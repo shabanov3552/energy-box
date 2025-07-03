@@ -1,0 +1,117 @@
+@use "sass:math" as math;
+@use '../config/breakpoints' as bp;
+@use '../config/variables' as var;
+@use '../config/functions' as func;
+@use '../config/mixins' as mixin;
+
+// Стили тега BODY
+body {
+
+   // Скролл заблокирован
+   .lock & {
+      overflow: hidden;
+      touch-action: none;
+      overscroll-behavior: none;
+   }
+
+   // Сайт загружен
+   .loaded & {}
+}
+
+// Оболочка wrapper
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   background: #d8e2f0 radial-gradient(51.76% 73.34% at 94.14% -4.92%, #fff 0%, rgba(255, 255, 255, 0) 100%);
+
+   @supports (overflow: clip) {
+      overflow: clip;
+   }
+
+   // Прижимаем footer
+   >main {
+      flex: 1 1 auto;
+   }
+
+   // Фикс для слайдеров
+   >* {
+      min-width: 0;
+   }
+}
+
+// Ограничивающий контейнер
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+@if (var.$responsiveType==1) {
+
+   // Отзывчивая
+   [class*="__container"] {
+      @if (var.$maxWidthContainer>0) {
+         max-width: func.rem(var.$containerWidth);
+         margin: 0 auto;
+      }
+
+      @if (var.$containerPadding>0) {
+         @if (var.$maxWidthContainer>0) {
+            padding: 0 func.rem(math.div(var.$containerPadding, 2));
+
+            @media (max-width:bp.$xxl) {
+               padding: func.rem(0) func.rem(40);
+            }
+
+            @media (max-width:bp.$xl) {
+               padding: func.rem(0) func.rem(30);
+            }
+
+            @media (max-width:bp.$md) {
+               padding: func.rem(0) func.rem(20);
+            }
+         }
+
+         @else {
+            @include adaptiveValue("padding-left", math.div(var.$containerPadding, 2), 15);
+            @include adaptiveValue("padding-right", math.div(var.$containerPadding, 2), 15);
+         }
+      }
+   }
+}
+
+@else {
+
+   // По брейк-поинтам
+   [class*="__container"] {
+      margin: 0 auto;
+
+      @if (var.$maxWidthContainer>0) {
+         max-width: func.rem(var.$containerWidth);
+      }
+
+      @else {
+         @if (var.$containerPadding>0) {
+            padding: 0 func.rem(math.div(var.$containerPadding, 2));
+         }
+      }
+
+      @media (max-width: $pc) {
+         max-width: func.rem(970);
+      }
+
+      @media (max-width: $lg) {
+         max-width: func.rem(750);
+      }
+
+      @media (max-width: $md) {
+         max-width: none;
+
+         @if (var.$containerPadding>0 and var.$maxWidthContainer>0) {
+            padding: 0 func.rem(math.div(var.$containerPadding, 2));
+         }
+      }
+   }
+}
