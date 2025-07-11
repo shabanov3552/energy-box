@@ -5021,11 +5021,11 @@
                 e.preventDefault();
             }
         }
-        const script_element = document.querySelector(".js-horizontal-scroll img");
+        const scrollabelBlock = document.querySelector(".js-horizontal-scroll img");
         function updatePosition() {
-            const rect = script_element.getBoundingClientRect();
+            const rect = scrollabelBlock.getBoundingClientRect();
             const viewportHeight = window.innerHeight;
-            const elementWidth = script_element.offsetWidth;
+            const elementWidth = scrollabelBlock.offsetWidth;
             const isInViewport = rect.top < viewportHeight && rect.bottom > 0;
             if (isInViewport) {
                 const totalScrollDistance = rect.height + viewportHeight;
@@ -5033,11 +5033,11 @@
                 const progress = visibleTop / totalScrollDistance;
                 const maxShift = elementWidth - window.innerWidth;
                 const shift = progress * maxShift;
-                script_element.style.transform = `translateX(-${shift}px)`;
-            } else script_element.style.transform = "";
+                scrollabelBlock.style.transform = `translateX(-${shift}px)`;
+            } else scrollabelBlock.style.transform = "";
             requestAnimationFrame(updatePosition);
         }
-        if (script_element) requestAnimationFrame(updatePosition);
+        if (scrollabelBlock) requestAnimationFrame(updatePosition);
         window["FLS"] = true;
         isWebp();
         menuInit();

@@ -89,6 +89,22 @@ h6 {
   overflow: hidden;
   background: #d8e2f0 radial-gradient(51.76% 73.34% at 94.14% -4.92%,#fff 0,rgba(255,255,255,0) 100%)
 }
+.wrapper.traction-battery-page {
+  background: #d8e2f0;
+  position: relative
+}
+.wrapper.traction-battery-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(51.76% 73.34% at 94.14% -4.92%,#fff 0,rgba(255,255,255,0) 100%);
+  z-index: 1;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
 @supports (overflow:clip) {
   .wrapper {
     overflow: clip
@@ -709,7 +725,8 @@ body::after {
   position: absolute;
   top: 138px;
   left: 36px;
-  right: 36px
+  right: 36px;
+  z-index: 5
 }
 .submenu__wrapper {
   max-width: 1042px;
@@ -1993,6 +2010,658 @@ body::after {
 .sidebar-info__text>*:not(:last-child) {
   margin-bottom: 1.75rem
 }
+.battery-diagram {
+  padding-top: 16.125rem;
+  height: 1821px;
+  position: relative;
+  margin-bottom: 15.625rem
+}
+.battery-diagram__halo {
+  position: absolute;
+  inset: 0
+}
+.battery-diagram__halo-wrapper {
+  height: 100%
+}
+.battery-diagram__main-ibg {
+  position: absolute;
+  top: 430px;
+  left: calc(50% - 20px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 1380px;
+  height: 1380px;
+  z-index: 2
+}
+.battery-diagram__container {
+  position: relative;
+  z-index: 2
+}
+.battery-diagram__top {
+  -webkit-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  transform: translateX(-30px)
+}
+.battery-diagram__subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: #6f7b8c;
+  margin-bottom: .625rem
+}
+.battery-diagram__title {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  background: -webkit-gradient(linear,left top,right top,from(#273583),color-stop(50%,#35b2b6),to(#4faf34));
+  background: linear-gradient(90deg,#273583 0,#35b2b6 50%,#4faf34 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+.battery-diagram__layers {
+  position: relative
+}
+.battery-diagram__layer {
+  position: absolute;
+  max-width: 270px
+}
+.battery-diagram__layer_left-top {
+  left: 0;
+  top: -66px
+}
+.battery-diagram__layer_left-center-1 {
+  left: 0;
+  top: 257px
+}
+.battery-diagram__layer_left-center-2 {
+  left: 0;
+  top: 621px
+}
+.battery-diagram__layer_left-bottom {
+  left: 0;
+  top: 961px
+}
+.battery-diagram__layer_right-top {
+  top: 70px;
+  right: 0
+}
+.battery-diagram__layer_right-center-1 {
+  top: 334px;
+  right: 0
+}
+.battery-diagram__layer_right-center-2 {
+  top: 611px;
+  right: 0
+}
+.battery-diagram__layer_right-bottom {
+  top: 912px;
+  right: 0
+}
+.battery-diagram__label {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 133%;
+  background: -webkit-gradient(linear,left top,right top,from(#273583),color-stop(50%,#35b2b6),to(#4faf34));
+  background: linear-gradient(90deg,#273583 0,#35b2b6 50%,#4faf34 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: .625rem
+}
+.battery-diagram__connector {
+  position: relative;
+  height: 10px;
+  margin-bottom: .625rem
+}
+.battery-diagram__connector::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  display: block
+}
+.battery-diagram__connector::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100%;
+  background-color: #fff
+}
+.battery-diagram__layer_left-top .battery-diagram__connector::after {
+  left: 10px;
+  width: 529px
+}
+.battery-diagram__layer_left-center-1 .battery-diagram__connector::after {
+  left: 10px;
+  width: 643px
+}
+.battery-diagram__layer_left-center-2 .battery-diagram__connector::after {
+  left: 10px;
+  width: 840px
+}
+.battery-diagram__layer_left-bottom .battery-diagram__connector::after {
+  left: 10px;
+  width: 1005px
+}
+.battery-diagram__layer_right-top .battery-diagram__connector::before {
+  position: absolute;
+  right: 0
+}
+.battery-diagram__layer_right-top .battery-diagram__connector::after {
+  right: 10px;
+  width: 886px
+}
+.battery-diagram__layer_right-center-1 .battery-diagram__connector::before {
+  position: absolute;
+  right: 0
+}
+.battery-diagram__layer_right-center-1 .battery-diagram__connector::after {
+  right: 10px;
+  width: 514px
+}
+.battery-diagram__layer_right-center-2 .battery-diagram__connector::before {
+  position: absolute;
+  right: 0
+}
+.battery-diagram__layer_right-center-2 .battery-diagram__connector::after {
+  right: 10px;
+  width: 730px
+}
+.battery-diagram__layer_right-bottom .battery-diagram__connector::before {
+  position: absolute;
+  right: 0
+}
+.battery-diagram__layer_right-bottom .battery-diagram__connector::after {
+  right: 10px;
+  width: 620px
+}
+.battery-diagram__text-block {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: #6f7b8c
+}
+.battery-diagram__text:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.battery-lineup {
+  position: relative;
+  padding-bottom: 5.1875rem;
+  margin-bottom: 7.3125rem
+}
+.battery-lineup__image-ibg {
+  width: 1015px;
+  height: 989px;
+  position: absolute;
+  left: calc(50% - 21px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1
+}
+.battery-lineup__container {
+  position: relative;
+  z-index: 3
+}
+.battery-lineup__top {
+  margin-bottom: 6.5rem
+}
+.battery-lineup__subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+  color: #6f7b8c
+}
+.battery-lineup__title {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 100%;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear,left top,right top,from(#273583),color-stop(50%,#35b2b6),to(#4faf34));
+  background: linear-gradient(90deg,#273583 0,#35b2b6 50%,#4faf34 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 558px
+}
+.battery-lineup__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4,1fr);
+  gap: 96px
+}
+.battery-lineup__item {
+  position: relative;
+  backdrop-filter: blur(20px);
+  background: hsla(0,0%,100%,.9);
+  border-radius: 40px;
+  padding: 1.875rem
+}
+.battery-lineup__item::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50px 50px 0 0;
+  width: 118px;
+  height: 24px;
+  background: hsla(0,0%,100%,.9)
+}
+.battery-lineup__model {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 1.875rem
+}
+.battery-lineup__model_color-blue {
+  color: #273583
+}
+.battery-lineup__model_color-green {
+  color: #4faf34
+}
+.battery-lineup__model_color-teal {
+  color: #35b2b6
+}
+.battery-lineup__model_color-black {
+  color: #000
+}
+.battery-lineup__spec {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 125%
+}
+.battery-lineup__spec:not(:last-child) {
+  margin-bottom: 1.53125rem
+}
+.battery-lineup__spec-name {
+  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+  color: #6f7b8c
+}
+.battery-lineup__spec-separator {
+  border: 1px solid #d8e2f0;
+  width: 100%;
+  height: 0
+}
+.battery-lineup__spec-value {
+  font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
+  color: #555
+}
+.battery-features {
+  margin-bottom: 6.875rem
+}
+.battery-features__title {
+  margin-bottom: 3.75rem;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  color: #273583
+}
+.battery-features__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5,1fr);
+  gap: 80px
+}
+.battery-features__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem
+}
+.battery-features__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #6f7b8c
+}
+.traction-battery-info {
+  background: -webkit-gradient(linear,left top,right top,from(#fff),to(rgba(255,255,255,0)));
+  background: linear-gradient(90deg,#fff 0,rgba(255,255,255,0) 100%);
+  padding: 8.875rem 0
+}
+.traction-battery-info__container {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.traction-battery-info__title {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 129%;
+  color: #273583
+}
+.info-card {
+  background: #fff;
+  border-radius: 40px;
+  padding: 3.125rem
+}
+.info-card__top {
+  padding-bottom: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 139px
+}
+.info-card__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 133%;
+  color: #000
+}
+.info-card__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #6f7b8c
+}
+.info-card__text p:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.info-card__bottom {
+  border-top: 1px solid #d8e2f0;
+  padding-top: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+  grid-template-columns: repeat(4,auto);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.info-card__item {
+  font-size: 18px;
+  line-height: 167%
+}
+.info-card__label {
+  font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
+  color: #000
+}
+.info-card__link {
+  font-size: inherit;
+  line-height: inherit;
+  color: #6f7b8c
+}
+.energy-storage-page {
+  padding-top: 14.875rem
+}
+.energy-storage {
+  margin-bottom: 8.6875rem
+}
+.energy-storage__title {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  background: -webkit-gradient(linear,left top,right top,from(#273583),color-stop(50%,#35b2b6),to(#4faf34));
+  background: linear-gradient(90deg,#273583 0,#35b2b6 50%,#4faf34 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3.8125rem
+}
+.energy-storage__product-card {
+  background: #fff;
+  border-radius: 50px;
+  padding: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  position: relative
+}
+.energy-storage__product-card::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -24px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50px 50px 0 0;
+  width: 118px;
+  height: 24px;
+  background: #fff
+}
+.energy-storage__product-ibg {
+  width: 469px;
+  height: 428px
+}
+.energy-storage__name {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear,left top,right top,from(#273583),color-stop(50%,#35b2b6),to(#4faf34));
+  background: linear-gradient(90deg,#273583 0,#35b2b6 50%,#4faf34 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.875rem
+}
+.energy-storage__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-bottom: 1.875rem
+}
+.energy-storage__badge {
+  background: #4faf34;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.25rem
+}
+.energy-storage__badge_green {
+  background: #4faf34
+}
+.energy-storage__badge_mint {
+  background: #4abead
+}
+.energy-storage__badge_blue {
+  background: #273583
+}
+.energy-storage__badge-value {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: .3125rem
+}
+.energy-storage__badge-value span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff;
+  text-transform: lowercase
+}
+.energy-storage__badge-name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff
+}
+.energy-storage__spec-row {
+  font-size: 16px;
+  line-height: 156%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px
+}
+.energy-storage__spec-row:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.energy-storage__spec-name {
+  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+  color: #6f7b8c
+}
+.energy-storage__separator {
+  border-top: 1px solid #d8e2f0
+}
+.energy-storage__spec-value {
+  font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
+  color: #555;
+  text-align: right
+}
+.multi-connect {
+  margin-bottom: 5.25rem
+}
+.multi-connect__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  color: #273583;
+  margin-bottom: 2.4375rem
+}
+.multi-connect__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 75.42px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.multi-connect__battery img {
+  max-width: 100%
+}
+.solar-ess {
+  background: #000008;
+  position: relative
+}
+.solar-ess__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 68px;
+  justify-items: end
+}
+.solar-ess__image-ibg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1192px
+}
+.solar-ess__main {
+  padding-top: 10.25rem;
+  padding-bottom: 8.6875rem;
+  max-width: 560px
+}
+.solar-ess__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  background: -webkit-gradient(linear,left top,right top,from(#273583),color-stop(50%,#35b2b6),to(#4faf34));
+  background: linear-gradient(90deg,#273583 0,#35b2b6 50%,#4faf34 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.875rem
+}
+.solar-ess__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 175%;
+  color: #6f7b8c;
+  max-width: 443px
+}
+.hybrid-solar {
+  background: #fff;
+  position: relative
+}
+.hybrid-solar__main {
+  max-width: 619px;
+  padding-top: 15.25rem;
+  padding-bottom: 17.3125rem;
+  position: relative;
+  z-index: 2
+}
+.hybrid-solar__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  background: -webkit-gradient(linear,left top,right top,from(#273583),color-stop(50%,#35b2b6),to(#4faf34));
+  background: linear-gradient(90deg,#273583 0,#35b2b6 50%,#4faf34 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2.5rem
+}
+.hybrid-solar__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 175%;
+  color: #6f7b8c;
+  max-width: 489px
+}
+.hybrid-solar__image-ibg {
+  position: absolute;
+  inset: 0;
+  z-index: 1
+}
 @media (min-width:47.99875em) {
   .mp-third-block__item_two-columns {
     -ms-grid-column: 1;
@@ -2005,6 +2674,12 @@ body::after {
   }
   .service-card__top {
     row-gap: 0
+  }
+  .battery-diagram__main-ibg_mobile {
+    display: none
+  }
+  .energy-storage__spec-value {
+    max-width: 201px
   }
 }
 @media (min-width:61.99875em) {
@@ -2033,6 +2708,11 @@ body::after {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 20px
+  }
+}
+@media (min-width:87.49875em) {
+  .energy-storage__spec-value {
+    max-width: 299px
   }
 }
 @media (min-width:120.06125em) {
@@ -2285,6 +2965,159 @@ body::after {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0)
+  }
+  .battery-diagram {
+    padding-top: 14.875rem;
+    height: 1521px;
+    margin-bottom: 23.3125rem
+  }
+  .battery-diagram__main-ibg {
+    width: 1216px;
+    height: 1216px;
+    top: 341px;
+    left: calc(50% - 3px)
+  }
+  .battery-diagram__top {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+  }
+  .battery-diagram__title {
+    font-size: 100px;
+    max-width: 1450px;
+    margin: 0 auto
+  }
+  .battery-diagram__layer {
+    max-width: 238px
+  }
+  .battery-diagram__layer_left-top {
+    top: -46px
+  }
+  .battery-diagram__layer_left-center-1 {
+    top: 238px
+  }
+  .battery-diagram__layer_left-center-2 {
+    top: 559px
+  }
+  .battery-diagram__layer_left-bottom {
+    top: 859px
+  }
+  .battery-diagram__layer_right-top {
+    top: 74px
+  }
+  .battery-diagram__layer_right-center-1 {
+    top: 306px
+  }
+  .battery-diagram__layer_right-center-2 {
+    top: 550px
+  }
+  .battery-diagram__layer_right-bottom {
+    top: 816px
+  }
+  .battery-diagram__label {
+    font-size: 25px;
+    line-height: 140%;
+    margin-bottom: .3125rem
+  }
+  .battery-diagram__connector {
+    margin-bottom: .3125rem
+  }
+  .battery-diagram__layer_left-center-1 .battery-diagram__connector::after {
+    width: 538px
+  }
+  .battery-diagram__layer_left-center-2 .battery-diagram__connector::after {
+    width: 727px
+  }
+  .battery-diagram__layer_left-bottom .battery-diagram__connector::after {
+    width: 868px
+  }
+  .battery-diagram__layer_right-top .battery-diagram__connector::after {
+    width: 748px
+  }
+  .battery-diagram__layer_right-center-1 .battery-diagram__connector::after {
+    width: 412px
+  }
+  .battery-diagram__layer_right-center-2 .battery-diagram__connector::after {
+    width: 619px
+  }
+  .battery-diagram__layer_right-bottom .battery-diagram__connector::after {
+    width: 506px
+  }
+  .battery-diagram__text:not(:last-child) {
+    margin-bottom: .625rem
+  }
+  .battery-lineup {
+    padding-bottom: 0;
+    margin-bottom: 9.5rem
+  }
+  .battery-lineup__image-ibg {
+    width: 894px;
+    height: 871px;
+    left: calc(50% - 0px);
+    bottom: 3px
+  }
+  .battery-lineup__top {
+    margin-bottom: 7rem
+  }
+  .battery-lineup__title {
+    font-size: 100px;
+    line-height: 112%
+  }
+  .battery-lineup__list {
+    gap: 30px
+  }
+  .battery-features {
+    margin-bottom: 7.375rem
+  }
+  .battery-features__list {
+    gap: 60px
+  }
+  .traction-battery-info {
+    padding: 6.5625rem 0
+  }
+  .traction-battery-info__container {
+    gap: 30px;
+    -ms-grid-columns: .935fr 2fr;
+    grid-template-columns: .935fr 2fr
+  }
+  .info-card__top {
+    -ms-grid-columns: 1fr 1.53fr;
+    grid-template-columns: 1fr 1.53fr
+  }
+  .energy-storage-page {
+    padding-top: 14.25rem
+  }
+  .energy-storage {
+    margin-bottom: 6.3125rem
+  }
+  .energy-storage__title {
+    font-size: 100px;
+    margin-bottom: 3.5625rem
+  }
+  .multi-connect {
+    margin-bottom: 3.8125rem
+  }
+  .solar-ess__image-ibg {
+    width: 1026px;
+    -webkit-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    transform: translateX(-40px)
+  }
+  .solar-ess__main {
+    padding-top: 5.9375rem;
+    padding-bottom: 18.5rem;
+    max-width: 520px
+  }
+  .solar-ess__title {
+    font-size: 50px;
+    margin-bottom: 2.5rem
+  }
+  .solar-ess__text {
+    max-width: 100%
+  }
+  .hybrid-solar__main {
+    padding-top: 11.9375rem;
+    padding-bottom: 11.8125rem
   }
 }
 @media (max-width:87.49875em) {
@@ -2599,6 +3432,189 @@ body::after {
     line-height: 120%
   }
   .sidebar-info__text {
+    font-size: 16px;
+    line-height: 156%
+  }
+  .battery-diagram {
+    height: 1369px;
+    margin-bottom: 21.375rem
+  }
+  .battery-diagram__main-ibg {
+    width: 1098px;
+    height: 1098px;
+    top: 300px
+  }
+  .battery-diagram__subtitle {
+    margin-bottom: 1rem
+  }
+  .battery-diagram__title {
+    font-size: 70px;
+    max-width: 1014px
+  }
+  .battery-diagram__layer {
+    max-width: 214px
+  }
+  .battery-diagram__layer_left-top {
+    top: -41px
+  }
+  .battery-diagram__layer_left-center-1 {
+    top: 216px
+  }
+  .battery-diagram__layer_left-center-2 {
+    top: 505px
+  }
+  .battery-diagram__layer_left-bottom {
+    top: 776px
+  }
+  .battery-diagram__layer_right-top {
+    top: 68px
+  }
+  .battery-diagram__layer_right-center-1 {
+    top: 277px
+  }
+  .battery-diagram__layer_right-center-2 {
+    top: 497px
+  }
+  .battery-diagram__layer_right-bottom {
+    top: 718px
+  }
+  .battery-diagram__label {
+    font-size: 22px;
+    line-height: 159%;
+    margin-bottom: .25rem
+  }
+  .battery-diagram__layer_left-top .battery-diagram__connector::after {
+    width: 382px
+  }
+  .battery-diagram__layer_left-center-2 .battery-diagram__connector::after {
+    width: 604px
+  }
+  .battery-diagram__layer_left-bottom .battery-diagram__connector::after {
+    width: 711px
+  }
+  .battery-diagram__layer_right-top .battery-diagram__connector::after {
+    width: 593px
+  }
+  .battery-diagram__layer_right-center-1 .battery-diagram__connector::after {
+    width: 305px
+  }
+  .battery-diagram__layer_right-center-2 .battery-diagram__connector::after {
+    width: 485px
+  }
+  .battery-diagram__layer_right-bottom .battery-diagram__connector::after {
+    width: 387px
+  }
+  .battery-lineup__image-ibg {
+    width: 807px;
+    height: 786px;
+    bottom: -21px
+  }
+  .battery-lineup__top {
+    margin-bottom: 4.4375rem
+  }
+  .battery-lineup__title {
+    font-size: 70px;
+    line-height: 109%
+  }
+  .battery-lineup__item {
+    padding: 1.25rem
+  }
+  .battery-lineup__model {
+    font-size: 35px
+  }
+  .battery-lineup__spec {
+    font-size: 15px;
+    line-height: 133%
+  }
+  .battery-features {
+    margin-bottom: 7.6875rem
+  }
+  .battery-features__title {
+    font-size: 50px
+  }
+  .battery-features__list {
+    gap: 40px
+  }
+  .battery-features__name {
+    font-size: 18px;
+    line-height: 139%
+  }
+  .battery-features__text {
+    font-size: 15px;
+    line-height: 167%;
+    overflow-wrap: anywhere
+  }
+  .traction-battery-info {
+    padding: 4.0625rem 0
+  }
+  .traction-battery-info__container {
+    display: block
+  }
+  .traction-battery-info__title {
+    font-size: 50px;
+    line-height: 100%;
+    margin-bottom: 1.875rem
+  }
+  .info-card__top {
+    -ms-grid-columns: 1fr 2.25fr;
+    grid-template-columns: 1fr 2.25fr
+  }
+  .energy-storage-page {
+    padding-top: 13.625rem
+  }
+  .energy-storage {
+    margin-bottom: 5.8125rem
+  }
+  .energy-storage__title {
+    font-size: 70px;
+    margin-bottom: 4.1875rem
+  }
+  .energy-storage__product-ibg {
+    width: 394px;
+    height: 360px
+  }
+  .energy-storage__name {
+    font-size: 40px
+  }
+  .energy-storage__badge-value {
+    font-size: 25px
+  }
+  .energy-storage__badge-name {
+    font-size: 16px
+  }
+  .energy-storage__spec-row:not(:last-child) {
+    margin-bottom: .9375rem
+  }
+  .multi-connect {
+    margin-bottom: 4.9375rem
+  }
+  .multi-connect__title {
+    font-size: 60px
+  }
+  .solar-ess__image-ibg {
+    width: 820px;
+    -webkit-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px)
+  }
+  .solar-ess__main {
+    padding-top: 5.125rem;
+    padding-bottom: 9.5rem;
+    max-width: 425px
+  }
+  .solar-ess__text {
+    font-size: 16px;
+    line-height: 156%
+  }
+  .hybrid-solar__main {
+    max-width: 418px;
+    padding-top: 10rem;
+    padding-bottom: 9.9375rem
+  }
+  .hybrid-solar__title {
+    font-size: 50px
+  }
+  .hybrid-solar__text {
     font-size: 16px;
     line-height: 156%
   }
@@ -2922,6 +3938,192 @@ body::after {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start
+  }
+  .battery-diagram {
+    padding-top: 13.625rem;
+    height: 1217px;
+    margin-bottom: 17.9375rem
+  }
+  .battery-diagram__main-ibg {
+    width: 910px;
+    height: 910px;
+    top: 304px
+  }
+  .battery-diagram__subtitle {
+    font-size: 20px;
+    margin-bottom: .625rem
+  }
+  .battery-diagram__layer {
+    max-width: 181px
+  }
+  .battery-diagram__layer_left-top {
+    top: -7px;
+    left: 2px
+  }
+  .battery-diagram__layer_left-center-1 {
+    top: 207px;
+    left: 2px
+  }
+  .battery-diagram__layer_left-center-2 {
+    top: 446px;
+    left: 2px
+  }
+  .battery-diagram__layer_left-bottom {
+    top: 671px;
+    left: 2px
+  }
+  .battery-diagram__layer_right-top {
+    top: 84px
+  }
+  .battery-diagram__layer_right-center-1 {
+    top: 257px
+  }
+  .battery-diagram__layer_right-center-2 {
+    top: 440px
+  }
+  .battery-diagram__layer_right-bottom {
+    top: 623px
+  }
+  .battery-diagram__label {
+    font-size: 18px;
+    line-height: 139%;
+    margin-bottom: .3125rem
+  }
+  .battery-diagram__layer_left-top .battery-diagram__connector::after {
+    width: 319px
+  }
+  .battery-diagram__layer_left-center-1 .battery-diagram__connector::after {
+    width: 403px
+  }
+  .battery-diagram__layer_left-center-2 .battery-diagram__connector::after {
+    width: 482px
+  }
+  .battery-diagram__layer_left-bottom .battery-diagram__connector::after {
+    width: 592px
+  }
+  .battery-diagram__layer_right-top .battery-diagram__connector::after {
+    width: 484px
+  }
+  .battery-diagram__layer_right-center-1 .battery-diagram__connector::after {
+    width: 230px
+  }
+  .battery-diagram__layer_right-center-2 .battery-diagram__connector::after {
+    width: 396px
+  }
+  .battery-diagram__layer_right-bottom .battery-diagram__connector::after {
+    width: 304px
+  }
+  .battery-diagram__text-block {
+    font-size: 13px;
+    line-height: 154%
+  }
+  .battery-lineup__image-ibg {
+    top: -237px;
+    bottom: auto;
+    width: 667px;
+    height: 650px
+  }
+  .battery-lineup__subtitle {
+    font-size: 20px;
+    line-height: 100%
+  }
+  .battery-lineup__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr);
+    gap: 54px 30px
+  }
+  .battery-features {
+    margin-bottom: 9.25rem
+  }
+  .battery-features__title {
+    font-size: 40px;
+    margin-bottom: 2.5rem
+  }
+  .traction-battery-info {
+    padding: 5.15625rem 0
+  }
+  .traction-battery-info__title {
+    font-size: 40px
+  }
+  .info-card__top {
+    -ms-grid-columns: 1fr 1.45fr;
+    grid-template-columns: 1fr 1.45fr
+  }
+  .info-card__title {
+    font-size: 25px;
+    line-height: 100%
+  }
+  .info-card__text {
+    font-size: 16px;
+    line-height: 156%
+  }
+  .info-card__text p:not(:last-child) {
+    margin-bottom: .625rem
+  }
+  .info-card__item {
+    font-size: 16px;
+    line-height: 156%
+  }
+  .energy-storage {
+    margin-bottom: 2.5rem
+  }
+  .energy-storage__title {
+    font-size: 60px;
+    margin-bottom: 2.3125rem
+  }
+  .energy-storage__product-card {
+    padding: 1.875rem
+  }
+  .energy-storage__product-ibg {
+    width: 275px;
+    height: 251px
+  }
+  .energy-storage__name {
+    font-size: 30px;
+    margin-bottom: 1.25rem
+  }
+  .energy-storage__row {
+    gap: 10px;
+    margin-bottom: 1.25rem
+  }
+  .energy-storage__badge-value {
+    font-size: 20px
+  }
+  .energy-storage__badge-value span {
+    font-size: 16px;
+    line-height: 100%;
+    margin-left: .625rem
+  }
+  .energy-storage__badge-name {
+    line-height: 125%
+  }
+  .multi-connect {
+    margin-bottom: 3.25rem
+  }
+  .multi-connect__title {
+    font-size: 50px
+  }
+  .multi-connect__row {
+    gap: 41px
+  }
+  .solar-ess__image-ibg {
+    width: 656px
+  }
+  .solar-ess__main {
+    padding: 4.6875rem 0;
+    max-width: 335px
+  }
+  .solar-ess__title {
+    font-size: 40px;
+    margin-bottom: 1.875rem
+  }
+  .hybrid-solar__main {
+    max-width: 349px;
+    padding-top: 6.53125rem;
+    padding-bottom: 6.403125rem
+  }
+  .hybrid-solar__title {
+    font-size: 40px
   }
 }
 @media (max-width:63.9375em) {
@@ -3323,6 +4525,230 @@ body::after {
   .sidebar-info__text>*:not(:last-child) {
     margin-bottom: 1.25rem
   }
+  .battery-diagram {
+    padding-top: 6.3125rem;
+    height: 877px;
+    margin-bottom: 10.0625rem
+  }
+  .battery-diagram__main-ibg {
+    width: 682px;
+    height: 682px;
+    top: 148px
+  }
+  .battery-diagram__container {
+    padding: 0 1.25rem
+  }
+  .battery-diagram__title {
+    max-width: 700px;
+    font-size: 50px
+  }
+  .battery-diagram__layer {
+    max-width: 135px
+  }
+  .battery-diagram__layer_left-top {
+    top: -25px;
+    left: 0
+  }
+  .battery-diagram__layer_left-center-1 {
+    top: 136px;
+    left: 0
+  }
+  .battery-diagram__layer_left-center-2 {
+    top: 315px;
+    left: 0
+  }
+  .battery-diagram__layer_left-bottom {
+    top: 484px;
+    left: 0
+  }
+  .battery-diagram__layer_right-top {
+    top: 44px
+  }
+  .battery-diagram__layer_right-center-1 {
+    top: 174px
+  }
+  .battery-diagram__layer_right-center-2 {
+    top: 311px
+  }
+  .battery-diagram__layer_right-bottom {
+    top: 448px
+  }
+  .battery-diagram__label {
+    font-size: 15px;
+    line-height: 129%;
+    margin-bottom: 0
+  }
+  .battery-diagram__connector {
+    margin-bottom: 0
+  }
+  .battery-diagram__layer_left-top .battery-diagram__connector::after {
+    width: 240px
+  }
+  .battery-diagram__layer_left-center-1 .battery-diagram__connector::after {
+    width: 279px
+  }
+  .battery-diagram__layer_left-center-2 .battery-diagram__connector::after {
+    width: 359px
+  }
+  .battery-diagram__layer_left-bottom .battery-diagram__connector::after {
+    width: 438px
+  }
+  .battery-diagram__layer_right-top .battery-diagram__connector::after {
+    width: 368px
+  }
+  .battery-diagram__layer_right-center-1 .battery-diagram__connector::after {
+    width: 182px
+  }
+  .battery-diagram__layer_right-center-2 .battery-diagram__connector::after {
+    width: 253px
+  }
+  .battery-diagram__layer_right-bottom .battery-diagram__connector::after {
+    width: 231px
+  }
+  .battery-diagram__text-block {
+    font-size: 11px;
+    line-height: 145%
+  }
+  .battery-diagram__text:not(:last-child) {
+    margin-bottom: .3125rem
+  }
+  .battery-lineup {
+    margin-bottom: 7.5625rem
+  }
+  .battery-lineup__image-ibg {
+    width: 500px;
+    height: 487px;
+    top: -157px
+  }
+  .battery-lineup__container {
+    padding: 0 1.25rem
+  }
+  .battery-lineup__title {
+    font-size: 50px;
+    line-height: 105%
+  }
+  .battery-lineup__list {
+    gap: 60px 30px
+  }
+  .battery-lineup__model {
+    font-size: 25px;
+    margin-bottom: 1.25rem
+  }
+  .battery-features {
+    margin-bottom: 7.25rem
+  }
+  .battery-features__container {
+    padding: 0 1.25rem
+  }
+  .battery-features__title {
+    font-size: 35px;
+    margin-bottom: 2.5rem
+  }
+  .battery-features__name {
+    font-size: 16px;
+    line-height: 125%
+  }
+  .traction-battery-info {
+    padding: 3.59375rem 0
+  }
+  .traction-battery-info__container {
+    padding: 0 1.25rem
+  }
+  .traction-battery-info__title {
+    font-size: 35px
+  }
+  .info-card {
+    padding: 1.25rem
+  }
+  .info-card__top {
+    gap: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr
+  }
+  .info-card__title {
+    font-size: 20px
+  }
+  .info-card__text {
+    font-size: 15px;
+    line-height: 133%
+  }
+  .info-card__bottom {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding-top: 1.25rem
+  }
+  .energy-storage-page {
+    padding-top: 6.75rem
+  }
+  .energy-storage {
+    margin-bottom: 4.4375rem
+  }
+  .energy-storage__title {
+    font-size: 50px;
+    margin-bottom: 3.5625rem
+  }
+  .energy-storage__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+  }
+  .energy-storage__badge {
+    padding: .9375rem
+  }
+  .energy-storage__spec-row {
+    font-size: 15px;
+    line-height: 133%
+  }
+  .multi-connect {
+    margin-bottom: 2.4375rem
+  }
+  .multi-connect__title {
+    font-size: 40px;
+    margin-bottom: 1.5625rem
+  }
+  .solar-ess__container {
+    display: block
+  }
+  .solar-ess__image-ibg {
+    position: static;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    width: calc(100% + 60px);
+    padding-bottom: 72.5%;
+    margin-left: -30px;
+    margin-right: -30px
+  }
+  .solar-ess__main {
+    max-width: 100%;
+    padding-top: 2.5625rem;
+    padding-bottom: 2.9375rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px
+  }
+  .solar-ess__title {
+    font-size: 35px;
+    margin-bottom: 0
+  }
+  .solar-ess__text {
+    font-size: 15px;
+    line-height: 167%
+  }
+  .hybrid-solar__main {
+    max-width: 267px;
+    padding-top: 3.3125rem;
+    padding-bottom: 3.25rem
+  }
+  .hybrid-solar__title {
+    font-size: 35px;
+    margin-bottom: 1.25rem
+  }
 }
 @media (max-width:47.99875em) {
   [class*=__container] {
@@ -3672,6 +5098,205 @@ body::after {
   .sidebar-info {
     gap: 60px
   }
+  .battery-diagram {
+    padding-top: 5.0625rem;
+    height: 1521px
+  }
+  .battery-diagram__halo {
+    width: 1838px;
+    height: 877px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
+  .battery-diagram__main-ibg {
+    width: 682px;
+    height: 682px;
+    top: 148px;
+    left: 401px
+  }
+  .battery-diagram__main-ibg_mobile {
+    top: 775px;
+    left: auto;
+    right: -276px
+  }
+  .battery-diagram__title {
+    font-size: 40px
+  }
+  .battery-diagram__layer.battery-diagram__layer_left-bottom,
+  .battery-diagram__layer.battery-diagram__layer_left-center-1,
+  .battery-diagram__layer.battery-diagram__layer_left-center-2,
+  .battery-diagram__layer.battery-diagram__layer_left-top {
+    max-width: 150px
+  }
+  .battery-diagram__layer_left-top {
+    top: 15px
+  }
+  .battery-diagram__layer_left-center-1 {
+    top: 153px
+  }
+  .battery-diagram__layer_left-center-2 {
+    top: 331px
+  }
+  .battery-diagram__layer_left-bottom {
+    top: 525px
+  }
+  .battery-diagram__layer_right-top {
+    top: 705px
+  }
+  .battery-diagram__layer_right-center-1 {
+    top: 838px
+  }
+  .battery-diagram__layer_right-center-2 {
+    top: 974px
+  }
+  .battery-diagram__layer_right-bottom {
+    top: 1110px
+  }
+  .battery-lineup__title {
+    font-size: 40px
+  }
+  .battery-lineup__list {
+    gap: 55px 30px
+  }
+  .battery-lineup__item {
+    padding-right: .9375rem
+  }
+  .battery-lineup__spec {
+    -ms-grid-columns: auto 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 5px
+  }
+  .battery-lineup__spec:not(:last-child) {
+    margin-bottom: .9375rem
+  }
+  .battery-lineup__spec-separator {
+    display: none
+  }
+  .battery-features {
+    margin-bottom: 6.5rem
+  }
+  .battery-features__title {
+    font-size: 30px
+  }
+  .battery-features__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr);
+    gap: 37px 40px
+  }
+  .battery-features__name {
+    margin-bottom: .625rem;
+    padding-bottom: .625rem
+  }
+  .traction-battery-info {
+    padding: 3.125rem 0
+  }
+  .traction-battery-info__title {
+    font-size: 30px
+  }
+  .info-card__top {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 1.25rem
+  }
+  .info-card__bottom {
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2,auto);
+    gap: 20px auto
+  }
+  .energy-storage-page {
+    padding-top: 5.5rem
+  }
+  .energy-storage {
+    margin-bottom: 5.4375rem
+  }
+  .energy-storage__title {
+    font-size: 40px;
+    margin-bottom: 2.9375rem
+  }
+  .energy-storage__product-card {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 1.25rem
+  }
+  .energy-storage__product-ibg {
+    width: 241px;
+    height: 220px;
+    -ms-grid-column-align: center;
+    justify-self: center
+  }
+  .energy-storage__name {
+    font-size: 25px
+  }
+  .energy-storage__row {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3,1fr)
+  }
+  .energy-storage__badge {
+    padding: .625rem
+  }
+  .energy-storage__badge-value {
+    font-size: 18px
+  }
+  .energy-storage__badge-value span {
+    font-size: 15px;
+    line-height: 133%
+  }
+  .energy-storage__badge-name {
+    font-size: 15px;
+    line-height: 133%
+  }
+  .energy-storage__spec-row:not(:last-child) {
+    margin-bottom: .625rem
+  }
+  .multi-connect {
+    margin-bottom: 2.6875rem
+  }
+  .multi-connect__title {
+    font-size: 35px;
+    margin-bottom: 1.0625rem
+  }
+  .multi-connect__row {
+    gap: 23.23px
+  }
+  .solar-ess__image-ibg {
+    padding-bottom: 71.8%
+  }
+  .solar-ess__main {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding-bottom: 43px
+  }
+  .hybrid-solar__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
+  }
+  .hybrid-solar__main {
+    max-width: 100%;
+    padding-top: .5rem;
+    padding-bottom: 2.6875rem
+  }
+  .hybrid-solar__image-ibg {
+    position: relative;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    width: calc(100% + 60px);
+    padding-bottom: 74.1%;
+    margin-left: -30px;
+    margin-right: -30px
+  }
+  .hybrid-solar__image-ibg img {
+    -o-object-position: right center;
+    object-position: right center
+  }
 }
 @media (max-width:42.49875em) {
   .popup__header {
@@ -3766,6 +5391,121 @@ body::after {
   }
   .mp-modul__compare-value {
     font-size: 17px
+  }
+  .battery-diagram {
+    margin-bottom: 2.625rem
+  }
+  .battery-diagram__halo {
+    width: 1243px;
+    height: 593px
+  }
+  .battery-diagram__main-ibg {
+    width: 570px;
+    height: 570px;
+    left: 300px
+  }
+  .battery-diagram__main-ibg_mobile {
+    width: 682px;
+    height: 682px;
+    top: 627px;
+    right: -321px
+  }
+  .battery-diagram__subtitle {
+    font-size: 15px;
+    line-height: 100%
+  }
+  .battery-diagram__title {
+    font-size: 35px;
+    line-height: 100%
+  }
+  .battery-diagram__layer.battery-diagram__layer_left-bottom,
+  .battery-diagram__layer.battery-diagram__layer_left-center-1,
+  .battery-diagram__layer.battery-diagram__layer_left-center-2,
+  .battery-diagram__layer.battery-diagram__layer_left-top {
+    max-width: 134px
+  }
+  .battery-diagram__layer_left-top {
+    top: 30px
+  }
+  .battery-diagram__layer_left-center-1 {
+    top: 138px
+  }
+  .battery-diagram__layer_left-center-2 {
+    top: 280px
+  }
+  .battery-diagram__layer_left-bottom {
+    top: 443px
+  }
+  .battery-diagram__layer_right-top {
+    top: 572px;
+    right: -10px
+  }
+  .battery-diagram__layer_right-center-1 {
+    top: 705px;
+    right: -10px
+  }
+  .battery-diagram__layer_right-center-2 {
+    top: 841px;
+    right: -10px
+  }
+  .battery-diagram__layer_right-bottom {
+    top: 977px;
+    right: -10px
+  }
+  .battery-diagram__layer_left-top .battery-diagram__connector::after {
+    width: 162px
+  }
+  .battery-diagram__layer_left-center-1 .battery-diagram__connector::after {
+    width: 240px
+  }
+  .battery-diagram__layer_left-center-2 .battery-diagram__connector::after {
+    width: 260px
+  }
+  .battery-diagram__layer_left-bottom .battery-diagram__connector::after {
+    width: 341px
+  }
+  .battery-diagram__layer_right-top .battery-diagram__connector::after {
+    width: 350px
+  }
+  .battery-diagram__layer_right-center-1 .battery-diagram__connector::after {
+    width: 167px
+  }
+  .battery-diagram__layer_right-center-2 .battery-diagram__connector::after {
+    width: 253px
+  }
+  .battery-diagram__layer_right-bottom .battery-diagram__connector::after {
+    width: 214px
+  }
+  .battery-lineup {
+    margin-bottom: 6.125rem
+  }
+  .battery-lineup__image-ibg {
+    width: 350px;
+    height: 341px;
+    top: -212px
+  }
+  .battery-lineup__top {
+    margin-bottom: 3.25rem
+  }
+  .battery-lineup__title {
+    font-size: 35px
+  }
+  .battery-lineup__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+  }
+  .battery-features {
+    margin-bottom: 6.125rem
+  }
+  .battery-features__list {
+    gap: 28px 30px
+  }
+  .traction-battery-info {
+    padding: 2.5625rem 0
+  }
+  .info-card__bottom {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
   }
 }
 @media (max-width:29.99875em) {
@@ -3913,6 +5653,39 @@ body::after {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr
   }
+  .energy-storage {
+    margin-bottom: 4rem
+  }
+  .energy-storage__title {
+    font-size: 35px;
+    margin-bottom: 2.625rem
+  }
+  .energy-storage__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+  }
+  .multi-connect {
+    margin-bottom: 2.8125rem
+  }
+  .multi-connect__title {
+    margin-bottom: .25rem
+  }
+  .multi-connect__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 15px
+  }
+  .solar-ess__image-ibg {
+    padding-bottom: 75.4%
+  }
+  .hybrid-solar__main {
+    padding-bottom: 2.25rem
+  }
+  .hybrid-solar__image-ibg {
+    padding-bottom: 80%
+  }
 }
 @media (max-width:23.43625em) {
   .mp-second-block__right-content {
@@ -3941,6 +5714,9 @@ body::after {
   }
   .auxiliary-products-page .products-catalog__title {
     margin-bottom: 3rem
+  }
+  .battery-diagram__layer_left-top .battery-diagram__label {
+    width: 145px
   }
 }
 @media (max-width:87.49875em)and (min-width:74.99875em) {

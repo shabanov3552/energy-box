@@ -460,12 +460,12 @@ function dropdownAction(e, ddWrapper, ddActive) {
 
 //#region прокрутка картинки по горизонтали при скролле
 
-const element = document.querySelector('.js-horizontal-scroll img');
+const scrollabelBlock = document.querySelector('.js-horizontal-scroll img');
 
 function updatePosition() {
-   const rect = element.getBoundingClientRect();
+   const rect = scrollabelBlock.getBoundingClientRect();
    const viewportHeight = window.innerHeight;
-   const elementWidth = element.offsetWidth;
+   const elementWidth = scrollabelBlock.offsetWidth;
 
    const isInViewport = rect.top < viewportHeight && rect.bottom > 0;
 
@@ -478,15 +478,20 @@ function updatePosition() {
       const maxShift = elementWidth - window.innerWidth;
       const shift = progress * maxShift;
 
-      element.style.transform = `translateX(-${shift}px)`;
+      scrollabelBlock.style.transform = `translateX(-${shift}px)`;
    } else {
-      element.style.transform = '';
+      scrollabelBlock.style.transform = '';
    }
 
    requestAnimationFrame(updatePosition);
 }
-if (element) {
+if (scrollabelBlock) {
    requestAnimationFrame(updatePosition);
 }
+
+//#endregion
+
+
+//#region паралакс эффект для блока
 
 //#endregion

@@ -1,0 +1,1577 @@
+@use '../config/breakpoints' as bp;
+@use '../config/variables' as var;
+@use '../config/functions' as func;
+@use '../config/mixins' as mixin;
+
+.traction-battery {
+   // padding-top: func.rem(258);
+}
+
+//========================================================================================================================================================
+
+.battery-diagram {
+   padding-top: func.rem(258);
+   height: 1821px;
+   position: relative;
+   margin-bottom: func.rem(250);
+
+   @media (max-width:bp.$pc) {
+      padding-top: func.rem(238);
+      height: 1521px;
+      margin-bottom: func.rem(373);
+   }
+
+   @media (max-width:bp.$xxl) {
+      height: 1369px;
+      margin-bottom: func.rem(342);
+   }
+
+   @media (max-width:bp.$xl) {
+      padding-top: func.rem(218);
+      height: 1217px;
+      margin-bottom: func.rem(287);
+   }
+
+   @media (max-width:bp.$lg) {
+      padding-top: func.rem(101);
+      height: 877px;
+      margin-bottom: func.rem(161);
+   }
+
+   @media (max-width:bp.$md) {
+      padding-top: func.rem(81);
+      height: 1521px;
+   }
+
+   @media (max-width:bp.$sm) {
+      margin-bottom: func.rem(42);
+   }
+
+   // .battery-diagram__halo
+
+   &__halo {
+      position: absolute;
+      inset: 0;
+
+      @media (max-width:bp.$md) {
+         width: 1838px;
+         height: 877px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+
+      @media (max-width:bp.$sm) {
+         width: 1243px;
+         height: 593px;
+      }
+   }
+
+   // .battery-diagram__halo-wrapper
+
+   &__halo-wrapper {
+      height: 100%;
+   }
+
+   // .battery-diagram__main-ibg
+
+   &__main-ibg {
+      position: absolute;
+      top: 430px;
+      left: calc(50% - 20px);
+      transform: translateX(-50%);
+      width: 1380px;
+      height: 1380px;
+      z-index: 2;
+
+      @media (max-width:bp.$pc) {
+         width: 1216px;
+         height: 1216px;
+         top: 341px;
+         left: calc(50% - 3px);
+      }
+
+      @media (max-width:bp.$xxl) {
+         width: 1098px;
+         height: 1098px;
+         top: 300px;
+      }
+
+      @media (max-width:bp.$xl) {
+         width: 910px;
+         height: 910px;
+         top: 304px;
+      }
+
+      @media (max-width:bp.$lg) {
+         width: 682px;
+         height: 682px;
+         top: 148px;
+      }
+
+      @media (max-width:bp.$md) {
+         width: 682px;
+         height: 682px;
+         top: 148px;
+         left: 401px;
+      }
+
+      @media (max-width:bp.$sm) {
+         width: 570px;
+         height: 570px;
+         left: 300px;
+      }
+
+      // .battery-diagram__main-ibg_mobile
+
+      &_mobile {
+         @media (min-width:bp.$md) {
+            display: none;
+         }
+
+         @media (max-width:bp.$md) {
+            top: 775px;
+            left: auto;
+            right: -276px;
+         }
+
+         @media (max-width:bp.$sm) {
+            width: 682px;
+            height: 682px;
+            top: 627px;
+            right: -321px;
+         }
+      }
+   }
+
+   // .battery-diagram__container
+
+   &__container {
+      position: relative;
+      z-index: 2;
+
+      @media (max-width:bp.$lg) {
+         padding: func.rem(0) func.rem(20);
+      }
+   }
+
+   // .battery-diagram__top
+
+   &__top {
+      transform: translateX(-30px);
+
+      @media (max-width:bp.$pc) {
+         transform: translateX(0);
+      }
+   }
+
+   // .battery-diagram__subtitle
+
+   &__subtitle {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 30px;
+      text-align: center;
+      color: #6f7b8c;
+      margin-bottom: func.rem(10);
+
+      @media (max-width:bp.$xxl) {
+         margin-bottom: func.rem(16);
+      }
+
+      @media (max-width:bp.$xl) {
+         font-size: 20px;
+         margin-bottom: func.rem(10);
+      }
+
+      @media (max-width:bp.$sm) {
+         font-size: 15px;
+         line-height: 100%;
+      }
+   }
+
+   // .battery-diagram__title
+
+   &__title {
+      font-family: var(--second-family);
+      font-weight: 800;
+      font-size: 150px;
+      line-height: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      background: linear-gradient(90deg, #273583 0%, #35b2b6 50%, #4faf34 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (max-width:bp.$pc) {
+         font-size: 100px;
+         max-width: 1450px;
+         margin: 0 auto;
+      }
+
+      @media (max-width:bp.$xxl) {
+         font-size: 70px;
+         max-width: 1014px;
+      }
+
+      @media (max-width:bp.$lg) {
+         max-width: 700px;
+         font-size: 50px;
+      }
+
+      @media (max-width:bp.$md) {
+         font-size: 40px;
+      }
+
+      @media (max-width:bp.$sm) {
+         font-size: 35px;
+         line-height: 100%;
+      }
+   }
+
+   // .battery-diagram__layers
+
+   &__layers {
+      position: relative;
+   }
+
+   // .battery-diagram__layer
+
+   &__layer {
+      position: absolute;
+      max-width: 270px;
+
+      @media (max-width:bp.$pc) {
+         max-width: 238px;
+      }
+
+      @media (max-width:bp.$xxl) {
+         max-width: 214px;
+      }
+
+      @media (max-width:bp.$xl) {
+         max-width: 181px;
+      }
+
+      @media (max-width:bp.$lg) {
+         max-width: 135px;
+      }
+
+      @media (max-width:bp.$md) {
+
+         &.battery-diagram__layer_left-top,
+         &.battery-diagram__layer_left-center-1,
+         &.battery-diagram__layer_left-center-2,
+         &.battery-diagram__layer_left-bottom {
+            max-width: 150px;
+         }
+      }
+
+      @media (max-width:bp.$sm) {
+
+         &.battery-diagram__layer_left-top,
+         &.battery-diagram__layer_left-center-1,
+         &.battery-diagram__layer_left-center-2,
+         &.battery-diagram__layer_left-bottom {
+            max-width: 134px;
+         }
+
+         // &.battery-diagram__layer_right-top,
+         // &.battery-diagram__layer_right-center-1,
+         // &.battery-diagram__layer_right-center-2,
+         // &.battery-diagram__layer_right-bottom {
+         //    max-width: 125px;
+         // }
+      }
+
+      // .battery-diagram__layer_left-top
+
+      &_left-top {
+         left: 0;
+         top: -66px;
+
+         @media (max-width:bp.$pc) {
+            top: -46px;
+         }
+
+         @media (max-width:bp.$xxl) {
+            top: -41px;
+         }
+
+         @media (max-width:bp.$xl) {
+            top: -7px;
+            left: 2px;
+         }
+
+         @media (max-width:bp.$lg) {
+            top: -25px;
+            left: 0;
+
+            @media (min-width:bp.$md) {
+               .battery-diagram__label {
+                  width: 145px;
+               }
+            }
+         }
+
+         @media (max-width:bp.$md) {
+            top: 15px;
+         }
+
+         @media (max-width:bp.$sm) {
+            top: 30px;
+         }
+      }
+
+      // .battery-diagram__layer_left-center-1
+
+      &_left-center-1 {
+         left: 0;
+         top: 257px;
+
+         @media (max-width:bp.$pc) {
+            top: 238px;
+         }
+
+         @media (max-width:bp.$xxl) {
+            top: 216px;
+         }
+
+         @media (max-width:bp.$xl) {
+            top: 207px;
+            left: 2px;
+         }
+
+         @media (max-width:bp.$lg) {
+            top: 136px;
+            left: 0px;
+         }
+
+         @media (max-width:bp.$md) {
+            top: 153px;
+         }
+
+         @media (max-width:bp.$sm) {
+            top: 138px;
+         }
+      }
+
+      // .battery-diagram__layer_left-center-2
+
+      &_left-center-2 {
+         left: 0;
+         top: 621px;
+
+         @media (max-width:bp.$pc) {
+            top: 559px;
+         }
+
+         @media (max-width:bp.$xxl) {
+            top: 505px;
+         }
+
+         @media (max-width:bp.$xl) {
+            top: 446px;
+            left: 2px;
+         }
+
+         @media (max-width:bp.$lg) {
+            top: 315px;
+            left: 0;
+         }
+
+         @media (max-width:bp.$md) {
+            top: 331px;
+         }
+
+         @media (max-width:bp.$sm) {
+            top: 280px;
+         }
+      }
+
+      // .battery-diagram__layer_left-bottom
+
+      &_left-bottom {
+         left: 0;
+         top: 961px;
+
+         @media (max-width:bp.$pc) {
+            top: 859px;
+         }
+
+         @media (max-width:bp.$xxl) {
+            top: 776px;
+         }
+
+         @media (max-width:bp.$xl) {
+            top: 671px;
+            left: 2px;
+         }
+
+         @media (max-width:bp.$lg) {
+            top: 484px;
+            left: 0;
+         }
+
+         @media (max-width:bp.$md) {
+            top: 525px;
+         }
+
+         @media (max-width:bp.$sm) {
+            top: 443px;
+         }
+      }
+
+      // .battery-diagram__layer_right-top
+
+      &_right-top {
+         top: 70px;
+         right: 0;
+
+         @media (max-width:bp.$pc) {
+            top: 74px;
+         }
+
+         @media (max-width:bp.$xxl) {
+            top: 68px;
+         }
+
+         @media (max-width:bp.$xl) {
+            top: 84px;
+         }
+
+         @media (max-width:bp.$lg) {
+            top: 44px;
+         }
+
+         @media (max-width:bp.$md) {
+            top: 705px;
+         }
+
+         @media (max-width:bp.$sm) {
+            top: 572px;
+            right: -10px;
+         }
+      }
+
+      // .battery-diagram__layer_right-center-1
+
+      &_right-center-1 {
+         top: 334px;
+         right: 0;
+
+         @media (max-width:bp.$pc) {
+            top: 306px;
+         }
+
+         @media (max-width:bp.$xxl) {
+            top: 277px;
+         }
+
+         @media (max-width:bp.$xl) {
+            top: 257px;
+         }
+
+         @media (max-width:bp.$lg) {
+            top: 174px;
+         }
+
+         @media (max-width:bp.$md) {
+            top: 838px;
+         }
+
+         @media (max-width:bp.$sm) {
+            top: 705px;
+            right: -10px;
+         }
+      }
+
+      // .battery-diagram__layer_right-center-2
+
+      &_right-center-2 {
+         top: 611px;
+         right: 0;
+
+         @media (max-width:bp.$pc) {
+            top: 550px;
+         }
+
+         @media (max-width:bp.$xxl) {
+            top: 497px;
+         }
+
+         @media (max-width:bp.$xl) {
+            top: 440px;
+         }
+
+         @media (max-width:bp.$lg) {
+            top: 311px;
+         }
+
+         @media (max-width:bp.$md) {
+            top: 974px;
+         }
+
+         @media (max-width:bp.$sm) {
+            top: 841px;
+            right: -10px;
+         }
+      }
+
+      // .battery-diagram__layer_right-bottom
+
+      &_right-bottom {
+         top: 912px;
+         right: 0;
+
+         @media (max-width:bp.$pc) {
+            top: 816px;
+         }
+
+         @media (max-width:bp.$xxl) {
+            top: 718px;
+         }
+
+         @media (max-width:bp.$xl) {
+            top: 623px;
+         }
+
+         @media (max-width:bp.$lg) {
+            top: 448px;
+         }
+
+         @media (max-width:bp.$md) {
+            top: 1110px;
+         }
+
+         @media (max-width:bp.$sm) {
+            top: 977px;
+            right: -10px;
+         }
+      }
+   }
+
+   // .battery-diagram__label
+
+   &__label {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 133%;
+      background: linear-gradient(90deg, #273583 0%, #35b2b6 50%, #4faf34 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: func.rem(10);
+
+      @media (max-width:bp.$pc) {
+         font-size: 25px;
+         line-height: 140%;
+         margin-bottom: func.rem(5);
+      }
+
+      @media (max-width:bp.$xxl) {
+         font-size: 22px;
+         line-height: 159%;
+         margin-bottom: func.rem(4);
+      }
+
+      @media (max-width:bp.$xl) {
+         font-size: 18px;
+         line-height: 139%;
+         margin-bottom: func.rem(5);
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 15px;
+         line-height: 129%;
+         margin-bottom: 0;
+      }
+   }
+
+   // .battery-diagram__connector
+
+   &__connector {
+      position: relative;
+      height: 10px;
+      margin-bottom: func.rem(10);
+
+      @media (max-width:bp.$pc) {
+         margin-bottom: func.rem(5);
+      }
+
+      @media (max-width:bp.$lg) {
+         margin-bottom: 0;
+      }
+
+      &::before {
+         content: '';
+         position: absolute;
+         width: 10px;
+         height: 10px;
+         border-radius: 100%;
+         border: 2px solid #fff;
+         display: block;
+      }
+
+      &::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         height: 2px;
+         width: 100%;
+         background-color: #fff;
+      }
+
+      .battery-diagram__layer_left-top & {
+         &::before {}
+
+         &::after {
+            left: 10px;
+            width: 529px;
+
+            @media (max-width:bp.$xxl) {
+               width: 382px;
+            }
+
+            @media (max-width:bp.$xl) {
+               width: 319px;
+            }
+
+            @media (max-width:bp.$lg) {
+               width: 240px;
+            }
+
+            @media (max-width:bp.$sm) {
+               width: 162px;
+            }
+         }
+      }
+
+      .battery-diagram__layer_left-center-1 & {
+         &::before {}
+
+         &::after {
+            left: 10px;
+            width: 643px;
+
+            @media (max-width:bp.$pc) {
+               width: 538px;
+            }
+
+            @media (max-width:bp.$xl) {
+               width: 403px;
+            }
+
+            @media (max-width:bp.$lg) {
+               width: 279px;
+            }
+
+            @media (max-width:bp.$sm) {
+               width: 240px;
+            }
+         }
+      }
+
+      .battery-diagram__layer_left-center-2 & {
+         &::before {}
+
+         &::after {
+            left: 10px;
+            width: 840px;
+
+            @media (max-width:bp.$pc) {
+               width: 727px;
+            }
+
+            @media (max-width:bp.$xxl) {
+               width: 604px;
+            }
+
+            @media (max-width:bp.$xl) {
+               width: 482px;
+            }
+
+            @media (max-width:bp.$lg) {
+               width: 359px;
+            }
+
+            @media (max-width:bp.$sm) {
+               width: 260px;
+            }
+         }
+      }
+
+      .battery-diagram__layer_left-bottom & {
+         &::before {}
+
+         &::after {
+            left: 10px;
+            width: 1005px;
+
+            @media (max-width:bp.$pc) {
+               width: 868px;
+            }
+
+            @media (max-width:bp.$xxl) {
+               width: 711px;
+            }
+
+            @media (max-width:bp.$xl) {
+               width: 592px;
+            }
+
+            @media (max-width:bp.$lg) {
+               width: 438px;
+            }
+
+            @media (max-width:bp.$sm) {
+               width: 341px;
+            }
+         }
+      }
+
+      .battery-diagram__layer_right-top & {
+         &::before {
+            position: absolute;
+            right: 0;
+         }
+
+         &::after {
+            right: 10px;
+            width: 886px;
+
+            @media (max-width:bp.$pc) {
+               width: 748px;
+            }
+
+            @media (max-width:bp.$xxl) {
+               width: 593px;
+            }
+
+            @media (max-width:bp.$xl) {
+               width: 484px;
+            }
+
+            @media (max-width:bp.$lg) {
+               width: 368px;
+            }
+
+            @media (max-width:bp.$sm) {
+               width: 350px;
+            }
+         }
+      }
+
+      .battery-diagram__layer_right-center-1 & {
+         &::before {
+            position: absolute;
+            right: 0;
+         }
+
+         &::after {
+            right: 10px;
+            width: 514px;
+
+            @media (max-width:bp.$pc) {
+               width: 412px;
+            }
+
+            @media (max-width:bp.$xxl) {
+               width: 305px;
+            }
+
+            @media (max-width:bp.$xl) {
+               width: 230px;
+            }
+
+            @media (max-width:bp.$lg) {
+               width: 182px;
+            }
+
+            @media (max-width:bp.$sm) {
+               width: 167px;
+            }
+         }
+      }
+
+      .battery-diagram__layer_right-center-2 & {
+         &::before {
+            position: absolute;
+            right: 0;
+         }
+
+         &::after {
+            right: 10px;
+            width: 730px;
+
+            @media (max-width:bp.$pc) {
+               width: 619px;
+            }
+
+            @media (max-width:bp.$xxl) {
+               width: 485px;
+            }
+
+            @media (max-width:bp.$xl) {
+               width: 396px;
+            }
+
+            @media (max-width:bp.$lg) {
+               width: 253px;
+            }
+
+            @media (max-width:bp.$sm) {
+               width: 253px;
+            }
+         }
+      }
+
+      .battery-diagram__layer_right-bottom & {
+         &::before {
+            position: absolute;
+            right: 0;
+         }
+
+         &::after {
+            right: 10px;
+            width: 620px;
+
+            @media (max-width:bp.$pc) {
+               width: 506px;
+            }
+
+            @media (max-width:bp.$xxl) {
+               width: 387px;
+            }
+
+            @media (max-width:bp.$xl) {
+               width: 304px;
+            }
+
+            @media (max-width:bp.$lg) {
+               width: 231px;
+            }
+
+            @media (max-width:bp.$sm) {
+               width: 214px;
+            }
+         }
+      }
+   }
+
+   // .battery-diagram__text-block
+
+   &__text-block {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 156%;
+      color: #6f7b8c;
+
+      @media (max-width:bp.$xl) {
+         font-size: 13px;
+         line-height: 154%;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 11px;
+         line-height: 145%;
+      }
+   }
+
+   // .battery-diagram__text
+
+   &__text {
+      &:not(:last-child) {
+         margin-bottom: func.rem(20);
+
+         @media (max-width:bp.$pc) {
+            margin-bottom: func.rem(10);
+         }
+
+         @media (max-width:bp.$lg) {
+            margin-bottom: func.rem(5);
+         }
+      }
+   }
+}
+
+//========================================================================================================================================================
+
+.battery-lineup {
+   position: relative;
+   padding-bottom: func.rem(83);
+   margin-bottom: func.rem(117);
+
+   @media (max-width:bp.$pc) {
+      padding-bottom: 0;
+      margin-bottom: func.rem(152);
+   }
+
+   @media (max-width:bp.$lg) {
+      margin-bottom: func.rem(121);
+   }
+
+   @media (max-width:bp.$sm) {
+      margin-bottom: func.rem(98);
+   }
+
+   // .battery-lineup__image-ibg
+
+   &__image-ibg {
+      width: 1015px;
+      height: 989px;
+      position: absolute;
+      left: calc(50% - 21px);
+      transform: translateX(-50%);
+      bottom: 0;
+      z-index: 1;
+
+      @media (max-width:bp.$pc) {
+         width: 894px;
+         height: 871px;
+         left: calc(50% - 0px);
+         bottom: 3px;
+      }
+
+      @media (max-width:bp.$xxl) {
+         width: 807px;
+         height: 786px;
+         bottom: -21px;
+      }
+
+      @media (max-width:bp.$xl) {
+         top: -237px;
+         bottom: auto;
+         width: 667px;
+         height: 650px;
+      }
+
+      @media (max-width:bp.$lg) {
+         width: 500px;
+         height: 487px;
+         top: -157px;
+      }
+
+      @media (max-width:bp.$sm) {
+         width: 350px;
+         height: 341px;
+         top: -212px;
+      }
+   }
+
+   // .battery-lineup__container
+
+   &__container {
+      position: relative;
+      z-index: 3;
+
+      @media (max-width:bp.$lg) {
+         padding: func.rem(0) func.rem(20);
+      }
+   }
+
+   // .battery-lineup__top
+
+   &__top {
+      margin-bottom: func.rem(104);
+
+      @media (max-width:bp.$pc) {
+         margin-bottom: func.rem(112);
+      }
+
+      @media (max-width:bp.$xxl) {
+         margin-bottom: func.rem(71);
+      }
+
+      @media (max-width:bp.$sm) {
+         margin-bottom: func.rem(52);
+      }
+   }
+
+   // .battery-lineup__subtitle
+
+   &__subtitle {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 30px;
+      color: #6f7b8c;
+
+      @media (max-width:bp.$xl) {
+         font-size: 20px;
+         line-height: 100%;
+      }
+   }
+
+   // .battery-lineup__title
+
+   &__title {
+      font-family: var(--second-family);
+      font-weight: 800;
+      font-size: 150px;
+      line-height: 100%;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #273583 0%, #35b2b6 50%, #4faf34 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      max-width: 558px;
+
+      @media (max-width:bp.$pc) {
+         font-size: 100px;
+         line-height: 112%;
+      }
+
+      @media (max-width:bp.$xxl) {
+         font-size: 70px;
+         line-height: 109%;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 50px;
+         line-height: 105%;
+      }
+
+      @media (max-width:bp.$md) {
+         font-size: 40px;
+      }
+
+      @media (max-width:bp.$sm) {
+         font-size: 35px;
+      }
+   }
+
+   // .battery-lineup__list
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 96px;
+
+      @media (max-width:bp.$pc) {
+         gap: 30px;
+      }
+
+      @media (max-width:bp.$xl) {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 54px 30px;
+      }
+
+      @media (max-width:bp.$lg) {
+         gap: 60px 30px;
+      }
+
+      @media (max-width:bp.$md) {
+         gap: 55px 30px;
+      }
+
+      @media (max-width:bp.$sm) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   // .battery-lineup__item
+
+   &__item {
+      position: relative;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 40px;
+      padding: func.rem(30);
+
+      @media (max-width:bp.$xxl) {
+         padding: func.rem(20);
+      }
+
+      @media (max-width:bp.$md) {
+         padding-right: func.rem(15);
+      }
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: -24px;
+         left: 50%;
+         transform: translateX(-50%);
+         border-radius: 50px 50px 0 0;
+         width: 118px;
+         height: 24px;
+         background: rgba(255, 255, 255, 0.9);
+      }
+   }
+
+   // .battery-lineup__model
+
+   &__model {
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: func.rem(30);
+
+      @media (max-width:bp.$xxl) {
+         font-size: 35px;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 25px;
+         margin-bottom: func.rem(20);
+      }
+
+      // .battery-lineup__model_color-blue
+
+      &_color-blue {
+         color: #273583;
+      }
+
+      // .battery-lineup__model_color-green
+
+      &_color-green {
+         color: #4faf34;
+      }
+
+      // .battery-lineup__model_color-teal
+
+      &_color-teal {
+         color: #35b2b6;
+      }
+
+      // .battery-lineup__model_color-black
+
+      &_color-black {
+         color: #000;
+      }
+   }
+
+   // .battery-lineup__spec-list
+
+   &__spec-list {}
+
+   // .battery-lineup__spec
+
+   &__spec {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 10px;
+      align-items: center;
+      font-size: 16px;
+      line-height: 125%;
+
+      @media (max-width:bp.$xxl) {
+         font-size: 15px;
+         line-height: 133%;
+      }
+
+      @media (max-width:bp.$md) {
+         grid-template-columns: auto 1fr;
+         gap: 5px;
+      }
+
+      &:not(:last-child) {
+         margin-bottom: func.rem(24.5);
+
+         @media (max-width:bp.$md) {
+            margin-bottom: func.rem(15);
+         }
+      }
+   }
+
+   // .battery-lineup__spec-name
+
+   &__spec-name {
+      font-weight: 400;
+      font-size: inherit;
+      line-height: inherit;
+      color: #6f7b8c;
+   }
+
+   // .battery-lineup__spec-separator
+
+   &__spec-separator {
+      border: 1px solid #d8e2f0;
+      width: 100%;
+      height: 0px;
+
+      @media (max-width:bp.$md) {
+         display: none;
+      }
+   }
+
+   // .battery-lineup__spec-value
+
+   &__spec-value {
+      font-weight: 600;
+      font-size: inherit;
+      line-height: inherit;
+      color: #555;
+   }
+}
+
+//========================================================================================================================================================
+
+.battery-features {
+   margin-bottom: func.rem(110);
+
+   @media (max-width:bp.$pc) {
+      margin-bottom: func.rem(118);
+   }
+
+   @media (max-width:bp.$xxl) {
+      margin-bottom: func.rem(123);
+   }
+
+   @media (max-width:bp.$xl) {
+      margin-bottom: func.rem(148);
+   }
+
+   @media (max-width:bp.$lg) {
+      margin-bottom: func.rem(116);
+   }
+
+   @media (max-width:bp.$md) {
+      margin-bottom: func.rem(104);
+   }
+
+   @media (max-width:bp.$sm) {
+      margin-bottom: func.rem(98);
+   }
+
+   // .battery-features__container
+
+   &__container {
+      @media (max-width:bp.$lg) {
+         padding: func.rem(0) func.rem(20);
+      }
+   }
+
+   // .battery-features__title
+
+   &__title {
+      margin-bottom: func.rem(60);
+      font-weight: 600;
+      font-size: 70px;
+      line-height: 100%;
+      color: #273583;
+
+      @media (max-width:bp.$xxl) {
+         font-size: 50px;
+      }
+
+      @media (max-width:bp.$xl) {
+         font-size: 40px;
+         margin-bottom: func.rem(40);
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 35px;
+         margin-bottom: func.rem(40);
+      }
+
+      @media (max-width:bp.$md) {
+         font-size: 30px;
+      }
+   }
+
+   // .battery-features__list
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 80px;
+
+      @media (max-width:bp.$pc) {
+         gap: 60px;
+      }
+
+      @media (max-width:bp.$xxl) {
+         gap: 40px;
+      }
+
+      @media (max-width:bp.$md) {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 37px 40px;
+      }
+
+      @media (max-width:bp.$sm) {
+         gap: 28px 30px;
+      }
+   }
+
+   // .battery-features__item
+
+   &__item {}
+
+   // .battery-features__name
+
+   &__name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: #000;
+      border-bottom: 2px solid #fff;
+      padding-bottom: func.rem(20);
+      margin-bottom: func.rem(20);
+
+      @media (max-width:bp.$xxl) {
+         font-size: 18px;
+         line-height: 139%;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 16px;
+         line-height: 125%;
+      }
+
+      @media (max-width:bp.$md) {
+         margin-bottom: func.rem(10);
+         padding-bottom: func.rem(10);
+      }
+   }
+
+   // .battery-features__text
+
+   &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 167%;
+      color: #6f7b8c;
+
+      @media (max-width:bp.$xxl) {
+         font-size: 15px;
+         line-height: 167%;
+         overflow-wrap: anywhere;
+      }
+   }
+}
+
+//========================================================================================================================================================
+
+.traction-battery-info {
+   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+   padding: func.rem(142) 0;
+
+   @media (max-width:bp.$pc) {
+      padding: func.rem(105) 0;
+   }
+
+   @media (max-width:bp.$xxl) {
+      padding: func.rem(65) 0;
+   }
+
+   @media (max-width:bp.$xl) {
+      padding: func.rem(82.5) 0;
+   }
+
+   @media (max-width:bp.$lg) {
+      padding: func.rem(57.5) 0;
+   }
+
+   @media (max-width:bp.$md) {
+      padding: func.rem(50) 0;
+   }
+
+   @media (max-width:bp.$sm) {
+      padding: func.rem(41) 0;
+   }
+
+   // .traction-battery-info__container
+
+   &__container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+
+      @media (max-width:bp.$pc) {
+         gap: 30px;
+         grid-template-columns: 0.935fr 2fr;
+      }
+
+      @media (max-width:bp.$xxl) {
+         display: block;
+      }
+
+      @media (max-width:bp.$lg) {
+         padding: func.rem(0) func.rem(20);
+      }
+   }
+
+   // .traction-battery-info__title
+
+   &__title {
+      font-weight: 600;
+      font-size: 70px;
+      line-height: 129%;
+      color: #273583;
+
+      @media (max-width:bp.$xxl) {
+         font-size: 50px;
+         line-height: 100%;
+         margin-bottom: func.rem(30);
+      }
+
+      @media (max-width:bp.$xl) {
+         font-size: 40px;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 35px;
+      }
+
+      @media (max-width:bp.$md) {
+         font-size: 30px;
+      }
+   }
+
+   // .traction-battery-info__card
+
+   &__card {}
+}
+
+.info-card {
+   background: #fff;
+   border-radius: 40px;
+   padding: func.rem(50);
+
+   @media (max-width:bp.$lg) {
+      padding: func.rem(20);
+   }
+
+   // .info-card__top
+
+   &__top {
+      padding-bottom: func.rem(40);
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 139px;
+
+      @media (max-width:bp.$pc) {
+         grid-template-columns: 1fr 1.53fr;
+      }
+
+      @media (max-width:bp.$xxl) {
+         grid-template-columns: 1fr 2.25fr;
+      }
+
+      @media (max-width:bp.$xl) {
+         grid-template-columns: 1fr 1.45fr;
+      }
+
+      @media (max-width:bp.$lg) {
+         gap: 50px;
+         align-items: center;
+         grid-template-columns: 1fr 2fr;
+      }
+
+      @media (max-width:bp.$md) {
+         grid-template-columns: 1fr;
+         gap: 20px;
+         padding-bottom: func.rem(20);
+      }
+   }
+
+   // .info-card__title
+
+   &__title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 133%;
+      color: #000;
+
+      @media (max-width:bp.$xl) {
+         font-size: 25px;
+         line-height: 100%;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 20px;
+      }
+   }
+
+   // .info-card__text
+
+   &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 167%;
+      color: #6f7b8c;
+
+      @media (max-width:bp.$xl) {
+         font-size: 16px;
+         line-height: 156%;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 15px;
+         line-height: 133%;
+      }
+
+      p {
+         &:not(:last-child) {
+            margin-bottom: func.rem(20);
+
+            @media (max-width:bp.$xl) {
+               margin-bottom: func.rem(10);
+            }
+         }
+      }
+   }
+
+   // .info-card__bottom
+
+   &__bottom {
+      border-top: 1px solid #d8e2f0;
+      padding-top: func.rem(40);
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      justify-content: space-between;
+
+      // gap: 40px;
+      @media (max-width:bp.$lg) {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 20px;
+         padding-top: func.rem(20);
+      }
+
+      @media (max-width:bp.$md) {
+         grid-template-columns: repeat(2, auto);
+         gap: 20px auto;
+      }
+
+      @media (max-width:bp.$sm) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   // .info-card__item
+
+   &__item {
+      font-size: 18px;
+      line-height: 167%;
+
+      @media (max-width:bp.$xl) {
+         font-size: 16px;
+         line-height: 156%;
+      }
+   }
+
+   // .info-card__label
+
+   &__label {
+      font-weight: 600;
+      font-size: inherit;
+      line-height: inherit;
+      color: #000;
+   }
+
+   // .info-card__link
+
+   &__link {
+      font-size: inherit;
+      line-height: inherit;
+      color: #6f7b8c;
+   }
+}
+
+//========================================================================================================================================================

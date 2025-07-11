@@ -26,6 +26,21 @@ body {
    overflow: hidden;
    background: #d8e2f0 radial-gradient(51.76% 73.34% at 94.14% -4.92%, #fff 0%, rgba(255, 255, 255, 0) 100%);
 
+   &.traction-battery-page {
+      background: #d8e2f0;
+      position: relative;
+
+      &::before {
+         content: '';
+         position: absolute;
+         inset: 0;
+         background: radial-gradient(51.76% 73.34% at 94.14% -4.92%, #fff 0%, rgba(255, 255, 255, 0) 100%);
+         z-index: 1;
+         pointer-events: none;
+         user-select: none;
+      }
+   }
+
    @supports (overflow: clip) {
       overflow: clip;
    }
