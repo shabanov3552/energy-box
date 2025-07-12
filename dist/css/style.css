@@ -2210,7 +2210,8 @@ body::after {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   bottom: 0;
-  z-index: 1
+  z-index: 1;
+  opacity: 0
 }
 .battery-lineup__container {
   position: relative;
@@ -4624,7 +4625,8 @@ body::after {
   .battery-lineup__image-ibg {
     width: 500px;
     height: 487px;
-    top: -157px
+    top: -157px;
+    opacity: 1!important
   }
   .battery-lineup__container {
     padding: 0 1.25rem

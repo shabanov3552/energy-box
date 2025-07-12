@@ -83,6 +83,7 @@
       height: 1380px;
       z-index: 2;
 
+
       @media (max-width:bp.$pc) {
          width: 1216px;
          height: 1216px;
@@ -927,6 +928,7 @@
       transform: translateX(-50%);
       bottom: 0;
       z-index: 1;
+      opacity: 0;
 
       @media (max-width:bp.$pc) {
          width: 894px;
@@ -952,6 +954,7 @@
          width: 500px;
          height: 487px;
          top: -157px;
+         opacity: 1 !important;
       }
 
       @media (max-width:bp.$sm) {

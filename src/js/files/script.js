@@ -491,7 +491,3 @@ if (scrollabelBlock) {
 
 //#endregion
 
-
-//#region паралакс эффект для блока
-
-//#endregion

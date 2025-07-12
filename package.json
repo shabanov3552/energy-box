@@ -94,6 +94,7 @@
 		"locomotive-scroll": "^4.1.4",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"scrollmagic": "^2.0.8",
 		"simplebar": "latest"
 	}
 }
