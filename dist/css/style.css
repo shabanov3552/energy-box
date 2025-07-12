@@ -3220,7 +3220,9 @@ body::after {
     bottom: 45px
   }
   .mp-third-block__content {
-    padding: 5.6875rem 0
+    padding: 5.6875rem 0;
+    margin-right: 0;
+    width: 620px
   }
   .mp-third-block__title {
     font-size: 45px
@@ -3714,7 +3716,8 @@ body::after {
     grid-template-columns: 1fr 402px
   }
   .mp-third-block__content {
-    padding: 2.8125rem 0
+    padding: 2.8125rem 0;
+    width: 100%
   }
   .mp-third-block__title {
     font-size: 40px;
@@ -4221,6 +4224,9 @@ body::after {
   .mp-first-block__button {
     font-size: 35px
   }
+  .mp-second-block {
+    padding-bottom: 3.125rem
+  }
   .mp-second-block__wrapper {
     background: url(../img/mp-second-block_arrow.svg) -426px -169px/900px 600px no-repeat,url(../img/mp-second-block_bg.webp) center/cover no-repeat;
     padding: .75rem 1.625rem .6875rem 1.9375rem
@@ -4324,9 +4330,9 @@ body::after {
   }
   .mp-emergency-start__main {
     grid-column: auto;
-    padding: 3.625rem 1.875rem 4.125rem 1.875rem;
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(180,180,180,0)),color-stop(32.21%,#b4b4b4),to(#757575));
-    background: linear-gradient(180deg,rgba(180,180,180,0) 0,#b4b4b4 32.21%,#757575 100%)
+    padding: 5rem 1.875rem 4.125rem 1.875rem;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(180,180,180,0)),color-stop(6%,rgba(180,180,180,.5)),color-stop(15%,#b4b4b4),to(#757575));
+    background: linear-gradient(180deg,rgba(180,180,180,0) 0,rgba(180,180,180,.5) 6%,#b4b4b4 15%,#757575 100%)
   }
   .mp-emergency-start__main-content {
     max-width: 100%
@@ -4920,7 +4926,7 @@ body::after {
     margin-bottom: -8.25rem
   }
   .mp-emergency-start__main {
-    padding: 3.125rem 1.40625rem 3.125rem 1.40625rem
+    padding: 5rem 1.40625rem 3.125rem 1.40625rem
   }
   .mp-emergency-start__title {
     margin-bottom: 1.25rem
@@ -5408,7 +5414,8 @@ body::after {
     width: 682px;
     height: 682px;
     top: 627px;
-    right: -321px
+    right: -321px;
+    left: auto
   }
   .battery-diagram__subtitle {
     font-size: 15px;
