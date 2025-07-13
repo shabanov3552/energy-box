@@ -267,8 +267,8 @@ textarea::-webkit-scrollbar {
   -ms-grid-row-align: stretch;
   align-self: stretch;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 12px;
-  flex: 0 0 12px;
+  -ms-flex: 0 0 19px;
+  flex: 0 0 19px;
   -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
   display: -webkit-box;
@@ -280,7 +280,7 @@ textarea::-webkit-scrollbar {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: url(../img/icons/arrow-select.svg) center center/12px 7px no-repeat
+  background: url(../img/icons/arrow-select.svg) center center/19px 11px no-repeat
 }
 ._select-open .select__value:after {
   -webkit-transform: rotate(-180deg);
@@ -545,7 +545,7 @@ body::after {
   top: 100px
 }
 .lightning-bg {
-  background-image: url(../../img/lightning-bg.webp);
+  background-image: url(../img/lightning-bg.webp);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 100%
@@ -2837,7 +2837,7 @@ body::after {
 }
 @media (max-width:115em) {
   .lightning-bg {
-    background-image: url(../../img/lightning-bg1600.webp)
+    background-image: url(../img/lightning-bg1600.webp)
   }
   .footer {
     padding: 3.53125rem 0
@@ -3239,7 +3239,7 @@ body::after {
     padding: 0 2.5rem
   }
   .lightning-bg {
-    background-image: url(../../img/lightning-bg1280.webp)
+    background-image: url(../img/lightning-bg1280.webp)
   }
   .header__logo {
     width: 120px;
@@ -3740,7 +3740,7 @@ body::after {
     padding: 0 1.875rem
   }
   .lightning-bg {
-    background-image: url(../../img/lightning-bg1024.webp)
+    background-image: url(../img/lightning-bg1024.webp)
   }
   .header__logo {
     width: 100px;
@@ -4250,7 +4250,7 @@ body::after {
 }
 @media (max-width:61.99875em) {
   .lightning-bg {
-    background-image: url(../../img/lightning-bg768.webp)
+    background-image: url(../img/lightning-bg768.webp)
   }
   .header__menu {
     -ms-grid-column: 1;
@@ -4890,7 +4890,7 @@ body::after {
     font-size: 50px
   }
   .lightning-bg {
-    background-image: url(../../img/lightning-bg576.webp)
+    background-image: url(../img/lightning-bg576.webp)
   }
   .header {
     top: 18px
@@ -5639,7 +5639,7 @@ body::after {
 }
 @media (max-width:29.99875em) {
   .lightning-bg {
-    background-image: url(../../img/lightning-bg375.webp)
+    background-image: url(../img/lightning-bg375.webp)
   }
   .footer__contacts {
     display: -ms-grid;

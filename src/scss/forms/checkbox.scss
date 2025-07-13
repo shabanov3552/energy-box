@@ -15,38 +15,6 @@
 	line-height: 22px;
 	color: #5B5B5B;
 
-	@media (any-hover:hover) {
-		// &:hover {
-		// 	.checkbox__chunk {
-		// 		background: url('@img/icons/icon_check-black.svg') center center no-repeat;
-		// 	}
-
-		// 	.checkbox__input {
-
-		// 		/* Checked */
-		// 		&:checked+.checkbox__chunk {
-		// 			background: url('@img/icons/icon_check-black.svg') center center no-repeat;
-		// 			opacity: 0.5;
-		// 		}
-
-		// 		/* Focused */
-		// 		&:focus+.checkbox__chunk {}
-
-		// 		/* Disabled */
-		// 		&:disabled+.checkbox__chunk {
-		// 			background: none;
-		// 		}
-
-
-		// 		&:checked:disabled+.checkbox__chunk {
-		// 			background: #4C4C4C url('../../../img/icons/icon_check.svg') center center no-repeat;
-		// 			box-shadow: none;
-		// 			opacity: 0.4;
-		// 		}
-
-		// 	}
-		// }
-	}
 
 	// .checkbox__input
 
@@ -59,7 +27,7 @@
 
 		/* Checked */
 		&:checked+.checkbox__chunk {
-			background: #4C4C4C url('../../../img/icons/icon_check.svg') center center no-repeat;
+			background: #4C4C4C url('../img/icons/icon_check.svg') center center no-repeat;
 			box-shadow: none;
 		}
 

@@ -60,32 +60,32 @@
 }
 
 .lightning-bg {
-   background-image: url(../../img/lightning-bg.png);
+   background-image: url(../img/lightning-bg.png);
    background-repeat: no-repeat;
    background-position: right top;
    background-size: 100%;
 
    @media (max-width:bp.$pc) {
-      background-image: url(../../img/lightning-bg1600.png);
+      background-image: url(../img/lightning-bg1600.png);
    }
 
    @media (max-width:bp.$xxl) {
-      background-image: url(../../img/lightning-bg1280.png);
+      background-image: url(../img/lightning-bg1280.png);
    }
 
    @media (max-width:bp.$xl) {
-      background-image: url(../../img/lightning-bg1024.png);
+      background-image: url(../img/lightning-bg1024.png);
    }
 
    @media (max-width:bp.$lg) {
-      background-image: url(../../img/lightning-bg768.png);
+      background-image: url(../img/lightning-bg768.png);
    }
 
    @media (max-width:bp.$md) {
-      background-image: url(../../img/lightning-bg576.png);
+      background-image: url(../img/lightning-bg576.png);
    }
 
    @media (max-width:bp.$xs) {
-      background-image: url(../../img/lightning-bg375.png);
+      background-image: url(../img/lightning-bg375.png);
    }
 }
