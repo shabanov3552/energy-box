@@ -62,10 +62,14 @@ body::after {
 		visibility: hidden;
 		transform: translate(120%, 0px);
 		transition: all 0.6s ease 0s;
-		background: #fff;
-		max-width: 667px;
+		background: linear-gradient(90deg, #273583 0%, #35b2b6 50%, #4faf34 100%);
 		width: 100%;
 		height: 100%;
+		padding: func.rem(50);
+
+		@media (max-width:bp.$md) {
+			padding: func.rem(20);
+		}
 
 		.popup_show & {
 			visibility: visible;
@@ -82,10 +86,6 @@ body::after {
 			transform: scale(1);
 		}
 
-		.video-popup & {
-			max-width: 100%;
-		}
-
 		.lock & {
 			visibility: visible;
 		}
@@ -95,14 +95,9 @@ body::after {
 
 	&__close {
 		outline: none;
-		width: 22px;
-		height: 22px;
-		flex: 0 0 22px;
-
-		svg {
-			height: 100%;
-			width: 100%;
-		}
+		width: 40px;
+		height: 40px;
+		flex-shrink: 0;
 	}
 
 	// .popup__close-svg
@@ -110,95 +105,54 @@ body::after {
 	&__close-svg {
 		height: 100%;
 		width: 100%;
-	}
 
-	// .popup__text
-
-	&__text {
-		font-size: 18px;
-		line-height: 26px;
-		max-width: 586px;
-		margin-bottom: func.rem(52);
+		use {
+			fill: #fff;
+		}
 	}
 
 	// .popup__header
 
 	&__header {
-		border-bottom: 1px solid #CACACA;
-		padding: func.rem(40);
-		padding-left: func.rem(54);
-		padding-right: func.rem(65);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		max-width: 616px;
+		margin: 0 auto;
+		margin-bottom: func.rem(50);
 
 		@media (max-width:bp.$md) {
-			padding: func.rem(30);
-		}
-
-		@media (max-width: func.em(679.98)) {
-			padding: func.rem(15);
-		}
-
-		@media (max-width:bp.$xs) {
-			padding: func.rem(10);
-		}
-
-		.video-popup &,
-		.basket-empty & {
-			justify-content: flex-end;
-		}
-	}
-
-	// .popup__video
-
-	&__video {
-		width: 100%;
-		height: calc(100vh - 200px);
-
-		iframe {
-			width: 100%;
-			height: 100%;
+			margin-bottom: func.rem(30);
 		}
 	}
 
 	// .popup__title
 
 	&__title {
-		font-size: 36px;
-		font-weight: 800;
+		font-family: var(--second-family);
+		font-weight: 600;
+		font-size: 70px;
+		line-height: 100%;
+		color: #fff;
 
 		@media (max-width:bp.$md) {
-			font-size: 25px;
-		}
-
-		@media (max-width:bp.$xs) {
-
-			#policy &,
-			#consent & {
-				font-size: 20px;
-			}
+			font-size: 50px;
 		}
 	}
 
 	// .popup__main
 
 	&__main {
-		padding: func.rem(24) func.rem(60) func.rem(50);
+		max-width: 616px;
+		margin: 0 auto;
 		overflow: auto;
-		height: calc(100% - 121px);
+		height: calc(100% - 120px);
 
-		#policy &,
-		#consent & {
-			height: calc(100% - 153px);
+		@media (min-width:bp.$md) {
 
 			&::-webkit-scrollbar {
 				display: none;
 			}
-		}
-
-		@media (max-width:bp.$md) {
-			padding: 20px;
 		}
 	}
 
@@ -206,107 +160,12 @@ body::after {
 
 	&__form {}
 
-	// .popup__icon
-
-	&__icon {
-		width: 38px;
-		height: 30px;
-	}
 }
 
 .popup_show {
 	z-index: 1500;
 	visibility: visible;
 	pointer-events: auto;
-}
-
-//#endregion
-
-//#region Дополнительные стили
-
-.popup {
-
-	// .popup_center
-
-	&_center {}
-
-	// .popup__wrapper
-
-	&__wrapper {}
-
-	// .popup__content
-
-	&__content {
-		#share-popup & {
-			max-width: 460px;
-		}
-	}
-
-	// .popup__close
-
-	&__close {}
-
-	// .popup__text
-
-	&__text {}
-
-	// .popup__header
-
-	&__header {}
-
-	// .popup__close-svg
-
-	&__close-svg {}
-
-	// .popup__video
-
-	&__video {}
-
-	// .popup__title
-
-	&__title {}
-
-	// .popup__main
-
-	&__main {
-		#share-popup & {
-			height: auto;
-		}
-	}
-
-	// .popup__form
-
-	&__form {}
-
-	// .popup__icon
-
-	&__icon {}
-}
-
-//#endregion
-
-//#region Стили модалки шаринга
-.share {
-
-	// .share__social
-
-	&__social {
-		margin-bottom: func.rem(40);
-	}
-
-	// .share__copy-url
-
-	&__copy-url {}
-
-	// .share__input
-
-	&__input {}
-
-	// .share__button
-
-	&__button {
-		width: 100%;
-	}
 }
 
 //#endregion

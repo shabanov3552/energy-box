@@ -81,13 +81,47 @@
 	// .header__callback-button
 
 	&__callback-button {
-		background: linear-gradient(90deg, #273583 0%, #35b2b6 50%, #4faf34 100%);
+
 		font-weight: 500;
 		font-size: 18px;
 		text-transform: uppercase;
 		color: #fff;
 		border-radius: 100px;
 		padding: 23.5px 30px;
+		transition: all 0.3s ease 0s;
+		position: relative;
+		overflow: hidden;
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			opacity: 0;
+			z-index: -1;
+			background: #000;
+			transition: all 0.3s ease 0s;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			background: linear-gradient(90deg, #273583 0%, #35b2b6 50%, #4faf34 100%);
+			transition: all 0.3s ease 0s;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				&::before {
+					opacity: 1;
+				}
+
+				&::after {
+					opacity: 0;
+				}
+			}
+		}
 
 		@media (max-width:bp.$xl) {
 			font-size: 16px;

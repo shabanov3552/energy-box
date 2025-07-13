@@ -153,6 +153,14 @@
       position: relative;
       display: flex;
 
+      @media (any-hover: hover) {
+         &:hover {
+            .products-preview__name {
+               color: #000;
+            }
+         }
+      }
+
       // .products-preview__row_first
 
       &_first {
@@ -400,6 +408,14 @@
       text-transform: uppercase;
       color: #273583;
       max-width: 778px;
+      display: block;
+      transition: all 0.3s ease 0s;
+
+      @media (any-hover: hover) {
+         &:hover {
+            color: #000;
+         }
+      }
 
       @media (max-width:bp.$pc) {
          font-size: 60px;
