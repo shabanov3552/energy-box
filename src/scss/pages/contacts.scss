@@ -171,8 +171,13 @@
       margin-top: func.rem(50);
       margin-bottom: func.rem(200);
       display: grid;
+      gap: 30px;
       grid-template-columns: 850px 560px;
       justify-content: space-between;
+
+      @media (max-width:bp.$pc) {
+         grid-template-columns: 850px 1fr;
+      }
 
       @media (max-width:bp.$xxl) {
          grid-template-columns: 736px 1fr;
@@ -269,7 +274,6 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
-      align-items: flex-start;
 
       @media (max-width:bp.$xl) {
          grid-template-columns: 1fr;
@@ -307,232 +311,6 @@
             margin-bottom: func.rem(30);
          }
       }
-   }
-}
-
-.service-card {
-   background: #fff;
-   padding: func.rem(50);
-   border-radius: 40px;
-
-   @media (max-width:bp.$xxl) {
-      padding: func.rem(30);
-   }
-
-   // .service-card__top
-   &__top,
-   &__bottom {
-      display: grid;
-      gap: 50px;
-      grid-template-columns: 0.75fr 1fr;
-
-      @media (max-width:bp.$xxl) {
-         grid-template-columns: 300px 1fr;
-      }
-
-      @media (max-width:bp.$md) {
-         grid-template-columns: 1fr;
-         gap: 20px;
-      }
-   }
-
-   &__top {
-      padding-bottom: func.rem(40);
-      grid-auto-flow: dense;
-      align-items: center;
-
-      @media (min-width:bp.$md) {
-         row-gap: 0;
-      }
-
-      @media (max-width:bp.$xl) {
-         align-items: start;
-      }
-
-      @media (max-width:bp.$md) {
-         padding-bottom: func.rem(20);
-      }
-   }
-
-   // .service-card__name
-
-   &__name {
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 133%;
-      color: #000;
-
-      @media (max-width:bp.$xxl) {
-         font-size: 25px;
-      }
-
-      @media (max-width:bp.$lg) {
-         font-size: 20px;
-      }
-   }
-
-   // .service-card__text
-
-   &__text {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 167%;
-      color: #6f7b8c;
-
-      @media (max-width:bp.$xxl) {
-         font-size: 16px;
-         line-height: 156%;
-      }
-
-      @media (max-width:bp.$lg) {
-         font-size: 15px;
-         line-height: 133%;
-      }
-
-      &>* {
-         &:not(:last-child) {
-            margin-bottom: func.rem(20);
-
-            @media (max-width:bp.$md) {
-               margin-bottom: func.rem(10);
-            }
-         }
-      }
-   }
-
-   // .service-card__bottom
-
-   &__bottom {
-      border-top: 1px solid #d8e2f0;
-      padding-top: func.rem(40);
-
-      @media (max-width:bp.$md) {
-         padding-top: func.rem(20);
-         gap: 10px;
-      }
-   }
-
-   // .service-card__contacts
-
-   &__contacts {
-      display: grid;
-      gap: 20px;
-      align-content: start;
-
-      @media (max-width:bp.$md) {
-         grid-template-columns: repeat(2, auto);
-         justify-content: space-between;
-         align-items: center;
-         grid-auto-flow: dense;
-         gap: 10px 20px;
-
-         .service-card__text {
-            grid-column: 1/-1;
-         }
-      }
-   }
-
-   // .service-card__phone
-
-   &__phone {
-      display: block;
-      font-size: 18px;
-      line-height: 167%;
-      font-weight: 400;
-      color: #6f7b8c;
-
-      @media (max-width:bp.$xxl) {
-         font-size: 16px;
-         line-height: 156%;
-      }
-
-      @media (max-width:bp.$lg) {
-         font-size: 15px;
-         line-height: 133%;
-      }
-
-      b {
-         font-weight: 600;
-         color: #000;
-      }
-   }
-
-   // .service-card__wa-button
-
-   &__wa-button {
-      border: 1px solid #d8e2f0;
-      border-radius: 50px;
-      padding: 0px 30px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      height: 60px;
-      width: 192px;
-
-      @media (max-width:bp.$xxl) {
-         font-size: 16px;
-         line-height: 100%;
-         width: 183px;
-      }
-
-      @media (max-width:bp.$md) {
-         font-size: 15px;
-         padding: 0px 15px;
-         width: 138px;
-         height: 40px;
-         justify-self: end;
-
-         img {
-            width: 20px;
-            height: 20px;
-         }
-      }
-
-      &:hover {
-         background: #d8e2f0;
-      }
-   }
-
-   // .service-card__working
-
-   &__working {
-      display: grid;
-      gap: 15px;
-      align-content: start;
-   }
-
-   // .service-card__work-text
-
-   &__work-text {
-      font-size: 18px;
-      line-height: 167%;
-      font-weight: 400;
-      color: #6f7b8c;
-
-      @media (max-width:bp.$xxl) {
-         font-size: 16px;
-         line-height: 156%;
-      }
-
-      @media (max-width:bp.$lg) {
-         font-size: 15px;
-         line-height: 133%;
-      }
-
-      b {
-         color: #000;
-         font-weight: 600;
-      }
-   }
-
-   // .service-card__descr
-
-   &__descr {
-      grid-column: 1/2;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 167%;
-      color: #6f7b8c;
    }
 }
 
@@ -609,6 +387,181 @@
                margin-bottom: func.rem(20);
             }
          }
+      }
+   }
+}
+
+.contact-card {
+   background: #fff;
+   padding: func.rem(50);
+   border-radius: 40px;
+
+   .contacts__services & {
+      align-self: start;
+   }
+
+   @media (max-width:bp.$xxl) {
+      padding: func.rem(30);
+   }
+
+   // .contact-card__header
+
+   &__header {
+      margin-bottom: func.rem(10);
+
+      &:has(+.contact-card__footer) {
+         border-bottom: 1px solid #d8e2f0;
+         padding-bottom: func.rem(10);
+      }
+   }
+
+   // .contact-card__title
+
+   &__title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 133%;
+      color: #000;
+      margin-bottom: func.rem(10);
+
+      @media (max-width:bp.$xxl) {
+         font-size: 25px;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 20px;
+      }
+   }
+
+   // .contact-card__row
+
+   &__row {
+      display: flex;
+      gap: 5px;
+      margin-bottom: func.rem(5);
+
+      @media (max-width:bp.$xs) {
+         display: grid;
+         gap: 0;
+      }
+
+      &:has(+.contact-card__row) {}
+
+      a {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+   // .contact-card__label
+
+   &__label {
+      font-size: 18px;
+      line-height: 167%;
+      font-weight: 600;
+      color: #000;
+
+      @media (max-width:bp.$xxl) {
+         font-size: 16px;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 15px;
+      }
+   }
+
+   // .contact-card__text
+
+   &__text {
+      font-size: 18px;
+      line-height: 167%;
+      font-weight: 400;
+      color: #6f7b8c;
+
+      @media (max-width:bp.$xxl) {
+         font-size: 16px;
+      }
+
+      @media (max-width:bp.$lg) {
+         font-size: 15px;
+      }
+
+      &:has(+.contact-card__row) {
+         margin-bottom: func.rem(5);
+      }
+
+      // .contact-card__text_blue
+
+      &_blue {
+         color: #273583;
+      }
+   }
+
+   // .contact-card__center
+
+   &__center {
+      border-bottom: 1px solid #d8e2f0;
+      border-top: 1px solid #d8e2f0;
+      padding: func.rem(15) 0;
+      margin-bottom: func.rem(10);
+   }
+
+   // .contact-card__footer
+
+   &__footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 0 15px;
+      grid-auto-flow: dense;
+
+      @media (max-width:bp.$xs) {
+         grid-template-columns: 1fr;
+         gap: 10px;
+      }
+   }
+
+   // .contact-card__wa-button
+
+   &__wa-button {
+      border: 1px solid #d8e2f0;
+      border-radius: 50px;
+      padding: 0px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      height: 50px;
+      width: 172px;
+
+      @media (min-width:bp.$md) {
+
+         .contact-card__footer & {
+            grid-column: 2/3;
+            grid-row: 1/2;
+         }
+      }
+
+      @media (max-width:bp.$xxl) {
+         font-size: 16px;
+         line-height: 100%;
+         width: 183px;
+      }
+
+      @media (max-width:bp.$md) {
+         font-size: 15px;
+         padding: 0px 15px;
+         width: 138px;
+         height: 40px;
+
+         img {
+            width: 20px;
+            height: 20px;
+         }
+      }
+
+      &:hover {
+         background: #d8e2f0;
       }
    }
 }

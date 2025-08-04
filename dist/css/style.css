@@ -1052,11 +1052,8 @@ body::after {
   border: 1px solid #6f7b8c;
   border-radius: 10px;
   padding: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
   gap: 20px 30px
 }
 .product-card__note {
@@ -1958,6 +1955,7 @@ body::after {
   margin-bottom: 12.5rem;
   display: -ms-grid;
   display: grid;
+  gap: 30px;
   -ms-grid-columns: 850px 560px;
   grid-template-columns: 850px 560px;
   -webkit-box-pack: justify;
@@ -1991,116 +1989,13 @@ body::after {
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2,1fr);
-  gap: 20px;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start
+  gap: 20px
 }
 .contacts__col .contacts__title {
   margin-bottom: 1.25rem
 }
 .contacts__col .contacts__descr {
   margin-bottom: 3.125rem
-}
-.service-card {
-  background: #fff;
-  padding: 3.125rem;
-  border-radius: 40px
-}
-.service-card__bottom,
-.service-card__top {
-  display: -ms-grid;
-  display: grid;
-  gap: 50px;
-  -ms-grid-columns: .75fr 1fr;
-  grid-template-columns: .75fr 1fr
-}
-.service-card__top {
-  padding-bottom: 2.5rem;
-  grid-auto-flow: dense;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
-}
-.service-card__name {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 133%;
-  color: #000
-}
-.service-card__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 167%;
-  color: #6f7b8c
-}
-.service-card__text>*:not(:last-child) {
-  margin-bottom: 1.25rem
-}
-.service-card__bottom {
-  border-top: 1px solid #d8e2f0;
-  padding-top: 2.5rem
-}
-.service-card__contacts {
-  display: -ms-grid;
-  display: grid;
-  gap: 20px;
-  -ms-flex-line-pack: start;
-  align-content: start
-}
-.service-card__phone {
-  display: block;
-  font-size: 18px;
-  line-height: 167%;
-  font-weight: 400;
-  color: #6f7b8c
-}
-.service-card__phone b {
-  font-weight: 600;
-  color: #000
-}
-.service-card__wa-button {
-  border: 1px solid #d8e2f0;
-  border-radius: 50px;
-  padding: 0 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 15px;
-  height: 60px;
-  width: 192px
-}
-.service-card__wa-button:hover {
-  background: #d8e2f0
-}
-.service-card__working {
-  display: -ms-grid;
-  display: grid;
-  gap: 15px;
-  -ms-flex-line-pack: start;
-  align-content: start
-}
-.service-card__work-text {
-  font-size: 18px;
-  line-height: 167%;
-  font-weight: 400;
-  color: #6f7b8c
-}
-.service-card__work-text b {
-  color: #000;
-  font-weight: 600
-}
-.service-card__descr {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 167%;
-  color: #6f7b8c
 }
 .sidebar-info__title {
   font-weight: 700;
@@ -2119,6 +2014,92 @@ body::after {
 }
 .sidebar-info__text>*:not(:last-child) {
   margin-bottom: 1.75rem
+}
+.contact-card {
+  background: #fff;
+  padding: 3.125rem;
+  border-radius: 40px
+}
+.contacts__services .contact-card {
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start
+}
+.contact-card__header {
+  margin-bottom: .625rem
+}
+.contact-card__header:has(+.contact-card__footer) {
+  border-bottom: 1px solid #d8e2f0;
+  padding-bottom: .625rem
+}
+.contact-card__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 133%;
+  color: #000;
+  margin-bottom: .625rem
+}
+.contact-card__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  margin-bottom: .3125rem
+}
+.contact-card__row a:hover {
+  text-decoration: underline
+}
+.contact-card__label {
+  font-size: 18px;
+  line-height: 167%;
+  font-weight: 600;
+  color: #000
+}
+.contact-card__text {
+  font-size: 18px;
+  line-height: 167%;
+  font-weight: 400;
+  color: #6f7b8c
+}
+.contact-card__text:has(+.contact-card__row) {
+  margin-bottom: .3125rem
+}
+.contact-card__text_blue {
+  color: #273583
+}
+.contact-card__center {
+  border-bottom: 1px solid #d8e2f0;
+  border-top: 1px solid #d8e2f0;
+  padding: .9375rem 0;
+  margin-bottom: .625rem
+}
+.contact-card__footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 15px;
+  grid-auto-flow: dense
+}
+.contact-card__wa-button {
+  border: 1px solid #d8e2f0;
+  border-radius: 50px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+  width: 172px
+}
+.contact-card__wa-button:hover {
+  background: #d8e2f0
 }
 .battery-diagram {
   padding-top: 16.125rem;
@@ -2786,8 +2767,13 @@ body::after {
     justify-content: center;
     text-align: center
   }
-  .service-card__top {
-    row-gap: 0
+  .contact-card__footer .contact-card__wa-button {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2
   }
   .battery-diagram__main-ibg_mobile {
     display: none
@@ -3079,6 +3065,10 @@ body::after {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0)
+  }
+  .contacts__service-center {
+    -ms-grid-columns: 850px 1fr;
+    grid-template-columns: 850px 1fr
   }
   .battery-diagram {
     padding-top: 14.875rem;
@@ -3515,34 +3505,6 @@ body::after {
     font-size: 16px;
     line-height: 156%
   }
-  .service-card {
-    padding: 1.875rem
-  }
-  .service-card__bottom,
-  .service-card__top {
-    -ms-grid-columns: 300px 1fr;
-    grid-template-columns: 300px 1fr
-  }
-  .service-card__name {
-    font-size: 25px
-  }
-  .service-card__text {
-    font-size: 16px;
-    line-height: 156%
-  }
-  .service-card__phone {
-    font-size: 16px;
-    line-height: 156%
-  }
-  .service-card__wa-button {
-    font-size: 16px;
-    line-height: 100%;
-    width: 183px
-  }
-  .service-card__work-text {
-    font-size: 16px;
-    line-height: 156%
-  }
   .sidebar-info__title {
     font-size: 25px;
     line-height: 120%
@@ -3550,6 +3512,23 @@ body::after {
   .sidebar-info__text {
     font-size: 16px;
     line-height: 156%
+  }
+  .contact-card {
+    padding: 1.875rem
+  }
+  .contact-card__title {
+    font-size: 25px
+  }
+  .contact-card__label {
+    font-size: 16px
+  }
+  .contact-card__text {
+    font-size: 16px
+  }
+  .contact-card__wa-button {
+    font-size: 16px;
+    line-height: 100%;
+    width: 183px
   }
   .battery-diagram {
     height: 1369px;
@@ -4050,11 +4029,6 @@ body::after {
   }
   .contacts__col .contacts__descr {
     margin-bottom: 1.875rem
-  }
-  .service-card__top {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start
   }
   .battery-diagram {
     padding-top: 13.625rem;
@@ -4612,21 +4586,6 @@ body::after {
     font-size: 15px;
     line-height: 133%
   }
-  .service-card__name {
-    font-size: 20px
-  }
-  .service-card__text {
-    font-size: 15px;
-    line-height: 133%
-  }
-  .service-card__phone {
-    font-size: 15px;
-    line-height: 133%
-  }
-  .service-card__work-text {
-    font-size: 15px;
-    line-height: 133%
-  }
   .sidebar-info {
     display: -ms-grid;
     display: grid;
@@ -4644,6 +4603,15 @@ body::after {
   }
   .sidebar-info__text>*:not(:last-child) {
     margin-bottom: 1.25rem
+  }
+  .contact-card__title {
+    font-size: 20px
+  }
+  .contact-card__label {
+    font-size: 15px
+  }
+  .contact-card__text {
+    font-size: 15px
   }
   .battery-diagram {
     padding-top: 6.3125rem;
@@ -5178,51 +5146,18 @@ body::after {
   .contacts__section-header {
     gap: 60px
   }
-  .service-card__bottom,
-  .service-card__top {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    gap: 20px
+  .sidebar-info {
+    gap: 60px
   }
-  .service-card__top {
-    padding-bottom: 1.25rem
-  }
-  .service-card__text>*:not(:last-child) {
-    margin-bottom: .625rem
-  }
-  .service-card__bottom {
-    padding-top: 1.25rem;
-    gap: 10px
-  }
-  .service-card__contacts {
-    -ms-grid-columns: (auto)[2];
-    grid-template-columns: repeat(2,auto);
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    grid-auto-flow: dense;
-    gap: 10px 20px
-  }
-  .service-card__contacts .service-card__text {
-    grid-column: 1/-1
-  }
-  .service-card__wa-button {
+  .contact-card__wa-button {
     font-size: 15px;
     padding: 0 15px;
     width: 138px;
-    height: 40px;
-    -ms-grid-column-align: end;
-    justify-self: end
+    height: 40px
   }
-  .service-card__wa-button img {
+  .contact-card__wa-button img {
     width: 20px;
     height: 20px
-  }
-  .sidebar-info {
-    gap: 60px
   }
   .battery-diagram {
     padding-top: 5.0625rem;
@@ -5774,6 +5709,16 @@ body::after {
   .sidebar-info {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr
+  }
+  .contact-card__row {
+    display: -ms-grid;
+    display: grid;
+    gap: 0
+  }
+  .contact-card__footer {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px
   }
   .energy-storage {
     margin-bottom: 4rem
