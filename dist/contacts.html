@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20260414124255">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260422181225">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap&_v=20260414124255" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap&_v=20260422181225" rel="stylesheet">
 </head>
 
 <body>
@@ -65,35 +65,39 @@
 						<div class="contacts__main-title">Where to buy</div>
 					</div>
 					<div class="contacts__title">Authorized Service Centres in Singapore</div>
+
 					<div class="contacts__map contacts-map">
 						<div class="contacts-map__wrapper">
-
 							<div class="contacts-map__filter">
-								<select name="contacts-map-filter" data-class-modif="contacts-map-filter">
-									<option value="1" selected>All services</option>
-									<option value="2">Cars & Trucks</option>
-									<option value="3">Boat</option>
-									<option value="4">Motorcycle</option>
-									<option value="5">MHE</option>
+								<select name="contacts-map-filter" data-class-modif="contacts-map-filter" data-show-selected>
+									<option value="all" selected>All services</option>
+									<option value="cars">Cars & Trucks</option>
+									<option value="boat">Boat</option>
+									<option value="motorcycle">Motorcycle</option>
+									<option value="mhe">MHE</option>
 								</select>
 								<div class="contacts-map__adresses-list">
-									<div class="contacts-map__address-card">
-										<div class="contact-card">
+									<div class="contacts-map__address-card" data-marker-id="1" data-category="cars" data-position="lat: 1.3369897027750, lng: 103.75417847386">
+										<div class="contact-card compas compas_e">
 											<div class="contact-card__header">
-												<div class="contact-card__title">Squad Workshop PTE LTD</div>
+												<div class="contact-card__title">Squad Workshop Pte Ltd</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">48 Toh Guan Road East, #04-131 Enterprise Hub, Singapore 608586</div>
+													<div class="contact-card__text" data-address>48 Toh Guan Road East, #04-131 Enterprise Hub, S(608586)</div>
 												</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
 													<div class="contact-card__label">Mon to Fri:</div>
-													<div class="contact-card__text">9am to 5pm</div>
+													<div class="contact-card__text">10am to 7pm</div>
 												</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Sat:</div>
 													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
 												</div>
 											</div>
 											<div class="contact-card__footer">
@@ -101,178 +105,425 @@
 													<div class="contact-card__label">Tel:</div>
 													<a href="tel:+6586185555" class="contact-card__text">+6586185555</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6586175555" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
 											</div>
 										</div>
 									</div>
-									<div class="contacts-map__address-card">
-										<div class="contact-card">
+									<div class="contacts-map__address-card" data-marker-id="2" data-category="cars" data-position="lat: 1.32467, lng: 103.91055">
+										<div class="contact-card compas compas_w">
 											<div class="contact-card__header">
-												<div class="contact-card__title">Squad Workshop PTE LTD</div>
+												<div class="contact-card__title">Swift Tyre Specialist Pte Ltd</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">48 Toh Guan Road East, #04-131 Enterprise Hub, Singapore 608586</div>
+													<div class="contact-card__text" data-address>8 Kaki Bukit Avenue 4, Premier@ Kaki Bukit, #06-41, S (415875) (Gate 2)</div>
 												</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Fri:</div>
-													<div class="contact-card__text">9am to 5pm</div>
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
 												</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Sat:</div>
 													<div class="contact-card__text">10am to 2pm</div>
 												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__row">
+												<div class="contact-card__text">24/7 breakdown assistance:&nbsp;<a href="tel:+6588589959">+6588589959</a></div>
+											</div>
+											<div class="contact-card__row">
+												<div class="contact-card__text">Do request Tsapa when calling 24/7 assistance</div>
 											</div>
 											<div class="contact-card__footer">
 												<div class="contact-card__row">
 													<div class="contact-card__label">Tel:</div>
-													<a href="tel:+6586185555" class="contact-card__text">+6586185555</a>
+													<a href="tel:+6588589959" class="contact-card__text">+6588589959</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6588589959" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
 											</div>
 										</div>
 									</div>
-									<div class="contacts-map__address-card">
-										<div class="contact-card">
+									<div class="contacts-map__address-card" data-marker-id="3" data-category="cars" data-position="lat: 1.31737, lng: 103.90723">
+										<div class="contact-card compas compas_s">
 											<div class="contact-card__header">
-												<div class="contact-card__title">Squad Workshop PTE LTD</div>
+												<div class="contact-card__title">Monster Garage Trading Pte Ltd</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">48 Toh Guan Road East, #04-131 Enterprise Hub, Singapore 608586</div>
+													<div class="contact-card__text" data-address>1B Kaki Bukit Rd 3, East Point Terrace, S(417822)</div>
 												</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Fri:</div>
-													<div class="contact-card__text">9am to 5pm</div>
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
 												</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Sat:</div>
 													<div class="contact-card__text">10am to 2pm</div>
 												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
 											</div>
 											<div class="contact-card__footer">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Tel:</div>
-													<a href="tel:+6586185555" class="contact-card__text">+6586185555</a>
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6567474095" class="contact-card__text">+6567474095</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6567474095" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
 											</div>
 										</div>
 									</div>
-									<div class="contacts-map__address-card">
-										<div class="contact-card">
+									<div class="contacts-map__address-card" data-marker-id="4" data-category="cars" data-position="lat: 1.37925, lng: 103.85481">
+										<div class="contact-card compas compas_e">
 											<div class="contact-card__header">
-												<div class="contact-card__title">Squad Workshop PTE LTD</div>
+												<div class="contact-card__title">Kuo Li Auto Workshop Pte Ltd</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">48 Toh Guan Road East, #04-131 Enterprise Hub, Singapore 608586</div>
+													<div class="contact-card__text" data-address>5035 ,Ang Mo kio Industrial Park 2 ,#01-363 S (569538)</div>
 												</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Fri:</div>
-													<div class="contact-card__text">9am to 5pm</div>
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
 												</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Sat:</div>
 													<div class="contact-card__text">10am to 2pm</div>
 												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
 											</div>
 											<div class="contact-card__footer">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Tel:</div>
-													<a href="tel:+6586185555" class="contact-card__text">+6586185555</a>
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6596943328" class="contact-card__text">+6596943328</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6596943328" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
 											</div>
 										</div>
 									</div>
+									<div class="contacts-map__address-card" data-marker-id="5" data-category="cars" data-position="lat: 1.38337, lng: 103.86164">
+										<div class="contact-card compas compas_n">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Auto Remedy Pte Ltd / Nightzconcepts</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>7030 Ang Mo Kio Ave 5, Unit 02 - 25, Singapore 569880</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6590035540">+6590035540</a> / <a href="tel:+6582077100">+6582077100</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-map__address-card" data-marker-id="6" data-category="cars" data-position="lat: 1.40497, lng: 103.92167">
+										<div class="contact-card compas compas_n">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Wakemusters (Marine Applications Only)</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>11 Northshore Drive, S(828670)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6590487060">+6590487060</a>
+												</div>
+												<a href="https://wa.me/6590487060" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-map__address-card" data-marker-id="7" data-category="cars" data-position="lat: 1.39328, lng: 103.87652">
+										<div class="contact-card compas compas_n">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Starlight 101 Garage</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>55 Serangoon North Avenue 4 #06-10 S9 building S (555859)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6594478430">+6594478430</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- motorcycle -->
+									<div class="contacts-map__address-card" data-marker-id="8" data-category="motorcycle" data-position="lat: 1.3412073, lng: 103.9126578">
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">BISADO MOTORING</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>Autobsy @ Kaki Bukit, 1 Kaki Bukit Avenue 6, #02-32, SIngapore 417883</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon to Sun:</div>
+													<div class="contact-card__text">10am to 6pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+8828 8918">+8828 8918</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-map__address-card" data-marker-id="9" data-category="motorcycle" data-position="lat: 1.33335, lng: 103.90237">
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">MOTOR TIAM (STAXX PTE LTD)</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>ENTERPRISE ONE, 1 Kaki Bukit Road 1, #03-31, Singapore 415934</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">12am to 8pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">12pm - 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp; (Pending owner to give me the whatsapp)
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- motorcycle -->
+
+									<!-- tests cards -->
+									<div class="contacts-map__address-card" data-marker-id="10" data-category="boat" data-position="lat: 1.33947, lng: 103.90723">
+										<div class="contact-card compas compas_s">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Monster Garage Trading Pte Ltd</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>1B Kaki Bukit Rd 3, East Point Terrace, S(417822)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6567474095" class="contact-card__text">+6567474095</a>
+												</div>
+												<a href="https://wa.me/6567474095" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-map__address-card" data-marker-id="11" data-category="mhe" data-position="lat: 1.39965, lng: 103.85481">
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Kuo Li Auto Workshop Pte Ltd</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>5035 ,Ang Mo kio Industrial Park 2 ,#01-363 S (569538)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6596943328" class="contact-card__text">+6596943328</a>
+												</div>
+												<a href="https://wa.me/6596943328" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- tests cards -->
 								</div>
 							</div>
 
 							<div class="contacts-map__map-wrapper">
-								<div id="map">
-									<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXjBNHEOJ1iVikr076vYZJQ5M4PYJKN0E&libraries=maps&_v=20260414124255"></script>
-
-									<gmp-map center="59.3293,18.0686" zoom="10" style="height:600px">
+								<div id="map" style="height:100%">
+									<gmp-map style="height:100%">
 									</gmp-map>
 								</div>
 							</div>
-
 						</div>
 					</div>
+
 					<div class="contacts__service-center">
 						<div data-tabs class="contacts-tabs">
 							<nav data-tabs-titles class="contacts-tabs__navigation">
 								<button type="button" class="contacts-tabs__title _tab-active">
 									<div class="contacts-tabs__title-icons">
 										<img src="img/icons/contacts-tab-icon-1.svg" alt="">
+										<img src="img/icons/contacts-tab-icon-1_white.svg" alt="" class='title-icon-white'>
 										<img src="img/icons/contacts-tab-icon-1_active.svg" alt="">
 									</div>
-									All services
+									<span>All services</span>
 								</button>
 								<button type="button" class="contacts-tabs__title">
 									<div class="contacts-tabs__title-icons">
 										<img src="img/icons/contacts-tab-icon-2.svg" alt="">
+										<img src="img/icons/contacts-tab-icon-2_white.svg" alt="" class='title-icon-white'>
 										<img src="img/icons/contacts-tab-icon-2_active.svg" alt="">
 									</div>
-									Cars & Trucks
+									<span>Cars & Trucks</span>
 								</button>
 								<button type="button" class="contacts-tabs__title">
 									<div class="contacts-tabs__title-icons">
 										<img src="img/icons/contacts-tab-icon-3.svg" alt="">
+										<img src="img/icons/contacts-tab-icon-3_white.svg" alt="" class='title-icon-white'>
 										<img src="img/icons/contacts-tab-icon-3_active.svg" alt="">
 									</div>
-									Boat
+									<span>Boat</span>
 								</button>
 								<button type="button" class="contacts-tabs__title">
 									<div class="contacts-tabs__title-icons">
 										<img src="img/icons/contacts-tab-icon-4.svg" alt="">
+										<img src="img/icons/contacts-tab-icon-4_white.svg" alt="" class='title-icon-white'>
 										<img src="img/icons/contacts-tab-icon-4_active.svg" alt="">
 									</div>
-									Motorcycle
+									<span>Motorcycle</span>
 								</button>
 								<button type="button" class="contacts-tabs__title">
 									<div class="contacts-tabs__title-icons">
 										<img src="img/icons/contacts-tab-icon-5.svg" alt="">
+										<img src="img/icons/contacts-tab-icon-5_white.svg" alt="" class='title-icon-white'>
 										<img src="img/icons/contacts-tab-icon-5_active.svg" alt="">
 									</div>
-									MHE
+									<span>MHE</span>
 								</button>
 							</nav>
 							<div data-tabs-body class="contacts-tabs__content">
-								<div class="contacts-tabs__body">
+								<div class="contacts-tabs__body"> <!-- All services -->
 									<div class="contacts__services">
-										<div class="contact-card compas compas_n">
+										<div class="contact-card compas compas_e">
 											<div class="contact-card__header">
-												<div class="contact-card__title">Squad Workshop PTE LTD</div>
+												<div class="contact-card__title">Squad Workshop Pte Ltd</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">48 Toh Guan Road East, #04-131 Enterprise Hub, Singapore 608586</div>
+													<div class="contact-card__text" data-address>48 Toh Guan Road East, #04-131 Enterprise Hub, S(608586)</div>
 												</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
 													<div class="contact-card__label">Mon to Fri:</div>
-													<div class="contact-card__text">9am to 5pm</div>
+													<div class="contact-card__text">10am to 7pm</div>
 												</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Sat:</div>
 													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
 												</div>
 											</div>
 											<div class="contact-card__footer">
@@ -280,200 +531,287 @@
 													<div class="contact-card__label">Tel:</div>
 													<a href="tel:+6586185555" class="contact-card__text">+6586185555</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6586175555" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
 											</div>
 										</div>
+
 										<div class="contact-card compas compas_w">
 											<div class="contact-card__header">
-												<div class="contact-card__title">Swift tyre specialist Pte ltd</div>
+												<div class="contact-card__title">Swift Tyre Specialist Pte Ltd</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">8 Kaki Bukit Avenue 4, Premier@ Kaki Bukit, #06-41, Singapore 415875 (Gate 2)</div>
+													<div class="contact-card__text" data-address>8 Kaki Bukit Avenue 4, Premier@ Kaki Bukit, #06-41, S (415875) (Gate 2)</div>
 												</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Sat:</div>
-													<div class="contact-card__text">9:30am to 6:30pm</div>
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
 												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__row">
+												<div class="contact-card__text">24/7 breakdown assistance:&nbsp;<a href="tel:+6588589959">+6588589959</a></div>
+											</div>
+											<div class="contact-card__row">
+												<div class="contact-card__text">Do request Tsapa when calling 24/7 assistance</div>
 											</div>
 											<div class="contact-card__footer">
 												<div class="contact-card__row">
 													<div class="contact-card__label">Tel:</div>
 													<a href="tel:+6588589959" class="contact-card__text">+6588589959</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6588589959" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
-												<div class="contact-card__text">24/7 breakdown assistance. Do request Tsapa when calling 24/7 assistance</div>
 											</div>
 										</div>
+
 										<div class="contact-card compas compas_s">
 											<div class="contact-card__header">
-												<div class="contact-card__title">Kuo Li Auto Workshop PTE LTD</div>
+												<div class="contact-card__title">Monster Garage Trading Pte Ltd</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">5035 ,Ang Mo kio Industrial Park 2 ,#01-363, Singapore 569538</div>
+													<div class="contact-card__text" data-address>1B Kaki Bukit Rd 3, East Point Terrace, S(417822)</div>
 												</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Sat:</div>
-													<div class="contact-card__text">9am to 6pm</div>
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
 												</div>
 											</div>
 											<div class="contact-card__footer">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Tel:</div>
-													<a href="tel:+6596943328" class="contact-card__text">+6596943328</a>
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6567474095" class="contact-card__text">+6567474095</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6567474095" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
 											</div>
 										</div>
+
 										<div class="contact-card compas compas_e">
 											<div class="contact-card__header">
-												<div class="contact-card__title">AUTO REMEDY PTE. LTD</div>
+												<div class="contact-card__title">Kuo Li Auto Workshop Pte Ltd</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">Kaki bukit Ave 4 ( Vicom centre) 01-02, Singapore 415933.</div>
+													<div class="contact-card__text" data-address>5035 ,Ang Mo kio Industrial Park 2 ,#01-363 S (569538)</div>
 												</div>
-												<div class="contact-card__text">Once enter gate take a left turn down to ground floor.</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Sat:</div>
-													<div class="contact-card__text">9am to 6pm</div>
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
 												</div>
 											</div>
 											<div class="contact-card__footer">
 												<div class="contact-card__row">
-													<div class="contact-card__label">Tel:</div>
-													<a href="tel:+6590035540" class="contact-card__text">+6590035540</a>
-													<a href="tel:+6582077100" class="contact-card__text">/ +6582077100</a>
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6596943328" class="contact-card__text">+6596943328</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6596943328" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="contacts-tabs__body">
-									<div class="contacts__services">
-										<div class="contact-card compas compas_w">
-											<div class="contact-card__header">
-												<div class="contact-card__title">Swift tyre specialist Pte ltd</div>
-												<div class="contact-card__row">
-													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">8 Kaki Bukit Avenue 4, Premier@ Kaki Bukit, #06-41, Singapore 415875 (Gate 2)</div>
-												</div>
-											</div>
-											<div class="contact-card__center">
-												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Sat:</div>
-													<div class="contact-card__text">9:30am to 6:30pm</div>
-												</div>
-											</div>
-											<div class="contact-card__footer">
-												<div class="contact-card__row">
-													<div class="contact-card__label">Tel:</div>
-													<a href="tel:+6588589959" class="contact-card__text">+6588589959</a>
-												</div>
-												<a href="" class="contact-card__wa-button">
-													<img src="img/icons/icon_wa.svg" alt="">
-													<span>WhatsApp</span>
-												</a>
-												<div class="contact-card__text">24/7 breakdown assistance. Do request Tsapa when calling 24/7 assistance</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="contacts-tabs__body">
-									<div class="contacts__services">
-										<div class="contact-card compas compas_s">
-											<div class="contact-card__header">
-												<div class="contact-card__title">Kuo Li Auto Workshop PTE LTD</div>
-												<div class="contact-card__row">
-													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">5035 ,Ang Mo kio Industrial Park 2 ,#01-363, Singapore 569538</div>
-												</div>
-											</div>
-											<div class="contact-card__center">
-												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Sat:</div>
-													<div class="contact-card__text">9am to 6pm</div>
-												</div>
-											</div>
-											<div class="contact-card__footer">
-												<div class="contact-card__row">
-													<div class="contact-card__label">Tel:</div>
-													<a href="tel:+6596943328" class="contact-card__text">+6596943328</a>
-												</div>
-												<a href="" class="contact-card__wa-button">
-													<img src="img/icons/icon_wa.svg" alt="">
-													<span>WhatsApp</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="contacts-tabs__body">
-									<div class="contacts__services">
-										<div class="contact-card compas compas_e">
-											<div class="contact-card__header">
-												<div class="contact-card__title">AUTO REMEDY PTE. LTD</div>
-												<div class="contact-card__row">
-													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">Kaki bukit Ave 4 ( Vicom centre) 01-02, Singapore 415933.</div>
-												</div>
-												<div class="contact-card__text">Once enter gate take a left turn down to ground floor.</div>
-											</div>
-											<div class="contact-card__center">
-												<div class="contact-card__row">
-													<div class="contact-card__label">Mon to Sat:</div>
-													<div class="contact-card__text">9am to 6pm</div>
-												</div>
-											</div>
-											<div class="contact-card__footer">
-												<div class="contact-card__row">
-													<div class="contact-card__label">Tel:</div>
-													<a href="tel:+6590035540" class="contact-card__text">+6590035540</a>
-													<a href="tel:+6582077100" class="contact-card__text">/ +6582077100</a>
-												</div>
-												<a href="" class="contact-card__wa-button">
-													<img src="img/icons/icon_wa.svg" alt="">
-													<span>WhatsApp</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="contacts-tabs__body">
-									<div class="contacts__services">
+
 										<div class="contact-card compas compas_n">
 											<div class="contact-card__header">
-												<div class="contact-card__title">Squad Workshop PTE LTD</div>
+												<div class="contact-card__title">Auto Remedy Pte Ltd / Nightzconcepts</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Address:</div>
-													<div class="contact-card__text">48 Toh Guan Road East, #04-131 Enterprise Hub, Singapore 608586</div>
+													<div class="contact-card__text" data-address>7030 Ang Mo Kio Ave 5, Unit 02 - 25, Singapore 569880</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6590035540">+6590035540</a> / <a href="tel:+6582077100">+6582077100</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_n">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Wakemusters (Marine Applications Only)</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>11 Northshore Drive, S(828670)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6590487060">+6590487060</a>
+												</div>
+												<a href="https://wa.me/6590487060" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_n">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Starlight 101 Garage</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>55 Serangoon North Avenue 4 #06-10 S9 building S (555859)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6594478430">+6594478430</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">BISADO MOTORING</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>Autobsy @ Kaki Bukit, 1 Kaki Bukit Avenue 6, #02-32, SIngapore 417883</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon to Sun:</div>
+													<div class="contact-card__text">10am to 6pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+8828 8918">+8828 8918</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">MOTOR TIAM (STAXX PTE LTD)</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>ENTERPRISE ONE, 1 Kaki Bukit Road 1, #03-31, Singapore 415934</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">12am to 8pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">12pm - 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp; (Pending owner to give me the whatsapp)
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-tabs__body"> <!-- Cars & Trucks -->
+									<div class="contacts__services">
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Squad Workshop Pte Ltd</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>48 Toh Guan Road East, #04-131 Enterprise Hub, S(608586)</div>
 												</div>
 											</div>
 											<div class="contact-card__center">
 												<div class="contact-card__row">
 													<div class="contact-card__label">Mon to Fri:</div>
-													<div class="contact-card__text">9am to 5pm</div>
+													<div class="contact-card__text">10am to 7pm</div>
 												</div>
 												<div class="contact-card__row">
 													<div class="contact-card__label">Sat:</div>
 													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
 												</div>
 											</div>
 											<div class="contact-card__footer">
@@ -481,11 +819,335 @@
 													<div class="contact-card__label">Tel:</div>
 													<a href="tel:+6586185555" class="contact-card__text">+6586185555</a>
 												</div>
-												<a href="" class="contact-card__wa-button">
+												<a href="https://wa.me/6586175555" class="contact-card__wa-button" target="_blank">
 													<img src="img/icons/icon_wa.svg" alt="">
 													<span>WhatsApp</span>
 												</a>
 											</div>
+										</div>
+
+										<div class="contact-card compas compas_w">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Swift Tyre Specialist Pte Ltd</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>8 Kaki Bukit Avenue 4, Premier@ Kaki Bukit, #06-41, S (415875) (Gate 2)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__row">
+												<div class="contact-card__text">24/7 breakdown assistance:&nbsp;<a href="tel:+6588589959">+6588589959</a></div>
+											</div>
+											<div class="contact-card__row">
+												<div class="contact-card__text">Do request Tsapa when calling 24/7 assistance</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Tel:</div>
+													<a href="tel:+6588589959" class="contact-card__text">+6588589959</a>
+												</div>
+												<a href="https://wa.me/6588589959" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_s">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Monster Garage Trading Pte Ltd</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>1B Kaki Bukit Rd 3, East Point Terrace, S(417822)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6567474095" class="contact-card__text">+6567474095</a>
+												</div>
+												<a href="https://wa.me/6567474095" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Kuo Li Auto Workshop Pte Ltd</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>5035 ,Ang Mo kio Industrial Park 2 ,#01-363 S (569538)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6596943328" class="contact-card__text">+6596943328</a>
+												</div>
+												<a href="https://wa.me/6596943328" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_n">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Auto Remedy Pte Ltd / Nightzconcepts</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>7030 Ang Mo Kio Ave 5, Unit 02 - 25, Singapore 569880</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6590035540">+6590035540</a> / <a href="tel:+6582077100">+6582077100</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_n">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Wakemusters (Marine Applications Only)</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>11 Northshore Drive, S(828670)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6590487060">+6590487060</a>
+												</div>
+												<a href="https://wa.me/6590487060" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_n">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Starlight 101 Garage</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>55 Serangoon North Avenue 4 #06-10 S9 building S (555859)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6594478430">+6594478430</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-tabs__body"> <!-- Boat -->
+									<div class="contacts__services">
+										<div class="contact-card compas compas_s">
+											<div class="contact-card__header">
+												<div class="contact-card__title">Monster Garage Trading Pte Ltd</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>1B Kaki Bukit Rd 3, East Point Terrace, S(417822)</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">10am to 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">10am to 2pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6567474095" class="contact-card__text">+6567474095</a>
+												</div>
+												<a href="https://wa.me/6567474095" class="contact-card__wa-button" target="_blank">
+													<img src="img/icons/icon_wa.svg" alt="">
+													<span>WhatsApp</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-tabs__body"> <!-- Motorcycle -->
+									<div class="contacts__services">
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">BISADO MOTORING</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>Autobsy @ Kaki Bukit, 1 Kaki Bukit Avenue 6, #02-32, SIngapore 417883</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon to Sun:</div>
+													<div class="contact-card__text">10am to 6pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+8828 8918">+8828 8918</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="contact-card compas compas_e">
+											<div class="contact-card__header">
+												<div class="contact-card__title">MOTOR TIAM (STAXX PTE LTD)</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Address:</div>
+													<div class="contact-card__text" data-address>ENTERPRISE ONE, 1 Kaki Bukit Road 1, #03-31, Singapore 415934</div>
+												</div>
+											</div>
+											<div class="contact-card__center">
+												<div class="contact-card__row">
+													<div class="contact-card__label">Mon-Fri:</div>
+													<div class="contact-card__text">12am to 8pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sat:</div>
+													<div class="contact-card__text">12pm - 7pm</div>
+												</div>
+												<div class="contact-card__row">
+													<div class="contact-card__label">Sun & PH:</div>
+													<div class="contact-card__text">Closed</div>
+												</div>
+											</div>
+											<div class="contact-card__footer">
+												<div class="contact-card__row">
+													<div class="contact-card__label">For Booking:</div>&nbsp; (Pending owner to give me the whatsapp)
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-tabs__body"> <!-- MHE -->
+									<div class="contact-card compas compas_e">
+										<div class="contact-card__header">
+											<div class="contact-card__title">Kuo Li Auto Workshop Pte Ltd</div>
+											<div class="contact-card__row">
+												<div class="contact-card__label">Address:</div>
+												<div class="contact-card__text" data-address>5035 ,Ang Mo kio Industrial Park 2 ,#01-363 S (569538)</div>
+											</div>
+										</div>
+										<div class="contact-card__center">
+											<div class="contact-card__row">
+												<div class="contact-card__label">Mon-Fri:</div>
+												<div class="contact-card__text">10am to 7pm</div>
+											</div>
+											<div class="contact-card__row">
+												<div class="contact-card__label">Sat:</div>
+												<div class="contact-card__text">10am to 2pm</div>
+											</div>
+											<div class="contact-card__row">
+												<div class="contact-card__label">Sun & PH:</div>
+												<div class="contact-card__text">Closed</div>
+											</div>
+										</div>
+										<div class="contact-card__footer">
+											<div class="contact-card__row">
+												<div class="contact-card__label">For Booking:</div>&nbsp;<a href="tel:+6596943328" class="contact-card__text">+6596943328</a>
+											</div>
+											<a href="https://wa.me/6596943328" class="contact-card__wa-button" target="_blank">
+												<img src="img/icons/icon_wa.svg" alt="">
+												<span>WhatsApp</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -640,6 +1302,313 @@
 				</div>
 			</div>
 		</main>
+
+		<script>
+			function safeParsePosition(dataPosition) {
+				try {
+					const match = dataPosition.match(/lat:\s*([\d.-]+),\s*lng:\s*([\d.-]+)/)
+					if (!match) throw new Error('The format does not match what is expected');
+
+					const lat = parseFloat(match[1]);
+					const lng = parseFloat(match[2]);
+
+					// Проверка на корректность координат
+					if (isNaN(lat) || isNaN(lng)) throw new Error('Incorrect coordinate values');
+					if (Math.abs(lat) > 90) throw new Error('The latitude is outside the acceptable range');
+					if (Math.abs(lng) > 180) throw new Error('The longitude is outside the acceptable range');
+
+					return {
+						lat,
+						lng
+					};
+				} catch (error) {
+					console.error('Coordinate parsing error:', error.message);
+					return null;
+				}
+			}
+
+			function clearActiveState() {
+				addressCards.forEach((card) => {
+					card.classList.remove('contacts-map__address-card_active');
+				});
+
+				markersData.forEach((item) => {
+					item.markerElement.classList.remove('marker_active');
+					item.svgElements.svgMarkerActiveIcon.remove();
+					item.markerElement.append(item.svgElements.svgMarkerIcon)
+				});
+			}
+
+			function setActiveItem(markerId) {
+				clearActiveState();
+
+				const currentCard = document.querySelector(`.contacts-map__address-card[data-marker-id="${markerId}"]`);
+
+				const currentMarker = markersData.find(item => item.id === markerId);
+
+				if (currentCard) {
+					currentCard.classList.add('contacts-map__address-card_active');
+
+					currentCard.scrollIntoView({
+						behavior: 'smooth',
+						block: 'nearest'
+					});
+				}
+
+				if (currentMarker) {
+					const node = currentMarker.markerElement;
+					currentMarker.svgElements.svgMarkerIcon.remove()
+
+					node.classList.add('marker_active');
+					node.append(currentMarker.svgElements.svgMarkerActiveIcon);
+				}
+			}
+
+			const mapIcons = {
+				cars: {
+					iconMain: `
+               <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M66 33.8838C66 47.1589 49.3935 69.1441 39.7414 80.8014C36.21 85.0662 29.79 85.0662 26.2586 80.8014C16.6066 69.1441 0 47.1589 0 33.8838C0 15.1702 14.7746 0 33 0C51.2254 0 66 15.1702 66 33.8838Z" fill="url(#paint0_linear_2037_27)" />
+                  <path d="M57 34.1693C57 46.8464 46.5763 57.1232 33.7179 57.1232C20.8596 57.1232 10.4359 46.8464 10.4359 34.1693C10.4359 21.4923 20.8596 11.2155 33.7179 11.2155C46.5763 11.2155 57 21.4923 57 34.1693Z" fill="white" />
+                  <path d="M39.9307 38.0659H35.3762V38.3866H39.9307V38.0659Z" fill="#273583" />
+                  <path d="M30.7426 38.0659H26.1881V38.3866H30.7426V38.0659Z" fill="#273583" />
+                  <path d="M41.7921 33.0539C40.8416 33.0539 39.9703 33.6955 39.6535 34.6177L39.6139 34.778H26.4257L26.3861 34.6177C26.0693 33.6955 25.198 33.0539 24.2475 33.0539C23.0198 33.0539 21.9901 34.0964 21.9901 35.3394C21.9901 36.5823 23.0198 37.6248 24.2475 37.6248C25.2376 37.6248 26.1485 36.9432 26.4257 35.9408L26.4653 35.7804H39.5743L39.6139 35.9408C39.8911 36.9432 40.802 37.6248 41.7921 37.6248C43.0198 37.6248 44.0495 36.5823 44.0495 35.3394C44.0495 34.0964 43.0198 33.0539 41.7921 33.0539ZM25.4752 35.5399C25.396 36.1814 24.8416 36.6224 24.2079 36.6224C23.495 36.6224 22.9406 36.0611 22.9406 35.3394C22.9406 34.6177 23.495 34.0563 24.2079 34.0563C24.802 34.0563 25.3168 34.4974 25.4356 35.0587V35.1389C25.4356 35.179 25.396 35.2191 25.396 35.2592C25.396 35.2993 25.396 35.3394 25.4356 35.4196V35.4597L25.4752 35.5399ZM41.7921 36.6224C41.1188 36.6224 40.604 36.1814 40.5248 35.5399V35.4597C40.5248 35.4196 40.5644 35.3394 40.5644 35.2993C40.5644 35.2592 40.5644 35.2191 40.5248 35.179V35.0988C40.6436 34.4974 41.198 34.0964 41.7525 34.0964C42.4653 34.0964 43.0198 34.6578 43.0198 35.3795C43.0594 36.0611 42.5049 36.6224 41.7921 36.6224Z" fill="#273583" />
+                  <path d="M29.5149 33.3747H36.5644C36.802 33.3747 37.0792 33.1341 37.0792 32.8535C37.0792 32.5728 36.8416 32.3322 36.5644 32.3322H29.5149C29.2376 32.3322 29 32.5728 29 32.8535C29 33.094 29.2376 33.3747 29.5149 33.3747Z" fill="#273583" />
+                  <path d="M26.3861 38.4668H30.5842C30.703 38.4668 30.901 38.3064 30.901 38.1461C30.901 37.9857 30.7426 37.8253 30.5842 37.8253H26.3861C26.2277 37.8253 26.0693 37.9857 26.0693 38.1461C26.0693 38.3064 26.2277 38.4668 26.3861 38.4668Z" fill="#273583" />
+                  <path d="M35.4158 38.4668H39.6139C39.7327 38.4668 39.9307 38.3064 39.9307 38.1461C39.9307 37.9857 39.7723 37.8253 39.6139 37.8253H35.4158C35.2574 37.8253 35.099 37.9857 35.099 38.1461C35.099 38.3064 35.2574 38.4668 35.4158 38.4668Z" fill="#273583" />
+                  <path d="M33.4356 25.2754C33.3168 25.1551 33.198 25.115 33.0792 25.115C32.9604 25.115 32.802 25.1551 32.7228 25.2754L30.5842 27.4406C30.3861 27.6411 30.3861 27.9618 30.5842 28.1623C30.7822 28.3628 31.0594 28.3628 31.297 28.1623L33.4356 25.9971C33.6337 25.7967 33.6337 25.4759 33.4356 25.2754Z" fill="#273583" />
+                  <path d="M48.4851 42.9575H46.1881L46.2277 42.7169C46.2277 42.6368 46.2673 42.5566 46.2673 42.5165V37.7451C46.2673 37.705 46.2673 37.6649 46.2673 37.6248V37.5847L46.8218 35.2592C47.0594 34.2167 46.8614 33.1341 46.2277 32.2921L45.9109 31.9313H46.3465C47.0198 31.9313 47.6139 31.3298 47.6139 30.6482V30.0067C47.6139 29.285 47.0594 28.7236 46.3465 28.7236H44.3267C44.0495 28.7236 43.8119 28.8038 43.5743 28.9642L43.3366 29.1647L42.7822 26.6788C42.2277 24.5136 40.4059 23.0301 38.1881 23.0301H38.1089C38.0297 22.99 37.9109 22.99 37.7921 23.0301H27.9307C25.7129 23.0301 23.8119 24.5136 23.3366 26.6788L22.7426 29.285L22.4653 29.0444C22.2277 28.8439 21.9505 28.7236 21.6337 28.7236H19.6535C18.9406 28.7236 18.3861 29.285 18.3861 30.0067V30.6482C18.3861 31.3699 18.9406 31.9313 19.6535 31.9313H20.2079L19.9307 32.2921C19.2574 33.1341 19.0594 34.2167 19.297 35.2592L19.8515 37.6248V37.6649C19.8515 37.705 19.8119 37.7451 19.8119 37.7852V42.6368L19.8515 42.9174H17.5149C17.2376 42.9575 17 43.1981 17 43.4788C17 43.7594 17.2376 44 17.5149 44H48.4851C48.7624 44 49 43.7594 49 43.4788C49 43.1981 48.7624 42.9575 48.4851 42.9575ZM44.1287 29.7661H46.3465C46.505 29.7661 46.6238 29.8864 46.6238 30.0468V30.6482C46.6238 30.8086 46.505 30.9289 46.3465 30.9289H44.3267C44.1683 30.9289 44.0495 30.8086 44.0495 30.6482L44.1287 29.7661ZM24.2871 26.9594C24.6436 25.2754 26.1485 24.0726 27.8515 24.0726H36.6832L34.0297 26.7589C33.8317 26.9594 33.8317 27.2802 34.0297 27.4807C34.2277 27.6811 34.5446 27.6811 34.7426 27.4807L38.1089 24.0726H38.1881C39.8911 24.1126 41.3168 25.3155 41.6733 26.9594L42.4653 30.4076L42.1485 30.3274C39.8515 29.8062 37.3168 29.6458 36.604 29.6057C34.8218 29.4453 31.297 29.4453 28.7624 29.6859C27.099 29.7661 25.2772 30.0468 23.8515 30.3675L23.5347 30.4477L24.2871 26.9594ZM19.6535 30.9289C19.495 30.9289 19.3762 30.8086 19.3762 30.6482L19.4554 29.7661H21.6733C21.8317 29.7661 21.9505 29.8864 21.9505 30.0468V30.6482C21.9505 30.8086 21.8317 30.9289 21.6733 30.9289H19.6535ZM24.0891 42.5165C24.0891 42.757 23.8911 42.9575 23.6535 42.9575H21.0792L21.0396 42.9174C20.9208 42.8372 20.8812 42.7169 20.8812 42.5967V40.0706L21.2376 40.3513C21.8713 40.8726 22.6238 41.1532 23.4554 41.1532H24.1287V42.5165H24.0891ZM25.0792 42.9575L25.1188 42.7169C25.1188 42.6368 25.1584 42.5566 25.1584 42.5165V41.1933H40.9604V42.6769L41 42.9575H25.0792ZM45.198 42.5165C45.198 42.757 45 42.9575 44.7624 42.9575H42.1881L42.1485 42.9174C42.0297 42.8372 41.9901 42.7169 41.9901 42.5967V41.1933H42.5842C43.4158 41.1933 44.2079 40.9126 44.8812 40.3112L45.2376 40.0306V42.5165H45.198ZM45.8317 35.0587L45.2772 37.4243C45.198 37.5045 45.1584 37.6248 45.1584 37.7451C45.1584 37.7852 45.1584 37.8253 45.1584 37.8654V37.9055L45.0792 38.2263C44.7624 39.4291 43.7723 40.231 42.6238 40.231H41.7525L41.7129 40.1909C41.5545 40.0706 41.3564 40.0706 41.198 40.1909L41.1584 40.231H25L24.9208 40.1909C24.8416 40.1508 24.7228 40.0706 24.604 40.0706C24.4851 40.0706 24.3663 40.1508 24.2871 40.1909L24.2475 40.231H23.495C22.3069 40.231 21.2772 39.389 21.0396 38.2263L20.2871 35.0587C19.9703 33.7757 20.6436 32.4926 21.8713 32.0916C22.0297 32.0115 22.1089 31.9714 22.2277 31.9313C22.3861 31.8511 22.5446 31.7709 22.8614 31.6506C22.9802 31.6506 23.0198 31.6105 23.0594 31.5704L23.099 31.5303H23.1386C23.2178 31.5303 23.2178 31.5303 23.7327 31.3699H23.7723C23.8515 31.3699 24.1287 31.2897 24.2871 31.2496C29.8713 29.9666 40.2079 30.3274 43.6931 31.8912C43.8515 31.9313 44.0495 32.0115 44.1683 32.0516C45.4356 32.4926 46.1089 33.8158 45.8317 35.0587Z" fill="#273583" />
+                  <path d="M39.9307 38.0659H35.3762V38.3866H39.9307V38.0659Z" stroke="#273583" stroke-width="0.5" />
+                  <path d="M30.7426 38.0659H26.1881V38.3866H30.7426V38.0659Z" stroke="#273583" stroke-width="0.5" />
+                  <path d="M41.7921 33.0539C40.8416 33.0539 39.9703 33.6955 39.6535 34.6177L39.6139 34.778H26.4257L26.3861 34.6177C26.0693 33.6955 25.198 33.0539 24.2475 33.0539C23.0198 33.0539 21.9901 34.0964 21.9901 35.3394C21.9901 36.5823 23.0198 37.6248 24.2475 37.6248C25.2376 37.6248 26.1485 36.9432 26.4257 35.9408L26.4653 35.7804H39.5743L39.6139 35.9408C39.8911 36.9432 40.802 37.6248 41.7921 37.6248C43.0198 37.6248 44.0495 36.5823 44.0495 35.3394C44.0495 34.0964 43.0198 33.0539 41.7921 33.0539ZM25.4752 35.5399C25.396 36.1814 24.8416 36.6224 24.2079 36.6224C23.495 36.6224 22.9406 36.0611 22.9406 35.3394C22.9406 34.6177 23.495 34.0563 24.2079 34.0563C24.802 34.0563 25.3168 34.4974 25.4356 35.0587V35.1389C25.4356 35.179 25.396 35.2191 25.396 35.2592C25.396 35.2993 25.396 35.3394 25.4356 35.4196V35.4597L25.4752 35.5399ZM41.7921 36.6224C41.1188 36.6224 40.604 36.1814 40.5248 35.5399V35.4597C40.5248 35.4196 40.5644 35.3394 40.5644 35.2993C40.5644 35.2592 40.5644 35.2191 40.5248 35.179V35.0988C40.6436 34.4974 41.198 34.0964 41.7525 34.0964C42.4653 34.0964 43.0198 34.6578 43.0198 35.3795C43.0594 36.0611 42.5049 36.6224 41.7921 36.6224Z" stroke="#273583" stroke-width="0.5" />
+                  <path d="M29.5149 33.3747H36.5644C36.802 33.3747 37.0792 33.1341 37.0792 32.8535C37.0792 32.5728 36.8416 32.3322 36.5644 32.3322H29.5149C29.2376 32.3322 29 32.5728 29 32.8535C29 33.094 29.2376 33.3747 29.5149 33.3747Z" stroke="#273583" stroke-width="0.5" />
+                  <path d="M26.3861 38.4668H30.5842C30.703 38.4668 30.901 38.3064 30.901 38.1461C30.901 37.9857 30.7426 37.8253 30.5842 37.8253H26.3861C26.2277 37.8253 26.0693 37.9857 26.0693 38.1461C26.0693 38.3064 26.2277 38.4668 26.3861 38.4668Z" stroke="#273583" stroke-width="0.5" />
+                  <path d="M35.4158 38.4668H39.6139C39.7327 38.4668 39.9307 38.3064 39.9307 38.1461C39.9307 37.9857 39.7723 37.8253 39.6139 37.8253H35.4158C35.2574 37.8253 35.099 37.9857 35.099 38.1461C35.099 38.3064 35.2574 38.4668 35.4158 38.4668Z" stroke="#273583" stroke-width="0.5" />
+                  <path d="M33.4356 25.2754C33.3168 25.1551 33.198 25.115 33.0792 25.115C32.9604 25.115 32.802 25.1551 32.7228 25.2754L30.5842 27.4406C30.3861 27.6411 30.3861 27.9618 30.5842 28.1623C30.7822 28.3628 31.0594 28.3628 31.297 28.1623L33.4356 25.9971C33.6337 25.7967 33.6337 25.4759 33.4356 25.2754Z" stroke="#273583" stroke-width="0.5" />
+                  <path d="M48.4851 42.9575H46.1881L46.2277 42.7169C46.2277 42.6368 46.2673 42.5566 46.2673 42.5165V37.7451C46.2673 37.705 46.2673 37.6649 46.2673 37.6248V37.5847L46.8218 35.2592C47.0594 34.2167 46.8614 33.1341 46.2277 32.2921L45.9109 31.9313H46.3465C47.0198 31.9313 47.6139 31.3298 47.6139 30.6482V30.0067C47.6139 29.285 47.0594 28.7236 46.3465 28.7236H44.3267C44.0495 28.7236 43.8119 28.8038 43.5743 28.9642L43.3366 29.1647L42.7822 26.6788C42.2277 24.5136 40.4059 23.0301 38.1881 23.0301H38.1089C38.0297 22.99 37.9109 22.99 37.7921 23.0301H27.9307C25.7129 23.0301 23.8119 24.5136 23.3366 26.6788L22.7426 29.285L22.4653 29.0444C22.2277 28.8439 21.9505 28.7236 21.6337 28.7236H19.6535C18.9406 28.7236 18.3861 29.285 18.3861 30.0067V30.6482C18.3861 31.3699 18.9406 31.9313 19.6535 31.9313H20.2079L19.9307 32.2921C19.2574 33.1341 19.0594 34.2167 19.297 35.2592L19.8515 37.6248V37.6649C19.8515 37.705 19.8119 37.7451 19.8119 37.7852V42.6368L19.8515 42.9174H17.5149C17.2376 42.9575 17 43.1981 17 43.4788C17 43.7594 17.2376 44 17.5149 44H48.4851C48.7624 44 49 43.7594 49 43.4788C49 43.1981 48.7624 42.9575 48.4851 42.9575ZM44.1287 29.7661H46.3465C46.505 29.7661 46.6238 29.8864 46.6238 30.0468V30.6482C46.6238 30.8086 46.505 30.9289 46.3465 30.9289H44.3267C44.1683 30.9289 44.0495 30.8086 44.0495 30.6482L44.1287 29.7661ZM24.2871 26.9594C24.6436 25.2754 26.1485 24.0726 27.8515 24.0726H36.6832L34.0297 26.7589C33.8317 26.9594 33.8317 27.2802 34.0297 27.4807C34.2277 27.6811 34.5446 27.6811 34.7426 27.4807L38.1089 24.0726H38.1881C39.8911 24.1126 41.3168 25.3155 41.6733 26.9594L42.4653 30.4076L42.1485 30.3274C39.8515 29.8062 37.3168 29.6458 36.604 29.6057C34.8218 29.4453 31.297 29.4453 28.7624 29.6859C27.099 29.7661 25.2772 30.0468 23.8515 30.3675L23.5347 30.4477L24.2871 26.9594ZM19.6535 30.9289C19.495 30.9289 19.3762 30.8086 19.3762 30.6482L19.4554 29.7661H21.6733C21.8317 29.7661 21.9505 29.8864 21.9505 30.0468V30.6482C21.9505 30.8086 21.8317 30.9289 21.6733 30.9289H19.6535ZM24.0891 42.5165C24.0891 42.757 23.8911 42.9575 23.6535 42.9575H21.0792L21.0396 42.9174C20.9208 42.8372 20.8812 42.7169 20.8812 42.5967V40.0706L21.2376 40.3513C21.8713 40.8726 22.6238 41.1532 23.4554 41.1532H24.1287V42.5165H24.0891ZM25.0792 42.9575L25.1188 42.7169C25.1188 42.6368 25.1584 42.5566 25.1584 42.5165V41.1933H40.9604V42.6769L41 42.9575H25.0792ZM45.198 42.5165C45.198 42.757 45 42.9575 44.7624 42.9575H42.1881L42.1485 42.9174C42.0297 42.8372 41.9901 42.7169 41.9901 42.5967V41.1933H42.5842C43.4158 41.1933 44.2079 40.9126 44.8812 40.3112L45.2376 40.0306V42.5165H45.198ZM45.8317 35.0587L45.2772 37.4243C45.198 37.5045 45.1584 37.6248 45.1584 37.7451C45.1584 37.7852 45.1584 37.8253 45.1584 37.8654V37.9055L45.0792 38.2263C44.7624 39.4291 43.7723 40.231 42.6238 40.231H41.7525L41.7129 40.1909C41.5545 40.0706 41.3564 40.0706 41.198 40.1909L41.1584 40.231H25L24.9208 40.1909C24.8416 40.1508 24.7228 40.0706 24.604 40.0706C24.4851 40.0706 24.3663 40.1508 24.2871 40.1909L24.2475 40.231H23.495C22.3069 40.231 21.2772 39.389 21.0396 38.2263L20.2871 35.0587C19.9703 33.7757 20.6436 32.4926 21.8713 32.0916C22.0297 32.0115 22.1089 31.9714 22.2277 31.9313C22.3861 31.8511 22.5446 31.7709 22.8614 31.6506C22.9802 31.6506 23.0198 31.6105 23.0594 31.5704L23.099 31.5303H23.1386C23.2178 31.5303 23.2178 31.5303 23.7327 31.3699H23.7723C23.8515 31.3699 24.1287 31.2897 24.2871 31.2496C29.8713 29.9666 40.2079 30.3274 43.6931 31.8912C43.8515 31.9313 44.0495 32.0115 44.1683 32.0516C45.4356 32.4926 46.1089 33.8158 45.8317 35.0587Z" stroke="#273583" stroke-width="0.5" />
+                  <defs>
+                     <linearGradient id="paint0_linear_2037_27" x1="0" y1="42" x2="66" y2="42" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#273583" />
+                        <stop offset="0.5" stop-color="#35B2B6" />
+                        <stop offset="1" stop-color="#4FAF34" />
+                     </linearGradient>
+                  </defs>
+               </svg>`,
+					iconActive: `
+                     <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M66 33.8838C66 47.1589 49.3935 69.1441 39.7414 80.8014C36.21 85.0662 29.79 85.0662 26.2586 80.8014C16.6066 69.1441 0 47.1589 0 33.8838C0 15.1702 14.7746 0 33 0C51.2254 0 66 15.1702 66 33.8838Z" fill="#283583" />
+                        <path d="M57 34.1693C57 46.8464 46.5763 57.1232 33.7179 57.1232C20.8596 57.1232 10.4359 46.8464 10.4359 34.1693C10.4359 21.4923 20.8596 11.2155 33.7179 11.2155C46.5763 11.2155 57 21.4923 57 34.1693Z" fill="white" />
+                        <path d="M39.9307 38.0659H35.3762V38.3866H39.9307V38.0659Z" fill="#273583" />
+                        <path d="M30.7426 38.0659H26.1881V38.3866H30.7426V38.0659Z" fill="#273583" />
+                        <path d="M41.7921 33.0539C40.8416 33.0539 39.9703 33.6955 39.6535 34.6177L39.6139 34.778H26.4257L26.3861 34.6177C26.0693 33.6955 25.198 33.0539 24.2475 33.0539C23.0198 33.0539 21.9901 34.0964 21.9901 35.3394C21.9901 36.5823 23.0198 37.6248 24.2475 37.6248C25.2376 37.6248 26.1485 36.9432 26.4257 35.9408L26.4653 35.7804H39.5743L39.6139 35.9408C39.8911 36.9432 40.802 37.6248 41.7921 37.6248C43.0198 37.6248 44.0495 36.5823 44.0495 35.3394C44.0495 34.0964 43.0198 33.0539 41.7921 33.0539ZM25.4752 35.5399C25.396 36.1814 24.8416 36.6224 24.2079 36.6224C23.495 36.6224 22.9406 36.0611 22.9406 35.3394C22.9406 34.6177 23.495 34.0563 24.2079 34.0563C24.802 34.0563 25.3168 34.4974 25.4356 35.0587V35.1389C25.4356 35.179 25.396 35.2191 25.396 35.2592C25.396 35.2993 25.396 35.3394 25.4356 35.4196V35.4597L25.4752 35.5399ZM41.7921 36.6224C41.1188 36.6224 40.604 36.1814 40.5248 35.5399V35.4597C40.5248 35.4196 40.5644 35.3394 40.5644 35.2993C40.5644 35.2592 40.5644 35.2191 40.5248 35.179V35.0988C40.6436 34.4974 41.198 34.0964 41.7525 34.0964C42.4653 34.0964 43.0198 34.6578 43.0198 35.3795C43.0594 36.0611 42.5049 36.6224 41.7921 36.6224Z" fill="#273583" />
+                        <path d="M29.5149 33.3747H36.5644C36.802 33.3747 37.0792 33.1341 37.0792 32.8535C37.0792 32.5728 36.8416 32.3322 36.5644 32.3322H29.5149C29.2376 32.3322 29 32.5728 29 32.8535C29 33.094 29.2376 33.3747 29.5149 33.3747Z" fill="#273583" />
+                        <path d="M26.3861 38.4668H30.5842C30.703 38.4668 30.901 38.3064 30.901 38.1461C30.901 37.9857 30.7426 37.8253 30.5842 37.8253H26.3861C26.2277 37.8253 26.0693 37.9857 26.0693 38.1461C26.0693 38.3064 26.2277 38.4668 26.3861 38.4668Z" fill="#273583" />
+                        <path d="M35.4158 38.4668H39.6139C39.7327 38.4668 39.9307 38.3064 39.9307 38.1461C39.9307 37.9857 39.7723 37.8253 39.6139 37.8253H35.4158C35.2574 37.8253 35.099 37.9857 35.099 38.1461C35.099 38.3064 35.2574 38.4668 35.4158 38.4668Z" fill="#273583" />
+                        <path d="M33.4356 25.2754C33.3168 25.1551 33.198 25.115 33.0792 25.115C32.9604 25.115 32.802 25.1551 32.7228 25.2754L30.5842 27.4406C30.3861 27.6411 30.3861 27.9618 30.5842 28.1623C30.7822 28.3628 31.0594 28.3628 31.297 28.1623L33.4356 25.9971C33.6337 25.7967 33.6337 25.4759 33.4356 25.2754Z" fill="#273583" />
+                        <path d="M48.4851 42.9575H46.1881L46.2277 42.7169C46.2277 42.6368 46.2673 42.5566 46.2673 42.5165V37.7451C46.2673 37.705 46.2673 37.6649 46.2673 37.6248V37.5847L46.8218 35.2592C47.0594 34.2167 46.8614 33.1341 46.2277 32.2921L45.9109 31.9313H46.3465C47.0198 31.9313 47.6139 31.3298 47.6139 30.6482V30.0067C47.6139 29.285 47.0594 28.7236 46.3465 28.7236H44.3267C44.0495 28.7236 43.8119 28.8038 43.5743 28.9642L43.3366 29.1647L42.7822 26.6788C42.2277 24.5136 40.4059 23.0301 38.1881 23.0301H38.1089C38.0297 22.99 37.9109 22.99 37.7921 23.0301H27.9307C25.7129 23.0301 23.8119 24.5136 23.3366 26.6788L22.7426 29.285L22.4653 29.0444C22.2277 28.8439 21.9505 28.7236 21.6337 28.7236H19.6535C18.9406 28.7236 18.3861 29.285 18.3861 30.0067V30.6482C18.3861 31.3699 18.9406 31.9313 19.6535 31.9313H20.2079L19.9307 32.2921C19.2574 33.1341 19.0594 34.2167 19.297 35.2592L19.8515 37.6248V37.6649C19.8515 37.705 19.8119 37.7451 19.8119 37.7852V42.6368L19.8515 42.9174H17.5149C17.2376 42.9575 17 43.1981 17 43.4788C17 43.7594 17.2376 44 17.5149 44H48.4851C48.7624 44 49 43.7594 49 43.4788C49 43.1981 48.7624 42.9575 48.4851 42.9575ZM44.1287 29.7661H46.3465C46.505 29.7661 46.6238 29.8864 46.6238 30.0468V30.6482C46.6238 30.8086 46.505 30.9289 46.3465 30.9289H44.3267C44.1683 30.9289 44.0495 30.8086 44.0495 30.6482L44.1287 29.7661ZM24.2871 26.9594C24.6436 25.2754 26.1485 24.0726 27.8515 24.0726H36.6832L34.0297 26.7589C33.8317 26.9594 33.8317 27.2802 34.0297 27.4807C34.2277 27.6811 34.5446 27.6811 34.7426 27.4807L38.1089 24.0726H38.1881C39.8911 24.1126 41.3168 25.3155 41.6733 26.9594L42.4653 30.4076L42.1485 30.3274C39.8515 29.8062 37.3168 29.6458 36.604 29.6057C34.8218 29.4453 31.297 29.4453 28.7624 29.6859C27.099 29.7661 25.2772 30.0468 23.8515 30.3675L23.5347 30.4477L24.2871 26.9594ZM19.6535 30.9289C19.495 30.9289 19.3762 30.8086 19.3762 30.6482L19.4554 29.7661H21.6733C21.8317 29.7661 21.9505 29.8864 21.9505 30.0468V30.6482C21.9505 30.8086 21.8317 30.9289 21.6733 30.9289H19.6535ZM24.0891 42.5165C24.0891 42.757 23.8911 42.9575 23.6535 42.9575H21.0792L21.0396 42.9174C20.9208 42.8372 20.8812 42.7169 20.8812 42.5967V40.0706L21.2376 40.3513C21.8713 40.8726 22.6238 41.1532 23.4554 41.1532H24.1287V42.5165H24.0891ZM25.0792 42.9575L25.1188 42.7169C25.1188 42.6368 25.1584 42.5566 25.1584 42.5165V41.1933H40.9604V42.6769L41 42.9575H25.0792ZM45.198 42.5165C45.198 42.757 45 42.9575 44.7624 42.9575H42.1881L42.1485 42.9174C42.0297 42.8372 41.9901 42.7169 41.9901 42.5967V41.1933H42.5842C43.4158 41.1933 44.2079 40.9126 44.8812 40.3112L45.2376 40.0306V42.5165H45.198ZM45.8317 35.0587L45.2772 37.4243C45.198 37.5045 45.1584 37.6248 45.1584 37.7451C45.1584 37.7852 45.1584 37.8253 45.1584 37.8654V37.9055L45.0792 38.2263C44.7624 39.4291 43.7723 40.231 42.6238 40.231H41.7525L41.7129 40.1909C41.5545 40.0706 41.3564 40.0706 41.198 40.1909L41.1584 40.231H25L24.9208 40.1909C24.8416 40.1508 24.7228 40.0706 24.604 40.0706C24.4851 40.0706 24.3663 40.1508 24.2871 40.1909L24.2475 40.231H23.495C22.3069 40.231 21.2772 39.389 21.0396 38.2263L20.2871 35.0587C19.9703 33.7757 20.6436 32.4926 21.8713 32.0916C22.0297 32.0115 22.1089 31.9714 22.2277 31.9313C22.3861 31.8511 22.5446 31.7709 22.8614 31.6506C22.9802 31.6506 23.0198 31.6105 23.0594 31.5704L23.099 31.5303H23.1386C23.2178 31.5303 23.2178 31.5303 23.7327 31.3699H23.7723C23.8515 31.3699 24.1287 31.2897 24.2871 31.2496C29.8713 29.9666 40.2079 30.3274 43.6931 31.8912C43.8515 31.9313 44.0495 32.0115 44.1683 32.0516C45.4356 32.4926 46.1089 33.8158 45.8317 35.0587Z" fill="#273583" />
+                        <path d="M39.9307 38.0659H35.3762V38.3866H39.9307V38.0659Z" stroke="#273583" stroke-width="0.5" />
+                        <path d="M30.7426 38.0659H26.1881V38.3866H30.7426V38.0659Z" stroke="#273583" stroke-width="0.5" />
+                        <path d="M41.7921 33.0539C40.8416 33.0539 39.9703 33.6955 39.6535 34.6177L39.6139 34.778H26.4257L26.3861 34.6177C26.0693 33.6955 25.198 33.0539 24.2475 33.0539C23.0198 33.0539 21.9901 34.0964 21.9901 35.3394C21.9901 36.5823 23.0198 37.6248 24.2475 37.6248C25.2376 37.6248 26.1485 36.9432 26.4257 35.9408L26.4653 35.7804H39.5743L39.6139 35.9408C39.8911 36.9432 40.802 37.6248 41.7921 37.6248C43.0198 37.6248 44.0495 36.5823 44.0495 35.3394C44.0495 34.0964 43.0198 33.0539 41.7921 33.0539ZM25.4752 35.5399C25.396 36.1814 24.8416 36.6224 24.2079 36.6224C23.495 36.6224 22.9406 36.0611 22.9406 35.3394C22.9406 34.6177 23.495 34.0563 24.2079 34.0563C24.802 34.0563 25.3168 34.4974 25.4356 35.0587V35.1389C25.4356 35.179 25.396 35.2191 25.396 35.2592C25.396 35.2993 25.396 35.3394 25.4356 35.4196V35.4597L25.4752 35.5399ZM41.7921 36.6224C41.1188 36.6224 40.604 36.1814 40.5248 35.5399V35.4597C40.5248 35.4196 40.5644 35.3394 40.5644 35.2993C40.5644 35.2592 40.5644 35.2191 40.5248 35.179V35.0988C40.6436 34.4974 41.198 34.0964 41.7525 34.0964C42.4653 34.0964 43.0198 34.6578 43.0198 35.3795C43.0594 36.0611 42.5049 36.6224 41.7921 36.6224Z" stroke="#273583" stroke-width="0.5" />
+                        <path d="M29.5149 33.3747H36.5644C36.802 33.3747 37.0792 33.1341 37.0792 32.8535C37.0792 32.5728 36.8416 32.3322 36.5644 32.3322H29.5149C29.2376 32.3322 29 32.5728 29 32.8535C29 33.094 29.2376 33.3747 29.5149 33.3747Z" stroke="#273583" stroke-width="0.5" />
+                        <path d="M26.3861 38.4668H30.5842C30.703 38.4668 30.901 38.3064 30.901 38.1461C30.901 37.9857 30.7426 37.8253 30.5842 37.8253H26.3861C26.2277 37.8253 26.0693 37.9857 26.0693 38.1461C26.0693 38.3064 26.2277 38.4668 26.3861 38.4668Z" stroke="#273583" stroke-width="0.5" />
+                        <path d="M35.4158 38.4668H39.6139C39.7327 38.4668 39.9307 38.3064 39.9307 38.1461C39.9307 37.9857 39.7723 37.8253 39.6139 37.8253H35.4158C35.2574 37.8253 35.099 37.9857 35.099 38.1461C35.099 38.3064 35.2574 38.4668 35.4158 38.4668Z" stroke="#273583" stroke-width="0.5" />
+                        <path d="M33.4356 25.2754C33.3168 25.1551 33.198 25.115 33.0792 25.115C32.9604 25.115 32.802 25.1551 32.7228 25.2754L30.5842 27.4406C30.3861 27.6411 30.3861 27.9618 30.5842 28.1623C30.7822 28.3628 31.0594 28.3628 31.297 28.1623L33.4356 25.9971C33.6337 25.7967 33.6337 25.4759 33.4356 25.2754Z" stroke="#273583" stroke-width="0.5" />
+                        <path d="M48.4851 42.9575H46.1881L46.2277 42.7169C46.2277 42.6368 46.2673 42.5566 46.2673 42.5165V37.7451C46.2673 37.705 46.2673 37.6649 46.2673 37.6248V37.5847L46.8218 35.2592C47.0594 34.2167 46.8614 33.1341 46.2277 32.2921L45.9109 31.9313H46.3465C47.0198 31.9313 47.6139 31.3298 47.6139 30.6482V30.0067C47.6139 29.285 47.0594 28.7236 46.3465 28.7236H44.3267C44.0495 28.7236 43.8119 28.8038 43.5743 28.9642L43.3366 29.1647L42.7822 26.6788C42.2277 24.5136 40.4059 23.0301 38.1881 23.0301H38.1089C38.0297 22.99 37.9109 22.99 37.7921 23.0301H27.9307C25.7129 23.0301 23.8119 24.5136 23.3366 26.6788L22.7426 29.285L22.4653 29.0444C22.2277 28.8439 21.9505 28.7236 21.6337 28.7236H19.6535C18.9406 28.7236 18.3861 29.285 18.3861 30.0067V30.6482C18.3861 31.3699 18.9406 31.9313 19.6535 31.9313H20.2079L19.9307 32.2921C19.2574 33.1341 19.0594 34.2167 19.297 35.2592L19.8515 37.6248V37.6649C19.8515 37.705 19.8119 37.7451 19.8119 37.7852V42.6368L19.8515 42.9174H17.5149C17.2376 42.9575 17 43.1981 17 43.4788C17 43.7594 17.2376 44 17.5149 44H48.4851C48.7624 44 49 43.7594 49 43.4788C49 43.1981 48.7624 42.9575 48.4851 42.9575ZM44.1287 29.7661H46.3465C46.505 29.7661 46.6238 29.8864 46.6238 30.0468V30.6482C46.6238 30.8086 46.505 30.9289 46.3465 30.9289H44.3267C44.1683 30.9289 44.0495 30.8086 44.0495 30.6482L44.1287 29.7661ZM24.2871 26.9594C24.6436 25.2754 26.1485 24.0726 27.8515 24.0726H36.6832L34.0297 26.7589C33.8317 26.9594 33.8317 27.2802 34.0297 27.4807C34.2277 27.6811 34.5446 27.6811 34.7426 27.4807L38.1089 24.0726H38.1881C39.8911 24.1126 41.3168 25.3155 41.6733 26.9594L42.4653 30.4076L42.1485 30.3274C39.8515 29.8062 37.3168 29.6458 36.604 29.6057C34.8218 29.4453 31.297 29.4453 28.7624 29.6859C27.099 29.7661 25.2772 30.0468 23.8515 30.3675L23.5347 30.4477L24.2871 26.9594ZM19.6535 30.9289C19.495 30.9289 19.3762 30.8086 19.3762 30.6482L19.4554 29.7661H21.6733C21.8317 29.7661 21.9505 29.8864 21.9505 30.0468V30.6482C21.9505 30.8086 21.8317 30.9289 21.6733 30.9289H19.6535ZM24.0891 42.5165C24.0891 42.757 23.8911 42.9575 23.6535 42.9575H21.0792L21.0396 42.9174C20.9208 42.8372 20.8812 42.7169 20.8812 42.5967V40.0706L21.2376 40.3513C21.8713 40.8726 22.6238 41.1532 23.4554 41.1532H24.1287V42.5165H24.0891ZM25.0792 42.9575L25.1188 42.7169C25.1188 42.6368 25.1584 42.5566 25.1584 42.5165V41.1933H40.9604V42.6769L41 42.9575H25.0792ZM45.198 42.5165C45.198 42.757 45 42.9575 44.7624 42.9575H42.1881L42.1485 42.9174C42.0297 42.8372 41.9901 42.7169 41.9901 42.5967V41.1933H42.5842C43.4158 41.1933 44.2079 40.9126 44.8812 40.3112L45.2376 40.0306V42.5165H45.198ZM45.8317 35.0587L45.2772 37.4243C45.198 37.5045 45.1584 37.6248 45.1584 37.7451C45.1584 37.7852 45.1584 37.8253 45.1584 37.8654V37.9055L45.0792 38.2263C44.7624 39.4291 43.7723 40.231 42.6238 40.231H41.7525L41.7129 40.1909C41.5545 40.0706 41.3564 40.0706 41.198 40.1909L41.1584 40.231H25L24.9208 40.1909C24.8416 40.1508 24.7228 40.0706 24.604 40.0706C24.4851 40.0706 24.3663 40.1508 24.2871 40.1909L24.2475 40.231H23.495C22.3069 40.231 21.2772 39.389 21.0396 38.2263L20.2871 35.0587C19.9703 33.7757 20.6436 32.4926 21.8713 32.0916C22.0297 32.0115 22.1089 31.9714 22.2277 31.9313C22.3861 31.8511 22.5446 31.7709 22.8614 31.6506C22.9802 31.6506 23.0198 31.6105 23.0594 31.5704L23.099 31.5303H23.1386C23.2178 31.5303 23.2178 31.5303 23.7327 31.3699H23.7723C23.8515 31.3699 24.1287 31.2897 24.2871 31.2496C29.8713 29.9666 40.2079 30.3274 43.6931 31.8912C43.8515 31.9313 44.0495 32.0115 44.1683 32.0516C45.4356 32.4926 46.1089 33.8158 45.8317 35.0587Z" stroke="#273583" stroke-width="0.5" />
+                     </svg>`,
+				},
+
+				boat: {
+					iconMain: `
+               <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M66 33.8838C66 47.1589 49.3935 69.1441 39.7414 80.8014C36.21 85.0662 29.79 85.0662 26.2586 80.8014C16.6066 69.1441 0 47.1589 0 33.8838C0 15.1702 14.7746 0 33 0C51.2254 0 66 15.1702 66 33.8838Z" fill="url(#paint0_linear_2037_19)" />
+                  <path d="M57 34.1693C57 46.8464 46.5763 57.1232 33.7179 57.1232C20.8596 57.1232 10.4359 46.8464 10.4359 34.1693C10.4359 21.4923 20.8596 11.2155 33.7179 11.2155C46.5763 11.2155 57 21.4923 57 34.1693Z" fill="white" />
+                  <path d="M38.7918 47.4059C38.7553 47.4435 38.4271 47.7818 37.88 47.9321C37.0777 48.1576 36.3118 47.9697 35.473 47.3683C33.5036 45.8649 31.68 46.6918 30.9506 47.4059C30.9506 47.4059 30.5859 47.7442 30.0024 47.9321C29.3094 48.1576 28.4706 47.9697 27.6682 47.3683C26.1729 46.2784 24.86 46.4663 24.0212 46.8421C23.8024 46.9549 23.6929 47.2556 23.8024 47.4811C23.9118 47.7066 24.2035 47.8193 24.4224 47.7066C24.7141 47.5562 25.0424 47.4811 25.3706 47.4811C25.9541 47.4811 26.5377 47.7066 27.1577 48.1576C29.1271 49.661 30.9506 48.8341 31.68 48.12C31.68 48.12 32.0447 47.7818 32.5918 47.5938C33.3941 47.3683 34.16 47.5562 34.9989 48.1576C35.6918 48.6838 36.4577 48.9845 37.26 48.9845C38.2812 48.9845 39.12 48.4959 39.5212 48.0824C39.5212 48.0824 39.8859 47.7066 40.4695 47.5563C41.1624 47.3307 42.0012 47.5187 42.8036 48.12C42.913 48.1952 43.0224 48.2328 43.1318 48.1952C43.2412 48.1576 43.3506 48.12 43.4236 48.0073C43.4965 47.8945 43.533 47.7818 43.4965 47.669C43.46 47.5562 43.4236 47.4435 43.3142 47.3683C41.3448 45.8649 39.5577 46.6918 38.7918 47.4059Z" fill="#283583" />
+                  <path d="M43.8612 44.6998C41.7824 43.234 39.9224 44.0609 39.2295 44.7374C39.2295 44.7374 38.8647 45.0757 38.2812 45.2636C37.4059 45.4891 36.5306 45.3012 35.7283 44.6998C35.2906 44.3991 34.853 44.1736 34.3789 44.0233L33.3577 43.7226L32.373 44.0233C31.68 44.2488 31.2424 44.5871 31.0965 44.7374C31.06 44.775 30.6953 45.1133 30.0753 45.2636C29.273 45.4891 28.4341 45.3012 27.5953 44.6998C26.72 44.0233 25.8082 43.7602 24.86 43.873C24.0212 43.9857 23.4741 44.2864 23.2553 44.4743C23.0729 44.5871 23 44.7374 23 44.9253C23 45.1884 23.2188 45.4139 23.4741 45.4139C23.5471 45.4139 23.6565 45.3763 23.7659 45.3388C24.0212 45.1508 24.5318 44.8502 25.2247 44.8502C25.7353 44.8502 26.3553 45.0005 27.0482 45.4891C27.9965 46.1656 28.8718 46.316 29.4188 46.316C30.44 46.316 31.2788 45.8649 31.6435 45.4139C31.68 45.3763 32.0812 45.0381 32.6647 44.8877C33.4671 44.6622 34.3059 44.8502 35.1447 45.4515C37.2236 46.9549 39.0836 46.0905 39.7765 45.4139C39.7765 45.4139 40.1412 45.0757 40.7247 44.8877C41.6 44.6622 42.4753 44.8502 43.2777 45.4515C43.3506 45.5267 43.4965 45.5643 43.6059 45.5267C43.7153 45.4891 43.8248 45.4515 43.8977 45.3388C43.9706 45.226 44.0071 45.1133 43.9706 45.0005C44.0436 44.8877 43.9706 44.775 43.8612 44.6998Z" fill="#283583" />
+                  <path d="M38.8647 43.6475C39.0471 43.6475 39.2295 43.4971 39.3024 43.3092L41.7824 34.1386C41.8189 34.0634 41.8553 34.0258 41.8918 33.9506C41.9283 33.8755 41.9283 33.8003 41.9283 33.7251V33.6875L42.4753 31.658C42.5483 31.4325 42.4024 31.1694 42.1836 31.0942L41.2718 30.7559V24.4417C41.2718 24.1787 41.053 23.9531 40.7977 23.9531H38.9377V22.4873C38.9377 22.2243 38.7189 21.9987 38.4636 21.9987C38.2083 21.9987 37.9894 22.2243 37.9894 22.4873V23.9531H37.0412V20.1571C37.0412 19.894 36.8224 19.6685 36.5671 19.6685H35.0718V17.4886C35.0718 17.2255 34.853 17 34.5977 17H31.06C30.8047 17 30.5859 17.2255 30.5859 17.4886V19.6685H29.4188C29.1635 19.6685 28.9447 19.894 28.9447 20.1571V23.9907H27.9965V22.4498C27.9965 22.1867 27.7777 21.9612 27.5224 21.9612C27.2671 21.9612 27.0482 22.1867 27.0482 22.4498V23.9907H25.2612C25.0059 23.9907 24.7871 24.2162 24.7871 24.4793V30.7935L23.8753 31.1318C23.6565 31.207 23.5106 31.4701 23.5835 31.6956L24.1306 33.6875V33.7251C24.1306 33.8003 24.1306 33.8755 24.1671 33.9506C24.1671 33.9882 24.2035 34.0634 24.24 34.101L24.2765 34.1761L26.793 43.3092C26.8294 43.4219 26.9753 43.6475 27.2306 43.6475H38.8647ZM40.7977 31.5828H40.8706L41.6365 31.8459L41.2353 33.1614L35.7647 31.3197C35.5459 31.2445 35.2541 31.3197 35.1812 31.6204C35.1447 31.7707 35.1447 31.8835 35.2177 31.9962C35.2541 32.109 35.3636 32.1842 35.473 32.2217L40.98 34.1386L38.573 42.7078H33.54V28.8767L40.5059 31.4701C40.6153 31.5452 40.6883 31.5452 40.7977 31.5828ZM31.5341 17.9772H34.16V19.7061H31.5341V17.9772ZM29.893 20.6833H36.093V24.0283H29.893V20.6833ZM32.5553 42.8206H27.5953L25.1518 34.1761L30.5859 32.2969C30.7318 32.2593 30.8047 32.1842 30.8412 32.0714C30.8777 31.9587 30.9141 31.8083 30.8777 31.6956C30.8412 31.5828 30.7683 31.4701 30.6588 31.4325C30.5494 31.3949 30.4035 31.3573 30.2941 31.3949L24.8965 33.1989L24.5682 31.9587L32.5553 28.9895V42.8206ZM32.6283 27.8995L32.5918 27.9371L25.6624 30.4553V26.9223H30.0388C30.2577 26.9223 30.513 26.6968 30.513 26.4337C30.513 26.1706 30.2941 25.9451 30.0388 25.9451H25.6624V24.9679H29.3824C29.4553 24.9679 29.4918 24.9679 29.5647 24.9303H40.3236V25.9827H35.8741C35.6189 25.9827 35.4 26.2082 35.4 26.4713C35.4 26.7344 35.6189 26.9599 35.8741 26.9599H40.3236V30.3425L33.1024 27.7116C33.0294 27.674 32.8106 27.7116 32.7012 27.7868C32.7012 27.8244 32.6647 27.8619 32.6283 27.8995Z" fill="#283583" />
+                  <path d="M38.7918 47.4059C38.7553 47.4435 38.4271 47.7818 37.88 47.9321C37.0777 48.1576 36.3118 47.9697 35.473 47.3683C33.5036 45.8649 31.68 46.6918 30.9506 47.4059C30.9506 47.4059 30.5859 47.7442 30.0024 47.9321C29.3094 48.1576 28.4706 47.9697 27.6682 47.3683C26.1729 46.2784 24.86 46.4663 24.0212 46.8421C23.8024 46.9549 23.6929 47.2556 23.8024 47.4811C23.9118 47.7066 24.2035 47.8193 24.4224 47.7066C24.7141 47.5562 25.0424 47.4811 25.3706 47.4811C25.9541 47.4811 26.5377 47.7066 27.1577 48.1576C29.1271 49.661 30.9506 48.8341 31.68 48.12C31.68 48.12 32.0447 47.7818 32.5918 47.5938C33.3941 47.3683 34.16 47.5562 34.9989 48.1576C35.6918 48.6838 36.4577 48.9845 37.26 48.9845C38.2812 48.9845 39.12 48.4959 39.5212 48.0824C39.5212 48.0824 39.8859 47.7066 40.4695 47.5563C41.1624 47.3307 42.0012 47.5187 42.8036 48.12C42.913 48.1952 43.0224 48.2328 43.1318 48.1952C43.2412 48.1576 43.3506 48.12 43.4236 48.0073C43.4965 47.8945 43.533 47.7818 43.4965 47.669C43.46 47.5562 43.4236 47.4435 43.3142 47.3683C41.3448 45.8649 39.5577 46.6918 38.7918 47.4059Z" stroke="#273583" stroke-width="0.25" />
+                  <path d="M43.8612 44.6998C41.7824 43.234 39.9224 44.0609 39.2295 44.7374C39.2295 44.7374 38.8647 45.0757 38.2812 45.2636C37.4059 45.4891 36.5306 45.3012 35.7283 44.6998C35.2906 44.3991 34.853 44.1736 34.3789 44.0233L33.3577 43.7226L32.373 44.0233C31.68 44.2488 31.2424 44.5871 31.0965 44.7374C31.06 44.775 30.6953 45.1133 30.0753 45.2636C29.273 45.4891 28.4341 45.3012 27.5953 44.6998C26.72 44.0233 25.8082 43.7602 24.86 43.873C24.0212 43.9857 23.4741 44.2864 23.2553 44.4743C23.0729 44.5871 23 44.7374 23 44.9253C23 45.1884 23.2188 45.4139 23.4741 45.4139C23.5471 45.4139 23.6565 45.3763 23.7659 45.3388C24.0212 45.1508 24.5318 44.8502 25.2247 44.8502C25.7353 44.8502 26.3553 45.0005 27.0482 45.4891C27.9965 46.1656 28.8718 46.316 29.4188 46.316C30.44 46.316 31.2788 45.8649 31.6435 45.4139C31.68 45.3763 32.0812 45.0381 32.6647 44.8877C33.4671 44.6622 34.3059 44.8502 35.1447 45.4515C37.2236 46.9549 39.0836 46.0905 39.7765 45.4139C39.7765 45.4139 40.1412 45.0757 40.7247 44.8877C41.6 44.6622 42.4753 44.8502 43.2777 45.4515C43.3506 45.5267 43.4965 45.5643 43.6059 45.5267C43.7153 45.4891 43.8248 45.4515 43.8977 45.3388C43.9706 45.226 44.0071 45.1133 43.9706 45.0005C44.0436 44.8877 43.9706 44.775 43.8612 44.6998Z" stroke="#273583" stroke-width="0.25" />
+                  <path d="M38.8647 43.6475C39.0471 43.6475 39.2295 43.4971 39.3024 43.3092L41.7824 34.1386C41.8189 34.0634 41.8553 34.0258 41.8918 33.9506C41.9283 33.8755 41.9283 33.8003 41.9283 33.7251V33.6875L42.4753 31.658C42.5483 31.4325 42.4024 31.1694 42.1836 31.0942L41.2718 30.7559V24.4417C41.2718 24.1787 41.053 23.9531 40.7977 23.9531H38.9377V22.4873C38.9377 22.2243 38.7189 21.9987 38.4636 21.9987C38.2083 21.9987 37.9894 22.2243 37.9894 22.4873V23.9531H37.0412V20.1571C37.0412 19.894 36.8224 19.6685 36.5671 19.6685H35.0718V17.4886C35.0718 17.2255 34.853 17 34.5977 17H31.06C30.8047 17 30.5859 17.2255 30.5859 17.4886V19.6685H29.4188C29.1635 19.6685 28.9447 19.894 28.9447 20.1571V23.9907H27.9965V22.4498C27.9965 22.1867 27.7777 21.9612 27.5224 21.9612C27.2671 21.9612 27.0482 22.1867 27.0482 22.4498V23.9907H25.2612C25.0059 23.9907 24.7871 24.2162 24.7871 24.4793V30.7935L23.8753 31.1318C23.6565 31.207 23.5106 31.4701 23.5835 31.6956L24.1306 33.6875V33.7251C24.1306 33.8003 24.1306 33.8755 24.1671 33.9506C24.1671 33.9882 24.2035 34.0634 24.24 34.101L24.2765 34.1761L26.793 43.3092C26.8294 43.4219 26.9753 43.6475 27.2306 43.6475H38.8647ZM40.7977 31.5828H40.8706L41.6365 31.8459L41.2353 33.1614L35.7647 31.3197C35.5459 31.2445 35.2541 31.3197 35.1812 31.6204C35.1447 31.7707 35.1447 31.8835 35.2177 31.9962C35.2541 32.109 35.3636 32.1842 35.473 32.2217L40.98 34.1386L38.573 42.7078H33.54V28.8767L40.5059 31.4701C40.6153 31.5452 40.6883 31.5452 40.7977 31.5828ZM31.5341 17.9772H34.16V19.7061H31.5341V17.9772ZM29.893 20.6833H36.093V24.0283H29.893V20.6833ZM32.5553 42.8206H27.5953L25.1518 34.1761L30.5859 32.2969C30.7318 32.2593 30.8047 32.1842 30.8412 32.0714C30.8777 31.9587 30.9141 31.8083 30.8777 31.6956C30.8412 31.5828 30.7683 31.4701 30.6588 31.4325C30.5494 31.3949 30.4035 31.3573 30.2941 31.3949L24.8965 33.1989L24.5682 31.9587L32.5553 28.9895V42.8206ZM32.6283 27.8995L32.5918 27.9371L25.6624 30.4553V26.9223H30.0388C30.2577 26.9223 30.513 26.6968 30.513 26.4337C30.513 26.1706 30.2941 25.9451 30.0388 25.9451H25.6624V24.9679H29.3824C29.4553 24.9679 29.4918 24.9679 29.5647 24.9303H40.3236V25.9827H35.8741C35.6189 25.9827 35.4 26.2082 35.4 26.4713C35.4 26.7344 35.6189 26.9599 35.8741 26.9599H40.3236V30.3425L33.1024 27.7116C33.0294 27.674 32.8106 27.7116 32.7012 27.7868C32.7012 27.8244 32.6647 27.8619 32.6283 27.8995Z" stroke="#273583" stroke-width="0.25" />
+                  <defs>
+                     <linearGradient id="paint0_linear_2037_19" x1="0" y1="42" x2="66" y2="42" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#273583" />
+                        <stop offset="0.5" stop-color="#35B2B6" />
+                        <stop offset="1" stop-color="#4FAF34" />
+                     </linearGradient>
+                  </defs>
+               </svg>`,
+					iconActive: `
+                     <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M66 33.8838C66 47.1589 49.3935 69.1442 39.7414 80.8014C36.21 85.0662 29.79 85.0662 26.2586 80.8014C16.6066 69.1442 0 47.1589 0 33.8838C0 15.1702 14.7746 0 33 0C51.2254 0 66 15.1702 66 33.8838Z" fill="#273583" />
+                        <path d="M57 34.1693C57 46.8464 46.5763 57.1232 33.7179 57.1232C20.8596 57.1232 10.4359 46.8464 10.4359 34.1693C10.4359 21.4923 20.8596 11.2155 33.7179 11.2155C46.5763 11.2155 57 21.4923 57 34.1693Z" fill="white" />
+                        <path d="M38.7918 47.4059C38.7553 47.4435 38.4271 47.7818 37.88 47.9321C37.0777 48.1576 36.3118 47.9697 35.473 47.3683C33.5036 45.8649 31.68 46.6918 30.9506 47.4059C30.9506 47.4059 30.5859 47.7442 30.0024 47.9321C29.3094 48.1576 28.4706 47.9697 27.6682 47.3683C26.1729 46.2784 24.86 46.4663 24.0212 46.8421C23.8024 46.9549 23.6929 47.2556 23.8024 47.4811C23.9118 47.7066 24.2035 47.8193 24.4224 47.7066C24.7141 47.5562 25.0424 47.4811 25.3706 47.4811C25.9541 47.4811 26.5377 47.7066 27.1577 48.1576C29.1271 49.661 30.9506 48.8341 31.68 48.12C31.68 48.12 32.0447 47.7818 32.5918 47.5938C33.3941 47.3683 34.16 47.5562 34.9989 48.1576C35.6918 48.6838 36.4577 48.9845 37.26 48.9845C38.2812 48.9845 39.12 48.4959 39.5212 48.0824C39.5212 48.0824 39.8859 47.7066 40.4695 47.5563C41.1624 47.3307 42.0012 47.5187 42.8036 48.12C42.913 48.1952 43.0224 48.2328 43.1318 48.1952C43.2412 48.1576 43.3506 48.12 43.4236 48.0073C43.4965 47.8945 43.533 47.7818 43.4965 47.669C43.46 47.5562 43.4236 47.4435 43.3142 47.3683C41.3448 45.8649 39.5577 46.6918 38.7918 47.4059Z" fill="#283583" />
+                        <path d="M43.8612 44.6998C41.7824 43.234 39.9224 44.0609 39.2295 44.7374C39.2295 44.7374 38.8647 45.0757 38.2812 45.2636C37.4059 45.4891 36.5306 45.3012 35.7283 44.6998C35.2906 44.3991 34.853 44.1736 34.3789 44.0233L33.3577 43.7226L32.373 44.0233C31.68 44.2488 31.2424 44.5871 31.0965 44.7374C31.06 44.775 30.6953 45.1133 30.0753 45.2636C29.273 45.4891 28.4341 45.3012 27.5953 44.6998C26.72 44.0233 25.8082 43.7602 24.86 43.873C24.0212 43.9857 23.4741 44.2864 23.2553 44.4743C23.0729 44.5871 23 44.7374 23 44.9253C23 45.1884 23.2188 45.4139 23.4741 45.4139C23.5471 45.4139 23.6565 45.3763 23.7659 45.3388C24.0212 45.1508 24.5318 44.8502 25.2247 44.8502C25.7353 44.8502 26.3553 45.0005 27.0482 45.4891C27.9965 46.1656 28.8718 46.316 29.4188 46.316C30.44 46.316 31.2788 45.8649 31.6435 45.4139C31.68 45.3763 32.0812 45.0381 32.6647 44.8877C33.4671 44.6622 34.3059 44.8502 35.1447 45.4515C37.2236 46.9549 39.0836 46.0905 39.7765 45.4139C39.7765 45.4139 40.1412 45.0757 40.7247 44.8877C41.6 44.6622 42.4753 44.8502 43.2777 45.4515C43.3506 45.5267 43.4965 45.5643 43.6059 45.5267C43.7153 45.4891 43.8248 45.4515 43.8977 45.3388C43.9706 45.226 44.0071 45.1133 43.9706 45.0005C44.0436 44.8877 43.9706 44.775 43.8612 44.6998Z" fill="#283583" />
+                        <path d="M38.8647 43.6475C39.0471 43.6475 39.2295 43.4971 39.3024 43.3092L41.7824 34.1386C41.8189 34.0634 41.8553 34.0258 41.8918 33.9506C41.9283 33.8755 41.9283 33.8003 41.9283 33.7251V33.6875L42.4753 31.658C42.5483 31.4325 42.4024 31.1694 42.1836 31.0942L41.2718 30.7559V24.4417C41.2718 24.1787 41.053 23.9531 40.7977 23.9531H38.9377V22.4873C38.9377 22.2243 38.7189 21.9987 38.4636 21.9987C38.2083 21.9987 37.9894 22.2243 37.9894 22.4873V23.9531H37.0412V20.1571C37.0412 19.894 36.8224 19.6685 36.5671 19.6685H35.0718V17.4886C35.0718 17.2255 34.853 17 34.5977 17H31.06C30.8047 17 30.5859 17.2255 30.5859 17.4886V19.6685H29.4188C29.1635 19.6685 28.9447 19.894 28.9447 20.1571V23.9907H27.9965V22.4498C27.9965 22.1867 27.7777 21.9612 27.5224 21.9612C27.2671 21.9612 27.0482 22.1867 27.0482 22.4498V23.9907H25.2612C25.0059 23.9907 24.7871 24.2162 24.7871 24.4793V30.7935L23.8753 31.1318C23.6565 31.207 23.5106 31.4701 23.5835 31.6956L24.1306 33.6875V33.7251C24.1306 33.8003 24.1306 33.8755 24.1671 33.9506C24.1671 33.9882 24.2035 34.0634 24.24 34.101L24.2765 34.1761L26.793 43.3092C26.8294 43.4219 26.9753 43.6475 27.2306 43.6475H38.8647ZM40.7977 31.5828H40.8706L41.6365 31.8459L41.2353 33.1614L35.7647 31.3197C35.5459 31.2445 35.2541 31.3197 35.1812 31.6204C35.1447 31.7707 35.1447 31.8835 35.2177 31.9962C35.2541 32.109 35.3636 32.1842 35.473 32.2217L40.98 34.1386L38.573 42.7078H33.54V28.8767L40.5059 31.4701C40.6153 31.5452 40.6883 31.5452 40.7977 31.5828ZM31.5341 17.9772H34.16V19.7061H31.5341V17.9772ZM29.893 20.6833H36.093V24.0283H29.893V20.6833ZM32.5553 42.8206H27.5953L25.1518 34.1761L30.5859 32.2969C30.7318 32.2593 30.8047 32.1842 30.8412 32.0714C30.8777 31.9587 30.9141 31.8083 30.8777 31.6956C30.8412 31.5828 30.7683 31.4701 30.6588 31.4325C30.5494 31.3949 30.4035 31.3573 30.2941 31.3949L24.8965 33.1989L24.5682 31.9587L32.5553 28.9895V42.8206ZM32.6283 27.8995L32.5918 27.9371L25.6624 30.4553V26.9223H30.0388C30.2577 26.9223 30.513 26.6968 30.513 26.4337C30.513 26.1706 30.2941 25.9451 30.0388 25.9451H25.6624V24.9679H29.3824C29.4553 24.9679 29.4918 24.9679 29.5647 24.9303H40.3236V25.9827H35.8741C35.6189 25.9827 35.4 26.2082 35.4 26.4713C35.4 26.7344 35.6189 26.9599 35.8741 26.9599H40.3236V30.3425L33.1024 27.7116C33.0294 27.674 32.8106 27.7116 32.7012 27.7868C32.7012 27.8244 32.6647 27.8619 32.6283 27.8995Z" fill="#283583" />
+                        <path d="M38.7918 47.4059C38.7553 47.4435 38.4271 47.7818 37.88 47.9321C37.0777 48.1576 36.3118 47.9697 35.473 47.3683C33.5036 45.8649 31.68 46.6918 30.9506 47.4059C30.9506 47.4059 30.5859 47.7442 30.0024 47.9321C29.3094 48.1576 28.4706 47.9697 27.6682 47.3683C26.1729 46.2784 24.86 46.4663 24.0212 46.8421C23.8024 46.9549 23.6929 47.2556 23.8024 47.4811C23.9118 47.7066 24.2035 47.8193 24.4224 47.7066C24.7141 47.5562 25.0424 47.4811 25.3706 47.4811C25.9541 47.4811 26.5377 47.7066 27.1577 48.1576C29.1271 49.661 30.9506 48.8341 31.68 48.12C31.68 48.12 32.0447 47.7818 32.5918 47.5938C33.3941 47.3683 34.16 47.5562 34.9989 48.1576C35.6918 48.6838 36.4577 48.9845 37.26 48.9845C38.2812 48.9845 39.12 48.4959 39.5212 48.0824C39.5212 48.0824 39.8859 47.7066 40.4695 47.5563C41.1624 47.3307 42.0012 47.5187 42.8036 48.12C42.913 48.1952 43.0224 48.2328 43.1318 48.1952C43.2412 48.1576 43.3506 48.12 43.4236 48.0073C43.4965 47.8945 43.533 47.7818 43.4965 47.669C43.46 47.5562 43.4236 47.4435 43.3142 47.3683C41.3448 45.8649 39.5577 46.6918 38.7918 47.4059Z" stroke="#273583" stroke-width="0.25" />
+                        <path d="M43.8612 44.6998C41.7824 43.234 39.9224 44.0609 39.2295 44.7374C39.2295 44.7374 38.8647 45.0757 38.2812 45.2636C37.4059 45.4891 36.5306 45.3012 35.7283 44.6998C35.2906 44.3991 34.853 44.1736 34.3789 44.0233L33.3577 43.7226L32.373 44.0233C31.68 44.2488 31.2424 44.5871 31.0965 44.7374C31.06 44.775 30.6953 45.1133 30.0753 45.2636C29.273 45.4891 28.4341 45.3012 27.5953 44.6998C26.72 44.0233 25.8082 43.7602 24.86 43.873C24.0212 43.9857 23.4741 44.2864 23.2553 44.4743C23.0729 44.5871 23 44.7374 23 44.9253C23 45.1884 23.2188 45.4139 23.4741 45.4139C23.5471 45.4139 23.6565 45.3763 23.7659 45.3388C24.0212 45.1508 24.5318 44.8502 25.2247 44.8502C25.7353 44.8502 26.3553 45.0005 27.0482 45.4891C27.9965 46.1656 28.8718 46.316 29.4188 46.316C30.44 46.316 31.2788 45.8649 31.6435 45.4139C31.68 45.3763 32.0812 45.0381 32.6647 44.8877C33.4671 44.6622 34.3059 44.8502 35.1447 45.4515C37.2236 46.9549 39.0836 46.0905 39.7765 45.4139C39.7765 45.4139 40.1412 45.0757 40.7247 44.8877C41.6 44.6622 42.4753 44.8502 43.2777 45.4515C43.3506 45.5267 43.4965 45.5643 43.6059 45.5267C43.7153 45.4891 43.8248 45.4515 43.8977 45.3388C43.9706 45.226 44.0071 45.1133 43.9706 45.0005C44.0436 44.8877 43.9706 44.775 43.8612 44.6998Z" stroke="#273583" stroke-width="0.25" />
+                        <path d="M38.8647 43.6475C39.0471 43.6475 39.2295 43.4971 39.3024 43.3092L41.7824 34.1386C41.8189 34.0634 41.8553 34.0258 41.8918 33.9506C41.9283 33.8755 41.9283 33.8003 41.9283 33.7251V33.6875L42.4753 31.658C42.5483 31.4325 42.4024 31.1694 42.1836 31.0942L41.2718 30.7559V24.4417C41.2718 24.1787 41.053 23.9531 40.7977 23.9531H38.9377V22.4873C38.9377 22.2243 38.7189 21.9987 38.4636 21.9987C38.2083 21.9987 37.9894 22.2243 37.9894 22.4873V23.9531H37.0412V20.1571C37.0412 19.894 36.8224 19.6685 36.5671 19.6685H35.0718V17.4886C35.0718 17.2255 34.853 17 34.5977 17H31.06C30.8047 17 30.5859 17.2255 30.5859 17.4886V19.6685H29.4188C29.1635 19.6685 28.9447 19.894 28.9447 20.1571V23.9907H27.9965V22.4498C27.9965 22.1867 27.7777 21.9612 27.5224 21.9612C27.2671 21.9612 27.0482 22.1867 27.0482 22.4498V23.9907H25.2612C25.0059 23.9907 24.7871 24.2162 24.7871 24.4793V30.7935L23.8753 31.1318C23.6565 31.207 23.5106 31.4701 23.5835 31.6956L24.1306 33.6875V33.7251C24.1306 33.8003 24.1306 33.8755 24.1671 33.9506C24.1671 33.9882 24.2035 34.0634 24.24 34.101L24.2765 34.1761L26.793 43.3092C26.8294 43.4219 26.9753 43.6475 27.2306 43.6475H38.8647ZM40.7977 31.5828H40.8706L41.6365 31.8459L41.2353 33.1614L35.7647 31.3197C35.5459 31.2445 35.2541 31.3197 35.1812 31.6204C35.1447 31.7707 35.1447 31.8835 35.2177 31.9962C35.2541 32.109 35.3636 32.1842 35.473 32.2217L40.98 34.1386L38.573 42.7078H33.54V28.8767L40.5059 31.4701C40.6153 31.5452 40.6883 31.5452 40.7977 31.5828ZM31.5341 17.9772H34.16V19.7061H31.5341V17.9772ZM29.893 20.6833H36.093V24.0283H29.893V20.6833ZM32.5553 42.8206H27.5953L25.1518 34.1761L30.5859 32.2969C30.7318 32.2593 30.8047 32.1842 30.8412 32.0714C30.8777 31.9587 30.9141 31.8083 30.8777 31.6956C30.8412 31.5828 30.7683 31.4701 30.6588 31.4325C30.5494 31.3949 30.4035 31.3573 30.2941 31.3949L24.8965 33.1989L24.5682 31.9587L32.5553 28.9895V42.8206ZM32.6283 27.8995L32.5918 27.9371L25.6624 30.4553V26.9223H30.0388C30.2577 26.9223 30.513 26.6968 30.513 26.4337C30.513 26.1706 30.2941 25.9451 30.0388 25.9451H25.6624V24.9679H29.3824C29.4553 24.9679 29.4918 24.9679 29.5647 24.9303H40.3236V25.9827H35.8741C35.6189 25.9827 35.4 26.2082 35.4 26.4713C35.4 26.7344 35.6189 26.9599 35.8741 26.9599H40.3236V30.3425L33.1024 27.7116C33.0294 27.674 32.8106 27.7116 32.7012 27.7868C32.7012 27.8244 32.6647 27.8619 32.6283 27.8995Z" stroke="#273583" stroke-width="0.25" />
+                     </svg>`
+				},
+
+				motorcycle: {
+					iconMain: `
+               <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M66 33.8838C66 47.1589 49.3935 69.1441 39.7414 80.8014C36.21 85.0662 29.79 85.0662 26.2586 80.8014C16.6066 69.1441 0 47.1589 0 33.8838C0 15.1702 14.7746 0 33 0C51.2254 0 66 15.1702 66 33.8838Z" fill="url(#paint0_linear_2033_18)" />
+                  <path d="M57 34.1693C57 46.8464 46.5763 57.1232 33.7179 57.1232C20.8596 57.1232 10.4359 46.8464 10.4359 34.1693C10.4359 21.4923 20.8596 11.2155 33.7179 11.2155C46.5763 11.2155 57 21.4923 57 34.1693Z" fill="white" />
+                  <path d="M49.4655 42.8696H46.752L47.3687 42.4348C49.1366 41.2174 50 38.8261 49.4655 36.6957C49.1366 35.3913 48.4788 34.3913 47.492 33.6522C46.1353 32.6957 44.6552 32.4348 43.0106 32.9565L42.8462 33L42.3528 31.913L42.5995 31.8261C43.6684 31.4348 44.6141 31.3478 45.5597 31.5217C46.053 31.6087 46.5053 31.7826 46.9576 31.9565C47.1631 32.0435 47.3276 32.087 47.492 32.1739C47.7798 32.2609 48.0265 32.1739 48.1088 31.9565C48.191 31.6957 48.1087 31.4783 47.8621 31.3478C46.5053 30.6087 45.0663 30.3913 43.6273 30.6087C43.2573 30.6522 42.8873 30.7826 42.5172 30.8696L41.9416 31L41.0782 29.087L41.6127 29.1739C41.9005 29.2174 42.2294 29.2609 42.5172 29.2609C42.6817 29.2609 42.805 29.2174 42.8873 29.1304C42.9695 29.0435 43.0106 28.913 43.0106 28.6957C43.0106 27.3043 43.0106 25.913 43.0106 24.5217C43.0106 24.1739 42.8462 24 42.5172 24C41.5716 23.9565 40.7082 24.2609 39.9682 24.913C39.8448 25 39.7626 25.1304 39.6393 25.2174L39.4337 25.4348L39.2692 25.1739L39.0637 24.7826C38.8581 24.3043 38.6525 23.8696 38.4469 23.4348C38.2825 23.1304 38.118 23 37.748 23C37.4602 23 37.1724 23 36.8846 23H36.679C36.5968 23 36.5146 23 36.4324 23H35.9801C35.6101 23 35.2401 23 34.87 23C34.6233 23 34.4589 23.1739 34.4178 23.4348C34.4178 23.6957 34.5822 23.8696 34.8289 23.913C34.9111 23.913 34.9523 23.913 35.0345 23.913H35.8979C36.3912 23.913 36.8846 23.913 37.378 23.913H37.4602C37.4602 23.913 37.378 23.913 37.3369 24L37.5013 24.1739L37.7069 24.087C37.8714 24.4783 38.0769 24.8261 38.2414 25.2174L38.4469 25.6957H36.8846C36.0212 25.6957 35.1989 25.6957 34.3355 25.6957C32.8966 25.6957 31.8687 26.3478 31.2109 27.6522C31.1286 27.8261 31.0053 27.8696 30.882 27.8696C28.1273 27.8696 25.3727 27.8696 22.6592 27.8696C22.1247 27.8696 21.6724 28.0435 21.3024 28.4348C20.8501 28.8696 20.6446 29.3913 20.7268 29.913C20.7679 30.3043 20.9735 30.6087 21.3024 30.8696L21.5902 31.087L21.2202 31.2609L20.8501 31.4783C20.5212 31.6957 20.1512 31.913 19.8223 32.1304C19.6167 32.2609 19.5756 32.5217 19.6989 32.7391C19.8223 32.9565 19.9867 33 20.1923 32.9565C20.2745 32.913 20.3979 32.8696 20.4801 32.7826C21.7958 31.7826 23.2347 31.3478 24.7971 31.5652C27.2228 31.8696 28.9496 33.2609 29.9363 35.6957C30.3886 36.7826 30.3886 37.9565 30.3475 38.913C30.3475 39.3043 30.4297 39.6087 30.5942 39.8261C30.7586 40.0435 31.0464 40.1304 31.4164 40.1304H33.7599C34.7878 40.1304 35.8568 40.1304 36.8846 40.1304C37.6247 40.1304 38.2003 39.6522 38.3236 38.9565C38.3647 38.7826 38.3647 38.5652 38.3647 38.3913V38.2609C38.3647 36.7391 38.7347 35.4348 39.5159 34.3043C40.0093 33.5652 40.5849 33 41.2838 32.5217L41.4894 32.3913L41.9828 33.4783L41.8183 33.6087C40.3793 34.6522 39.8448 36 39.6804 36.9565C39.3926 38.3913 39.6804 39.8696 40.3793 41C40.7493 41.5652 41.2427 42.087 41.7772 42.4783L42.3939 42.913H26.3594L26.935 42.4783C27.3462 42.1739 27.7162 41.8261 28.004 41.4348C29.0729 40.087 29.4019 38.3043 28.9496 36.6087C28.4151 34.5652 26.6472 32.9565 24.6737 32.7826C22.5358 32.5652 20.5212 33.7391 19.6578 35.6522C19.5345 36.0435 19.4111 36.4783 19.2878 36.913C19.2467 37.1304 19.2056 37.3043 19.1233 37.4783V38.6087L19.1645 38.6957C19.1645 38.7391 19.2056 38.7826 19.2056 38.8696C19.4111 40.3043 20.1923 41.6087 21.3846 42.4783L21.9602 42.913H19.5345C19.2467 42.8696 19 43.1304 19 43.4348C19 43.7391 19.2467 44 19.5345 44H49.4655C49.7533 44 50 43.7391 50 43.4348C50 43.1304 49.7533 42.8696 49.4655 42.8696ZM40.1737 26.0435C40.626 25.3913 41.3249 25.1739 41.8594 25.087L42.1061 25.0435V28.3478H41.8594C40.8727 28.2609 40.1737 27.6957 39.9682 26.8261C39.9271 26.5652 40.0093 26.2609 40.1737 26.0435ZM31.7865 28.6957C31.992 27.5652 32.9377 26.6957 33.9655 26.6522C34.7467 26.6087 35.569 26.6087 36.3501 26.6087H38.4469C38.5292 26.6087 38.6525 26.6522 38.6936 26.6957L38.7347 26.7391C39.1459 27.6087 39.557 28.4783 39.9682 29.3913L40.256 29.9565H32.8143C32.3621 29.9565 32.0743 29.8696 31.9098 29.6522C31.7454 29.5217 31.7042 29.1739 31.7865 28.6957ZM21.5491 30L21.5902 29.7391C21.6724 29.2174 22.0013 28.8696 22.4947 28.7826C22.5769 28.7826 22.6592 28.7826 22.7825 28.7826H30.8408V30H21.5491ZM38.8992 33.6087C38.6936 34 38.4469 34.3913 38.2414 34.7391L38.2003 34.7826C38.118 34.8261 37.9947 34.8696 37.9536 34.8696C37.0902 34.8696 36.1857 34.8696 35.3223 34.8696C34.7056 34.8696 34.13 34.8696 33.5133 34.8696C33.0199 34.8696 32.8143 34.6522 32.8143 34.1304C32.8143 34.0435 32.8143 33.913 32.8143 33.8261C32.8554 33.3478 33.061 33.1304 33.5133 33.1304H39.2281L38.8992 33.6087ZM40.8316 31.6957C40.6671 31.8261 40.4615 31.9565 40.256 32.087C40.1737 32.1304 40.0915 32.1739 39.9682 32.1739H33.5544C32.4854 32.1739 31.9098 32.7826 31.9098 33.9565C31.9098 34.9565 32.2798 35.5217 32.9788 35.7391C33.1844 35.7826 33.431 35.8261 33.5955 35.8261C34.3767 35.8261 35.1578 35.8261 35.939 35.8261H37.8302L37.748 36.1739C37.7069 36.3913 37.6658 36.6087 37.6247 36.8261L37.5836 36.913C37.5013 37 37.378 37.0435 37.2958 37.0435C36.679 37.0435 36.1034 37.0435 35.4867 37.0435H34.5822C34.5 37.0435 34.4178 37.0435 34.3355 37.0435C34.13 37.087 34.0066 37.2174 34.0066 37.4348C34.0066 37.6522 34.0889 37.8261 34.2944 37.8696C34.4178 37.913 34.5411 37.913 34.6645 37.913C35.2812 37.913 35.8568 37.913 36.4735 37.913H37.5424V38.2174C37.5424 38.3478 37.5424 38.4348 37.5424 38.5652C37.5424 39.087 37.2135 39.2174 36.9257 39.2174C35.9801 39.2174 35.0756 39.2174 34.13 39.2174C33.7188 39.2174 33.2666 39.2174 32.8143 39.2174H31.252V38.2609C31.252 36.913 30.9642 35.6522 30.3886 34.5652C29.6897 33.2174 28.6618 32.1304 27.3873 31.4348L26.6061 31H29.1141C32.4032 31 38.4469 31 40.4204 31C40.5438 31 40.9549 31 41.0371 31.4348L41.0782 31.6087L40.8316 31.6957ZM21.2202 41.1304C20.439 40.3043 20.0279 39.1739 20.0279 38.0435C20.0279 35.6522 21.9191 33.6957 24.1804 33.6957C25.2905 33.6957 26.3183 34.1739 27.1406 35C27.9218 35.8261 28.374 36.913 28.374 38.087C28.374 39.2609 27.9218 40.3478 27.1406 41.1739C26.3594 42 25.3316 42.4348 24.2215 42.4348C23.0292 42.4348 22.0013 41.9565 21.2202 41.1304ZM44.5729 42.4348C43.0928 42.4348 41.6538 41.5652 40.8727 40.0435C39.9271 38.2174 40.5438 35.6522 42.1883 34.4783L42.3939 34.3478L42.6406 34.8696C42.8462 35.3478 43.0517 35.8261 43.2573 36.2609L43.2984 36.3043V36.3478C43.2984 36.4783 43.2162 36.6087 43.1751 36.6522C42.7639 37.1739 42.5995 37.8261 42.7639 38.4783C42.9284 39.1304 43.3395 39.6087 43.9151 39.8696C44.6552 40.1739 45.4775 39.9565 46.0119 39.3478C46.5464 38.6957 46.6698 37.9565 46.382 37.1739C46.0942 36.3913 45.3541 35.913 44.5729 35.9565C44.244 36 44.1207 35.8696 43.9562 35.5652C43.7918 35.1739 43.6273 34.8261 43.4629 34.4783L43.2162 33.913L43.4629 33.8261C45.3952 33.1739 47.6565 34.3043 48.3966 36.2174C49.3011 38.4783 48.4377 41 46.382 42C45.7653 42.3043 45.1897 42.4348 44.5729 42.4348ZM43.6684 37.4783L43.7507 37.3478L43.9151 37.3913C44.2851 37.4348 44.4085 37.3913 44.5318 37.0435L44.6141 36.8696H44.7785C45.2719 36.913 45.6008 37.2609 45.683 37.7391C45.8064 38.2609 45.5597 38.7826 45.1074 39C44.943 39.087 44.7785 39.1304 44.6141 39.1304C44.3263 39.1304 43.9973 39 43.7918 38.7391C43.4629 38.4348 43.4217 37.9565 43.6684 37.4783Z" fill="#283583" stroke="#283583" stroke-width="0.25" />
+                  <defs>
+                     <linearGradient id="paint0_linear_2033_18" x1="0" y1="42" x2="66" y2="42" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#273583" />
+                        <stop offset="0.5" stop-color="#35B2B6" />
+                        <stop offset="1" stop-color="#4FAF34" />
+                     </linearGradient>
+                  </defs>
+               </svg>`,
+					iconActive: `
+                     <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M66 33.8838C66 47.1589 49.3935 69.1442 39.7414 80.8014C36.21 85.0662 29.79 85.0662 26.2586 80.8014C16.6066 69.1442 0 47.1589 0 33.8838C0 15.1702 14.7746 0 33 0C51.2254 0 66 15.1702 66 33.8838Z" fill="#273583" />
+                        <path d="M57 34.1693C57 46.8464 46.5763 57.1232 33.7179 57.1232C20.8596 57.1232 10.4359 46.8464 10.4359 34.1693C10.4359 21.4923 20.8596 11.2155 33.7179 11.2155C46.5763 11.2155 57 21.4923 57 34.1693Z" fill="white" />
+                        <path d="M49.4655 42.8696H46.752L47.3687 42.4348C49.1366 41.2174 50 38.8261 49.4655 36.6957C49.1366 35.3913 48.4788 34.3913 47.492 33.6522C46.1353 32.6957 44.6552 32.4348 43.0106 32.9565L42.8462 33L42.3528 31.913L42.5995 31.8261C43.6684 31.4348 44.6141 31.3478 45.5597 31.5217C46.053 31.6087 46.5053 31.7826 46.9576 31.9565C47.1631 32.0435 47.3276 32.087 47.492 32.1739C47.7798 32.2609 48.0265 32.1739 48.1088 31.9565C48.191 31.6957 48.1088 31.4783 47.8621 31.3478C46.5053 30.6087 45.0663 30.3913 43.6273 30.6087C43.2573 30.6522 42.8873 30.7826 42.5172 30.8696L41.9416 31L41.0782 29.087L41.6127 29.1739C41.9005 29.2174 42.2294 29.2609 42.5172 29.2609C42.6817 29.2609 42.805 29.2174 42.8873 29.1304C42.9695 29.0435 43.0106 28.913 43.0106 28.6957C43.0106 27.3043 43.0106 25.913 43.0106 24.5217C43.0106 24.1739 42.8462 24 42.5172 24C41.5716 23.9565 40.7082 24.2609 39.9682 24.913C39.8448 25 39.7626 25.1304 39.6393 25.2174L39.4337 25.4348L39.2692 25.1739L39.0637 24.7826C38.8581 24.3043 38.6525 23.8696 38.4469 23.4348C38.2825 23.1304 38.118 23 37.748 23C37.4602 23 37.1724 23 36.8846 23H36.679C36.5968 23 36.5146 23 36.4324 23H35.9801C35.6101 23 35.2401 23 34.87 23C34.6233 23 34.4589 23.1739 34.4178 23.4348C34.4178 23.6957 34.5822 23.8696 34.8289 23.913C34.9111 23.913 34.9523 23.913 35.0345 23.913H35.8979C36.3912 23.913 36.8846 23.913 37.378 23.913H37.4602C37.4602 23.913 37.378 23.913 37.3369 24L37.5013 24.1739L37.7069 24.087C37.8714 24.4783 38.0769 24.8261 38.2414 25.2174L38.4469 25.6957H36.8846C36.0212 25.6957 35.1989 25.6957 34.3355 25.6957C32.8966 25.6957 31.8687 26.3478 31.2109 27.6522C31.1286 27.8261 31.0053 27.8696 30.882 27.8696C28.1273 27.8696 25.3727 27.8696 22.6592 27.8696C22.1247 27.8696 21.6724 28.0435 21.3024 28.4348C20.8501 28.8696 20.6446 29.3913 20.7268 29.913C20.7679 30.3043 20.9735 30.6087 21.3024 30.8696L21.5902 31.087L21.2202 31.2609L20.8501 31.4783C20.5212 31.6957 20.1512 31.913 19.8223 32.1304C19.6167 32.2609 19.5756 32.5217 19.6989 32.7391C19.8223 32.9565 19.9867 33 20.1923 32.9565C20.2745 32.913 20.3979 32.8696 20.4801 32.7826C21.7958 31.7826 23.2347 31.3478 24.7971 31.5652C27.2228 31.8696 28.9496 33.2609 29.9363 35.6957C30.3886 36.7826 30.3886 37.9565 30.3475 38.913C30.3475 39.3043 30.4297 39.6087 30.5942 39.8261C30.7586 40.0435 31.0464 40.1304 31.4164 40.1304H33.7599C34.7878 40.1304 35.8568 40.1304 36.8846 40.1304C37.6247 40.1304 38.2003 39.6522 38.3236 38.9565C38.3647 38.7826 38.3647 38.5652 38.3647 38.3913V38.2609C38.3647 36.7391 38.7347 35.4348 39.5159 34.3043C40.0093 33.5652 40.5849 33 41.2838 32.5217L41.4894 32.3913L41.9828 33.4783L41.8183 33.6087C40.3793 34.6522 39.8448 36 39.6804 36.9565C39.3926 38.3913 39.6804 39.8696 40.3793 41C40.7493 41.5652 41.2427 42.087 41.7772 42.4783L42.3939 42.913H26.3594L26.935 42.4783C27.3462 42.1739 27.7162 41.8261 28.004 41.4348C29.0729 40.087 29.4019 38.3043 28.9496 36.6087C28.4151 34.5652 26.6472 32.9565 24.6737 32.7826C22.5358 32.5652 20.5212 33.7391 19.6578 35.6522C19.5345 36.0435 19.4111 36.4783 19.2878 36.913C19.2467 37.1304 19.2056 37.3043 19.1233 37.4783V38.6087L19.1645 38.6957C19.1645 38.7391 19.2056 38.7826 19.2056 38.8696C19.4111 40.3043 20.1923 41.6087 21.3846 42.4783L21.9602 42.913H19.5345C19.2467 42.8696 19 43.1304 19 43.4348C19 43.7391 19.2467 44 19.5345 44H49.4655C49.7533 44 50 43.7391 50 43.4348C50 43.1304 49.7533 42.8696 49.4655 42.8696ZM40.1737 26.0435C40.626 25.3913 41.3249 25.1739 41.8594 25.087L42.1061 25.0435V28.3478H41.8594C40.8727 28.2609 40.1737 27.6957 39.9682 26.8261C39.9271 26.5652 40.0093 26.2609 40.1737 26.0435ZM31.7865 28.6957C31.992 27.5652 32.9377 26.6957 33.9655 26.6522C34.7467 26.6087 35.569 26.6087 36.3501 26.6087H38.4469C38.5292 26.6087 38.6525 26.6522 38.6936 26.6957L38.7347 26.7391C39.1459 27.6087 39.557 28.4783 39.9682 29.3913L40.256 29.9565H32.8143C32.3621 29.9565 32.0743 29.8696 31.9098 29.6522C31.7454 29.5217 31.7042 29.1739 31.7865 28.6957ZM21.5491 30L21.5902 29.7391C21.6724 29.2174 22.0013 28.8696 22.4947 28.7826C22.5769 28.7826 22.6592 28.7826 22.7825 28.7826H30.8408V30H21.5491ZM38.8992 33.6087C38.6936 34 38.4469 34.3913 38.2414 34.7391L38.2003 34.7826C38.118 34.8261 37.9947 34.8696 37.9536 34.8696C37.0902 34.8696 36.1857 34.8696 35.3223 34.8696C34.7056 34.8696 34.13 34.8696 33.5133 34.8696C33.0199 34.8696 32.8143 34.6522 32.8143 34.1304C32.8143 34.0435 32.8143 33.913 32.8143 33.8261C32.8554 33.3478 33.061 33.1304 33.5133 33.1304H39.2281L38.8992 33.6087ZM40.8316 31.6957C40.6671 31.8261 40.4615 31.9565 40.256 32.087C40.1737 32.1304 40.0915 32.1739 39.9682 32.1739H33.5544C32.4854 32.1739 31.9098 32.7826 31.9098 33.9565C31.9098 34.9565 32.2798 35.5217 32.9788 35.7391C33.1843 35.7826 33.431 35.8261 33.5955 35.8261C34.3767 35.8261 35.1578 35.8261 35.939 35.8261H37.8302L37.748 36.1739C37.7069 36.3913 37.6658 36.6087 37.6247 36.8261L37.5836 36.913C37.5013 37 37.378 37.0435 37.2958 37.0435C36.679 37.0435 36.1034 37.0435 35.4867 37.0435H34.5822C34.5 37.0435 34.4178 37.0435 34.3355 37.0435C34.13 37.087 34.0066 37.2174 34.0066 37.4348C34.0066 37.6522 34.0889 37.8261 34.2944 37.8696C34.4178 37.913 34.5411 37.913 34.6645 37.913C35.2812 37.913 35.8568 37.913 36.4735 37.913H37.5424V38.2174C37.5424 38.3478 37.5424 38.4348 37.5424 38.5652C37.5424 39.087 37.2135 39.2174 36.9257 39.2174C35.9801 39.2174 35.0756 39.2174 34.13 39.2174C33.7188 39.2174 33.2666 39.2174 32.8143 39.2174H31.252V38.2609C31.252 36.913 30.9642 35.6522 30.3886 34.5652C29.6897 33.2174 28.6618 32.1304 27.3873 31.4348L26.6061 31H29.1141C32.4032 31 38.4469 31 40.4204 31C40.5438 31 40.9549 31 41.0371 31.4348L41.0782 31.6087L40.8316 31.6957ZM21.2202 41.1304C20.439 40.3044 20.0279 39.1739 20.0279 38.0435C20.0279 35.6522 21.9191 33.6957 24.1804 33.6957C25.2905 33.6957 26.3183 34.1739 27.1406 35C27.9217 35.8261 28.374 36.913 28.374 38.087C28.374 39.2609 27.9217 40.3478 27.1406 41.1739C26.3594 42 25.3316 42.4348 24.2215 42.4348C23.0292 42.4348 22.0013 41.9565 21.2202 41.1304ZM44.5729 42.4348C43.0928 42.4348 41.6538 41.5652 40.8727 40.0435C39.9271 38.2174 40.5438 35.6522 42.1883 34.4783L42.3939 34.3478L42.6406 34.8696C42.8462 35.3478 43.0517 35.8261 43.2573 36.2609L43.2984 36.3043V36.3478C43.2984 36.4783 43.2162 36.6087 43.1751 36.6522C42.7639 37.1739 42.5995 37.8261 42.7639 38.4783C42.9284 39.1304 43.3395 39.6087 43.9151 39.8696C44.6552 40.1739 45.4775 39.9565 46.0119 39.3478C46.5464 38.6957 46.6698 37.9565 46.382 37.1739C46.0942 36.3913 45.3541 35.913 44.5729 35.9565C44.244 36 44.1207 35.8696 43.9562 35.5652C43.7918 35.1739 43.6273 34.8261 43.4629 34.4783L43.2162 33.913L43.4629 33.8261C45.3952 33.1739 47.6565 34.3043 48.3966 36.2174C49.3011 38.4783 48.4377 41 46.382 42C45.7653 42.3043 45.1897 42.4348 44.5729 42.4348ZM43.6684 37.4783L43.7507 37.3478L43.9151 37.3913C44.2851 37.4348 44.4085 37.3913 44.5318 37.0435L44.6141 36.8696H44.7785C45.2719 36.913 45.6008 37.2609 45.683 37.7391C45.8064 38.2609 45.5597 38.7826 45.1074 39C44.943 39.087 44.7785 39.1304 44.6141 39.1304C44.3263 39.1304 43.9973 39 43.7918 38.7391C43.4629 38.4348 43.4217 37.9565 43.6684 37.4783Z" fill="#283583" stroke="#283583" stroke-width="0.25" />
+                     </svg>`
+				},
+
+				mhe: {
+					iconMain: `
+               <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M66 33.8838C66 47.1589 49.3935 69.1441 39.7414 80.8014C36.21 85.0662 29.79 85.0662 26.2586 80.8014C16.6066 69.1441 0 47.1589 0 33.8838C0 15.1702 14.7746 0 33 0C51.2254 0 66 15.1702 66 33.8838Z" fill="url(#paint0_linear_2037_23)" />
+                  <path d="M57 34.1693C57 46.8464 46.5763 57.1232 33.7179 57.1232C20.8596 57.1232 10.4359 46.8464 10.4359 34.1693C10.4359 21.4923 20.8596 11.2155 33.7179 11.2155C46.5763 11.2155 57 21.4923 57 34.1693Z" fill="white" />
+                  <path d="M44 28.4907V42.2484C44 43.7681 42.6569 45 41 45H26C24.3431 45 23 43.7681 23 42.2484V28.4907M38 45V38.1211C38 36.6014 36.6569 35.3696 35 35.3696H32C30.3431 35.3696 29 36.6014 29 38.1211V45M47 31.2422L35.6213 20.8059C34.4498 19.7314 32.5502 19.7314 31.3787 20.8059L20 31.2422" stroke="#273583" stroke-width="1.5" stroke-linecap="round" />
+                  <defs>
+                     <linearGradient id="paint0_linear_2037_23" x1="0" y1="42" x2="66" y2="42" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#273583" />
+                        <stop offset="0.5" stop-color="#35B2B6" />
+                        <stop offset="1" stop-color="#4FAF34" />
+                     </linearGradient>
+                  </defs>
+               </svg>`,
+					iconActive: `
+                     <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M66 33.8838C66 47.1589 49.3935 69.1442 39.7414 80.8014C36.21 85.0662 29.79 85.0662 26.2586 80.8014C16.6066 69.1442 0 47.1589 0 33.8838C0 15.1702 14.7746 0 33 0C51.2254 0 66 15.1702 66 33.8838Z" fill="#273583" />
+                        <path d="M57 34.1693C57 46.8464 46.5763 57.1232 33.7179 57.1232C20.8596 57.1232 10.4359 46.8464 10.4359 34.1693C10.4359 21.4923 20.8596 11.2155 33.7179 11.2155C46.5763 11.2155 57 21.4923 57 34.1693Z" fill="white" />
+                        <path d="M44 28.4907V42.2484C44 43.7681 42.6569 45 41 45H26C24.3431 45 23 43.7681 23 42.2484V28.4907M38 45V38.1211C38 36.6014 36.6569 35.3696 35 35.3696H32C30.3431 35.3696 29 36.6014 29 38.1211V45M47 31.2422L35.6213 20.8059C34.4498 19.7314 32.5502 19.7314 31.3787 20.8059L20 31.2422" stroke="#273583" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>`
+				}
+			}
+
+			const addressFilterSelect = document.querySelector('[name="contacts-map-filter"]');
+
+			const addressCards = document.querySelectorAll('.contacts-map__address-card');
+
+			const markersData = Array.from(addressCards).map(card => {
+				const title = card.querySelector('.contact-card__title')
+				const address = card.querySelector('[data-address]')
+
+				const {
+					markerId,
+					category,
+					position,
+				} = card.dataset;
+
+				return {
+					id: markerId,
+					category: category,
+					marker: mapIcons[category],
+					position: safeParsePosition(position),
+					title,
+					address
+				}
+			});
+
+
+			addressCards.forEach((card) => {
+				card.addEventListener('click', () => {
+					const markerId = card.dataset.markerId;
+
+					setActiveItem(markerId);
+				});
+			});
+
+			async function initMap() {
+				const {
+					Map,
+					InfoWindow
+				} = (await google.maps.importLibrary('maps'));
+				const {
+					AdvancedMarkerElement,
+					PinElement
+				} = await google.maps.importLibrary("marker");
+
+				const parser = new DOMParser();
+				const infoWindow = new InfoWindow();
+				const center = {
+					lat: 1.35232,
+					lng: 103.81855
+				};
+				const mapElement = document.querySelector('gmp-map');
+
+				const map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 12,
+					center: center,
+					mapId: 'SERVICES_MAP'
+				});
+
+				markersData.forEach((data, index) => {
+					const iconMain = data.marker.iconMain;
+					const iconActive = data.marker.iconActive;
+					const svgMarkerIcon = parser.parseFromString(iconMain, 'image/svg+xml').documentElement;
+					const svgMarkerActiveIcon = parser.parseFromString(iconActive, 'image/svg+xml').documentElement;
+
+					const marker = new AdvancedMarkerElement({
+						position: data.position,
+						map: map,
+						title: data.title.textContent,
+						anchorLeft: '-50%',
+						anchorTop: '-50%',
+						gmpClickable: true,
+					});
+
+					marker.append(svgMarkerIcon);
+					mapElement.append(marker);
+
+					marker.addEventListener('gmp-click', (domEvent) => {
+						setActiveItem(data.id)
+
+						infoWindow.close();
+						infoWindow.setHeaderContent(data.title.cloneNode(true))
+						infoWindow.setContent(data.address.cloneNode(true));
+						infoWindow.open(marker.map, marker);
+					});
+					marker.markerId = data.id
+
+					markersData[index].markerElement = marker;
+					markersData[index].svgElements = {
+						svgMarkerIcon,
+						svgMarkerActiveIcon
+					};
+				});
+
+				addressFilterSelect.addEventListener('change', (event) => {
+					filterMapItems(event.target.value);
+				});
+
+				function filterMapItems(category) {
+					addressCards.forEach((card) => {
+						const cardCategory = card.dataset.category;
+						const shouldShow = category === 'all' || cardCategory === category;
+
+						card.style.display = shouldShow ? '' : 'none';
+					});
+
+					markersData.forEach((item) => {
+						const shouldShow = category === 'all' || item.category === category;
+						item.markerElement.map = shouldShow ? map : null;
+					});
+
+					clearActiveState();
+				}
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTR1hke9WEjWAzhDTUx5JM6HbhlsY9XN0&callback=initMap&_v=20260422181225"></script>
+
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__left-block">
@@ -717,8 +1686,8 @@
 		</div>
 
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20260414124255" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20260414124255"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20260422181225" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20260422181225"></script>
 </body>
 
 </html>

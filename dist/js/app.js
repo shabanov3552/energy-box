@@ -5172,7 +5172,7 @@
             requestAnimationFrame(updatePosition);
         }
         if (scrollabelBlock) requestAnimationFrame(updatePosition);
-        window["FLS"] = true;
+        window["FLS"] = false;
         menuInit();
         tabs();
         formFieldsInit({

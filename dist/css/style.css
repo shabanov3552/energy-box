@@ -1905,12 +1905,8 @@ body::after {
   grid-template-columns: repeat(3,1fr);
   gap: 80px 17px
 }
-.contacts {
-  padding-top: 8.3125rem
-}
 .contacts__top {
-  position: relative;
-  margin-bottom: 1.25rem
+  position: relative
 }
 .contacts__white-title {
   pointer-events: none;
@@ -2108,7 +2104,6 @@ body::after {
   background-color: #fff;
   height: 600px;
   border-radius: 100px;
-  margin-top: 3.125rem;
   overflow: hidden
 }
 .contacts-map__wrapper {
@@ -2123,6 +2118,8 @@ body::after {
   overflow: hidden;
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: start;
+  align-content: start;
   padding-left: 1.875rem;
   padding-right: .9375rem;
   padding-top: 3.125rem;
@@ -2151,6 +2148,9 @@ body::after {
   cursor: pointer
 }
 .contacts-map__address-card:hover {
+  background: #f5f5f5
+}
+.contacts-map__address-card_active {
   background: #f5f5f5
 }
 .contacts-map__address-card:not(:last-child) {
@@ -2210,6 +2210,9 @@ body::after {
   width: 16px;
   height: 16px
 }
+.contacts-map__map-wrapper {
+  height: 600px
+}
 .select_contacts-map-filter {
   padding-right: 3.125rem
 }
@@ -2257,15 +2260,16 @@ body::after {
   font-size: 14px;
   color: #6f7b8c
 }
-.contacts-tabs__title:hover {
-  border-color: #283583
-}
 .contacts-tabs__title._tab-active {
   border-color: #283583;
   color: #283583
 }
 .contacts-tabs__title-icons {
   position: relative
+}
+.contacts-tabs__title-icons img {
+  max-width: 100%;
+  max-height: 100%
 }
 ._tab-active .contacts-tabs__title-icons img:first-child {
   display: none
@@ -2275,6 +2279,9 @@ body::after {
 }
 ._tab-active .contacts-tabs__title-icons img:last-child {
   display: block
+}
+.contacts-tabs__title-icons img.title-icon-white {
+  display: none
 }
 .contacts-tabs__body .contact-card {
   padding: 1.25rem 1.875rem
@@ -2291,16 +2298,16 @@ body::after {
   height: 50px
 }
 .contacts-tabs__body .contact-card.compas_n::after {
-  background: url(../../img/icons/compas-n.svg) no-repeat
+  background: url(../../img/icons/compas-n.svg) center/contain no-repeat
 }
 .contacts-tabs__body .contact-card.compas_w::after {
-  background: url(../../img/icons/compas-w.svg) no-repeat
+  background: url(../../img/icons/compas-w.svg) center/contain no-repeat
 }
 .contacts-tabs__body .contact-card.compas_s::after {
-  background: url(../../img/icons/compas-s.svg) no-repeat
+  background: url(../../img/icons/compas-s.svg) center/contain no-repeat
 }
 .contacts-tabs__body .contact-card.compas_e::after {
-  background: url(../../img/icons/compas-e.svg) no-repeat
+  background: url(../../img/icons/compas-e.svg) center/contain no-repeat
 }
 .contacts-tabs__body .contact-card__header {
   margin-bottom: .9375rem
@@ -2335,7 +2342,7 @@ body::after {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 20px
+  gap: 0 20px
 }
 .contacts-tabs__body .contact-card__wa-button {
   height: 40px;
@@ -3069,6 +3076,17 @@ body::after {
     width: 100%
   }
 }
+@media (min-width:115em) {
+  .contacts {
+    padding-top: 8.3125rem
+  }
+  .contacts__top {
+    margin-bottom: 1.25rem
+  }
+  .contacts-map {
+    margin-top: 3.125rem
+  }
+}
 @media (max-width:115em) {
   .lightning-bg {
     background-image: url(../img/lightning-bg1600.webp)
@@ -3297,12 +3315,6 @@ body::after {
   .products-catalog__grid {
     gap: 94px 20px
   }
-  .contacts {
-    padding-top: 13.9375rem
-  }
-  .contacts__top {
-    margin-bottom: 8rem
-  }
   .contacts__white-title {
     font-size: 250px;
     bottom: -14px;
@@ -3470,6 +3482,17 @@ body::after {
   .hybrid-solar__main {
     padding-top: 11.9375rem;
     padding-bottom: 11.8125rem
+  }
+}
+@media (max-width:20em) {
+  .contacts {
+    padding-top: 6.875rem
+  }
+  .contacts__top {
+    margin-bottom: 1.125rem
+  }
+  .contacts-map {
+    margin-top: 1.25rem
   }
 }
 @media (max-width:87.49875em) {
@@ -3719,12 +3742,6 @@ body::after {
   .products-catalog__title {
     font-size: 70px;
     margin-bottom: 3rem
-  }
-  .contacts {
-    padding-top: 10rem
-  }
-  .contacts__top {
-    margin-bottom: 3.1875rem
   }
   .contacts__white-title {
     font-size: 150px;
@@ -4239,12 +4256,6 @@ body::after {
     height: 525px;
     top: -162px;
     left: -60px
-  }
-  .contacts {
-    padding-top: 8.3125rem
-  }
-  .contacts__top {
-    margin-bottom: 6.125rem
   }
   .contacts__white-title {
     font-size: 100px
@@ -4811,12 +4822,6 @@ body::after {
     grid-template-columns: repeat(2,1fr);
     gap: 85px 20px
   }
-  .contacts {
-    padding-top: 7.75rem
-  }
-  .contacts__top {
-    margin-bottom: 2.8125rem
-  }
   .contacts__white-title {
     font-size: 80px
   }
@@ -4860,6 +4865,37 @@ body::after {
   }
   .contact-card__text {
     font-size: 15px
+  }
+  .contacts-map {
+    background-color: rgba(0,0,0,0);
+    border-radius: 0;
+    overflow: visible;
+    height: auto
+  }
+  .contacts-map__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 40px 1fr;
+    grid-template-rows: 40px 1fr;
+    gap: 10px
+  }
+  .contacts-map__filter {
+    padding: 0;
+    overflow: visible
+  }
+  .contacts-map__adresses-list {
+    display: none
+  }
+  .contacts-map__map-wrapper {
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden
+  }
+  .select_contacts-map-filter {
+    padding: 0
+  }
+  .select_contacts-map-filter .select__title {
+    border-color: #fff
   }
   .battery-diagram {
     padding-top: 6.3125rem;
@@ -5391,6 +5427,9 @@ body::after {
   .contacts__title {
     font-size: 30px
   }
+  .contacts__services {
+    gap: 15px
+  }
   .contacts__section-header {
     gap: 60px
   }
@@ -5407,10 +5446,86 @@ body::after {
     width: 20px;
     height: 20px
   }
+  .contacts-tabs {
+    overflow: hidden
+  }
   .contacts-tabs__navigation {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 5px;
+    margin-bottom: .9375rem;
+    overflow: auto;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    gap: 0
+  }
+  .contacts-tabs__title {
+    padding-bottom: 0;
+    font-size: 13px;
+    padding: .3125rem .625rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    -ms-grid-columns: auto 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    height: auto
+  }
+  .contacts-tabs__title._tab-active {
+    background-color: #283583;
+    color: #fff
+  }
+  .contacts-tabs__title-icons img {
+    max-height: 20px;
+    max-width: 30px
+  }
+  ._tab-active .contacts-tabs__title-icons img:last-child {
+    display: none
+  }
+  .contacts-tabs__title-icons img.title-icon-white {
+    display: none
+  }
+  ._tab-active .contacts-tabs__title-icons img.title-icon-white {
+    display: block
+  }
+  .contacts-tabs__body .contact-card {
+    padding: .9375rem;
+    border-radius: 20px
+  }
+  .contacts-tabs__body .contact-card.compas::after {
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right: 15px
+  }
+  .contacts-tabs__body .contact-card__title {
+    font-size: 16px
+  }
+  .contacts-tabs__body .contact-card__row {
+    font-size: 13px;
+    display: block
+  }
+  .contacts-tabs__body .contact-card__label {
+    display: inline
+  }
+  .contacts-tabs__body .contact-card__text {
+    display: inline
+  }
+  .contacts-tabs__body .contact-card__center {
+    margin-bottom: .9375rem
+  }
+  .contacts-tabs__body .contact-card__footer {
+    -ms-grid-columns: 1fr auto;
+    grid-template-columns: 1fr auto
+  }
+  .contacts-tabs__body .contact-card__wa-button {
+    font-size: 13px;
+    height: 30px;
+    padding: 0 .625rem;
+    gap: 5px
+  }
+  .contacts-tabs__body .contact-card__wa-button img {
+    width: 16px;
+    height: 16px
   }
   .battery-diagram {
     padding-top: 5.0625rem;
@@ -5708,22 +5823,7 @@ body::after {
   .mp-modul__compare-value {
     font-size: 17px
   }
-  .contacts-tabs__navigation {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start
-  }
-  .contacts-tabs__title {
-    -ms-grid-columns: 50px 1fr;
-    grid-template-columns: 50px 1fr;
-    padding-bottom: .625rem;
-    gap: 10px
-  }
-  .contacts-tabs__title .contacts-tabs__title-icons {
+  .contacts-tabs__title-icons {
     -ms-grid-column-align: center;
     justify-self: center
   }
@@ -5956,12 +6056,6 @@ body::after {
   .auxiliary-products-page .products-catalog__title {
     margin-bottom: 1.4375rem
   }
-  .contacts {
-    padding-top: 6.875rem
-  }
-  .contacts__top {
-    margin-bottom: 1.9375rem
-  }
   .contacts__white-title {
     font-size: 70px
   }
@@ -6076,6 +6170,38 @@ body::after {
     margin-bottom: 3.875rem
   }
 }
+@media (min-width:20em)and (max-width:115em) {
+  @supports (padding-top:clamp(6.875rem ,6.5723684211rem + 1.5131578947vw ,8.3125rem)) {
+    .contacts {
+      padding-top: clamp(6.875rem ,6.5723684211rem + 1.5131578947vw ,8.3125rem)
+    }
+  }
+  @supports not (padding-top:clamp(6.875rem ,6.5723684211rem + 1.5131578947vw ,8.3125rem)) {
+    .contacts {
+      padding-top: calc(6.875rem + 1.4375*(100vw - 20rem)/ 95)
+    }
+  }
+  @supports (margin-bottom:clamp(1.125rem ,1.0986842105rem + 0.1315789474vw ,1.25rem)) {
+    .contacts__top {
+      margin-bottom: clamp(1.125rem ,1.0986842105rem + .1315789474vw ,1.25rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(1.125rem ,1.0986842105rem + 0.1315789474vw ,1.25rem)) {
+    .contacts__top {
+      margin-bottom: calc(1.125rem + .125*(100vw - 20rem)/ 95)
+    }
+  }
+  @supports (margin-top:clamp(1.25rem ,0.8552631579rem + 1.9736842105vw ,3.125rem)) {
+    .contacts-map {
+      margin-top: clamp(1.25rem ,.8552631579rem + 1.9736842105vw ,3.125rem)
+    }
+  }
+  @supports not (margin-top:clamp(1.25rem ,0.8552631579rem + 1.9736842105vw ,3.125rem)) {
+    .contacts-map {
+      margin-top: calc(1.25rem + 1.875*(100vw - 20rem)/ 95)
+    }
+  }
+}
 @media (any-hover:hover) {
   .form__button:hover {
     background: #000
@@ -6097,5 +6223,8 @@ body::after {
   }
   .products-preview__name:hover {
     color: #000
+  }
+  .contacts-tabs__title:hover {
+    border-color: #283583
   }
 }
