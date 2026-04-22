@@ -963,25 +963,25 @@
 
             &_n {
                &::after {
-                  background: url(../../img/icons/compas-n.svg) center/contain no-repeat;
+                  background: url(@img/icons/compas-n.svg) center/contain no-repeat;
                }
             }
 
             &_w {
                &::after {
-                  background: url(../../img/icons/compas-w.svg) center/contain no-repeat;
+                  background: url(@img/icons/compas-w.svg) center/contain no-repeat;
                }
             }
 
             &_s {
                &::after {
-                  background: url(../../img/icons/compas-s.svg) center/contain no-repeat;
+                  background: url(@img/icons/compas-s.svg) center/contain no-repeat;
                }
             }
 
             &_e {
                &::after {
-                  background: url(../../img/icons/compas-e.svg) center/contain no-repeat;
+                  background: url(@img/icons/compas-e.svg) center/contain no-repeat;
                }
             }
          }

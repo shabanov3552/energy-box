@@ -2298,16 +2298,16 @@ body::after {
   height: 50px
 }
 .contacts-tabs__body .contact-card.compas_n::after {
-  background: url(../../img/icons/compas-n.svg) center/contain no-repeat
+  background: url(../img/icons/compas-n.svg) center/contain no-repeat
 }
 .contacts-tabs__body .contact-card.compas_w::after {
-  background: url(../../img/icons/compas-w.svg) center/contain no-repeat
+  background: url(../img/icons/compas-w.svg) center/contain no-repeat
 }
 .contacts-tabs__body .contact-card.compas_s::after {
-  background: url(../../img/icons/compas-s.svg) center/contain no-repeat
+  background: url(../img/icons/compas-s.svg) center/contain no-repeat
 }
 .contacts-tabs__body .contact-card.compas_e::after {
-  background: url(../../img/icons/compas-e.svg) center/contain no-repeat
+  background: url(../img/icons/compas-e.svg) center/contain no-repeat
 }
 .contacts-tabs__body .contact-card__header {
   margin-bottom: .9375rem
